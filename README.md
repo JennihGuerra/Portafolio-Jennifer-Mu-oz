@@ -1,2 +1,58 @@
-# Portafolio-Jennifer-Mu-oz
-Portafolio profesional ux/productdesigner
+# Portafolio — Jennifer Muñoz | UX/UI & Product Designer
+
+Portafolio profesional construido con **HTML5, CSS3 y JavaScript Vanilla** (sin frameworks), listo para publicar en **Netlify**.
+
+## Estructura del proyecto
+
+```
+├── index.html              # Página principal (Inicio, Sobre mí, Proyectos, Proceso, Habilidades, Contacto)
+├── css/
+│   └── style.css           # Estilos, variables de color, modo claro/oscuro, responsive
+├── js/
+│   └── script.js           # Menú móvil, dark mode, scroll suave, animaciones, formulario
+├── assets/
+│   ├── favicon.svg
+│   └── cv-jennifer-munoz.pdf    # CV real, descargable desde el botón del hero
+├── proyectos/
+│   ├── proyecto-1.html     # Páginas de detalle de cada proyecto (placeholder "en construcción")
+│   ├── proyecto-2.html
+│   ├── proyecto-3.html
+│   └── proyecto-4.html
+├── 404.html
+└── netlify.toml
+```
+
+## Cómo editar el contenido
+
+El texto del sitio está en `index.html`, marcado en español y organizado por secciones con comentarios `<!-- ============ SECCIÓN ============ -->`. El contenido de Inicio, Sobre mí, Proceso, Habilidades y Contacto está tomado directamente del CV de Jennifer (research, arquitectura de información, UI, prototipado, QA, WordPress/Elementor, IA aplicada al diseño, etc.). La sección **Proyectos** sigue siendo placeholder a propósito — cada tarjeta enlaza a `proyectos/proyecto-N.html`, listas para recibir los casos de estudio reales (Portal de nuevos clientes + Back Office, App de inspección en terreno, Plataforma de venta de entradas) cuando estén redactados.
+
+- **Nombre y logo**: clase `.logo` en el header y footer.
+- **Foto de "Sobre mí"**: hoy es un avatar con iniciales (`.about__avatar`). Para usar una foto real, reemplaza el `<span>JM</span>` por una etiqueta `<img>` dentro de `assets/img/`.
+- **Proyectos**: cada tarjeta en `#proyectos` enlaza a `proyectos/proyecto-N.html`. Cuando tengas el caso de estudio completo, reemplaza el contenido de esa página (mantiene el mismo header/footer del sitio).
+- **CV**: `assets/cv-jennifer-munoz.pdf` es el CV real subido por Jennifer, enlazado desde el botón "Descargar CV" del hero. Si se actualiza el CV, reemplaza este archivo manteniendo el mismo nombre.
+- **Formulario de contacto**: ya está configurado para **Netlify Forms** (atributo `data-netlify="true"`), por lo que funciona sin backend una vez publicado en Netlify. Los mensajes llegan al panel *Forms* de tu sitio en Netlify.
+
+## Modo oscuro
+
+El sitio carga en **modo claro por defecto**. El botón de sol/luna en el header alterna el tema y la preferencia se guarda en `localStorage` del navegador de cada visitante.
+
+## Publicar en Netlify
+
+**Opción 1 — Arrastrar y soltar:**
+1. Entra a [app.netlify.com/drop](https://app.netlify.com/drop).
+2. Arrastra la carpeta completa del proyecto.
+3. Netlify publica el sitio y te da una URL `https://tu-sitio.netlify.app`.
+
+**Opción 2 — Conectado a Git (recomendado para actualizaciones futuras):**
+1. Sube este proyecto a un repositorio (GitHub/GitLab/Bitbucket).
+2. En Netlify: *Add new site → Import an existing project* y conecta el repositorio.
+3. Build command: (vacío — es un sitio estático). Publish directory: `.`
+4. Netlify detecta `netlify.toml` automáticamente.
+
+Después de publicar, activa **Forms** en el panel de Netlify (Site settings → Forms) para empezar a recibir los mensajes del formulario de contacto.
+
+## Próximos pasos sugeridos
+
+- Sustituir las páginas `proyectos/proyecto-N.html` por los casos de estudio completos a medida que los tengas listos — el sistema de diseño (variables CSS, componentes) ya está preparado para que se vean consistentes con el resto del sitio.
+- Agregar imágenes reales de los proyectos en `assets/img/` y reemplazar los fondos con degradado por `<img>`.
+- Conectar un dominio propio en Netlify (Site settings → Domain management).
