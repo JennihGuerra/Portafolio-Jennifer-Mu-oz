@@ -140,8 +140,18 @@
   function animateCount(el) {
     var target = parseFloat(el.getAttribute('data-count-to'), 10);
     var suffix = el.getAttribute('data-count-suffix') || '';
+    var decimalsAttr = parseInt(el.getAttribute('data-count-decimals'), 10);
+    var decimals = (!isNaN(decimalsAttr) && decimalsAttr > 0) ? decimalsAttr : 0;
+
+    function formatNumber(n) {
+      if (decimals > 0) {
+        return n.toLocaleString('es-CL', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+      }
+      return String(Math.round(n));
+    }
+
     if (prefersReducedMotion || isNaN(target)) {
-      el.textContent = target + suffix;
+      el.textContent = formatNumber(target) + suffix;
       return;
     }
     var duration = 1400;
@@ -155,12 +165,12 @@
       if (startTime === null) startTime = timestamp;
       var progress = Math.min((timestamp - startTime) / duration, 1);
       var eased = easeOutExpo(progress);
-      var current = Math.round(eased * target);
-      el.textContent = current + suffix;
+      var current = eased * target;
+      el.textContent = formatNumber(current) + suffix;
       if (progress < 1) {
         window.requestAnimationFrame(step);
       } else {
-        el.textContent = target + suffix;
+        el.textContent = formatNumber(target) + suffix;
       }
     }
     window.requestAnimationFrame(step);
