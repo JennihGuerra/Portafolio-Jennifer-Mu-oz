@@ -1,0 +1,90 @@
+/* ============================================================
+   TEMA — App móvil de agendamiento médico (proyecto-3.html)
+   ------------------------------------------------------------
+   Paleta REAL del proyecto (enviada por Jennifer, 2026-08-27):
+     #007AFF  azul primario
+     #F7941D  naranjo (acento / CTA)
+     #CEE0F8  celeste suave (fondos y bordes)
+     blanco   base de la página
+
+   ⚠️ Tipografía aún PENDIENTE — sigue en Roboto de respaldo hasta
+   que Jennifer confirme la fuente real de este proyecto.
+   ============================================================ */
+
+.project-detail {
+  --pd-bg: #FFFFFF;
+  --pd-bg-alt: #F5F9FE;
+  --pd-surface: #FFFFFF;
+  --pd-border: #CEE0F8;
+
+  --pd-text-primary: #10233D;
+  --pd-text-body: #4B5B6E;
+  --pd-text-muted: #93A2B3;
+
+  --pd-accent: #007AFF;
+  --pd-accent-2: #CEE0F8;
+  --pd-on-accent: #FFFFFF;
+
+  /* Gradiente propio (azul → naranjo) para el hero y el CTA de "siguiente proyecto" */
+  --pd-gradient: linear-gradient(135deg, #007AFF 0%, #F7941D 100%);
+
+  /* SF Pro Display: es una fuente propietaria de Apple, no se puede alojar el
+     archivo en la web (Apple solo la licencia para apps nativas). Se usa como
+     "system font stack": en Mac/iPhone/iPad se ve la SF Pro Display real
+     (es la fuente del sistema ahí); en Windows/Android cae a su equivalente
+     nativo (Segoe UI / Roboto), que visualmente es muy cercano. */
+  --pd-font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --pd-font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ============================================================
+   MODO OSCURO — se activa con el mismo botón de tema del header
+   (data-theme="dark" en <html>, manejado por js/script.js: es el
+   mismo interruptor global del sitio, ya presente en esta página).
+   Paleta propia de este proyecto en oscuro: azul marino de fondo,
+   celeste brillante para todo lo que en modo claro usa --pd-accent
+   (kickers, cifras, íconos, bordes de cita, bullets — lo que debe
+   "resaltar"), y el resto del texto en blanco / casi blanco.
+   ============================================================ */
+[data-theme="dark"] .project-detail {
+  --pd-bg: #0A1B33;
+  --pd-bg-alt: #0E2440;
+  --pd-surface: #12294B;
+  --pd-border: rgba(110, 180, 255, 0.22);
+
+  --pd-text-primary: #FFFFFF;
+  --pd-text-body: #F0F5FC;
+  --pd-text-muted: #9FB7D6;
+
+  --pd-accent: #5EC8FF;
+  --pd-accent-2: #BFE6FF;
+  --pd-on-accent: #FFFFFF;
+
+  /* El degradado de marca (azul → naranjo) se deja igual: ya es lo
+     bastante oscuro/saturado para funcionar también sobre fondo oscuro,
+     y se usa con texto blanco (--pd-on-accent) en tarjetas y CTA. */
+}
+
+/* --pd-accent pasa a ser un celeste CLARO en oscuro (para que resalte
+   como texto/ícono sobre el fondo azul marino), pero un par de piezas
+   lo usan como FONDO SÓLIDO con --pd-on-accent encima — ahí el texto
+   debe pasar a oscuro para no perder el contraste (a diferencia de las
+   piezas con degradado, que siguen con --pd-on-accent blanco). */
+[data-theme="dark"] .project-detail .project-stage-badge,
+[data-theme="dark"] .project-detail .pd-heuristics__table thead th {
+  color: #0A1B33;
+}
+
+/* Marco de la imagen real del hero: fondo blanco fijo pensado para
+   modo claro — en oscuro pasa a la superficie oscura del tema. */
+[data-theme="dark"] .project-detail .project-hero__media--img {
+  background: var(--pd-surface);
+}
+
+/* Botón del CTA final "Siguiente proyecto": fondo blanco fijo, con
+   texto que normalmente toma --pd-text-primary (ya blanco en modo
+   oscuro) — se fija a un color oscuro para que el texto se siga
+   viendo sobre el botón blanco. */
+[data-theme="dark"] .project-detail .pd-next .btn--pd-next {
+  color: #0A1B33;
+}

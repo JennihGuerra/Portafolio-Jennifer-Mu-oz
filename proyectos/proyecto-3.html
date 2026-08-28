@@ -3,16 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>App móvil de agendamiento médico — Jennifer Muñoz</title>
-<meta name="description" content="Caso de estudio: diseño de una experiencia accesible para agendar horas médicas en pocos pasos.">
+<title>Medical 360 — App móvil de agendamiento médico | Jennifer Muñoz</title>
+<meta name="description" content="Caso de estudio personal: Medical 360, una app de agendamiento médico pensada para descongestionar los centros de salud.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..600,0..1,-25..0&display=swap">
 
+<!-- TODO: si la tipografía real de este proyecto viene de Google Fonts, agrega su <link> aquí -->
+
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/project-detail.css">
+<link rel="stylesheet" href="../css/proyecto-3-theme.css">
 </head>
 <body>
 
@@ -53,7 +57,9 @@
 
 <div class="nav-overlay" id="navOverlay"></div>
 
-<main id="main">
+<main id="main" class="project-detail">
+
+  <!-- 01. HERO DEL PROYECTO -->
   <section class="project-hero">
     <div class="container">
       <a href="../index.html#proyectos" class="btn btn--ghost btn--sm btn--back">
@@ -61,34 +67,541 @@
         Volver a proyectos
       </a>
 
-      <p class="eyebrow">UI Design · Salud</p>
-      <h1 class="section-title">App móvil de agendamiento médico</h1>
-      <p class="section-lead">Caso de estudio: diseño de una experiencia accesible para agendar horas médicas en pocos pasos.</p>
+      <p class="eyebrow">Caso de estudio personal · Salud</p>
+      <div class="project-stage-badge">
+        <span class="material-symbols-outlined">flag</span>
+        Etapa 1 — MVP · 2023
+      </div>
+      <h1 class="section-title">Medical 360</h1>
+      <p class="section-lead">Partió como un MVP simple para agendar horas médicas. Al entrevistar a usuarios reales aparecieron muchas más oportunidades de mejora, y el proyecto evolucionó hacia una app pensada para descongestionar los centros de salud: menos tiempos de espera y menos trámites presenciales que perfectamente pueden resolverse a distancia.</p>
 
       <div class="project-detail__meta">
-        <div><strong>Rol</strong><span>UI/UX Designer</span></div>
-        <div><strong>Duración</strong><span>6 semanas</span></div>
-        <div><strong>Herramientas</strong><span>Figma, UserTesting</span></div>
+        <div><strong>Rol</strong><span>UX / Product Designer</span></div>
+        <div><strong>Duración</strong><span>MVP: 3 meses (2023) · Etapa 2: 1 mes (2026)</span></div>
+        <div><strong>Herramientas</strong><span>Figma, Illustrator, Photoshop, Claude, Google Workspace, ChatGPT</span></div>
       </div>
 
-      <div class="project-hero__media" style="background:linear-gradient(135deg, #F26666, #F27457)">
-        <span class="material-symbols-outlined">local_hospital</span>
+      <div class="project-hero__media project-hero__media--img">
+        <img src="../assets/img/proyecto-3-hero.png" alt="Medical 360 — app móvil de agendamiento médico">
       </div>
     </div>
   </section>
 
-  <section class="coming-soon">
-    <div class="container">
-      <div class="coming-soon__card">
-        <div class="coming-soon__icon">
-          <span class="material-symbols-outlined">construction</span>
+  <!-- 02. RESUMEN DEL PROYECTO -->
+  <section class="pd-section" id="resumen">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">summarize</span>02 · Resumen</p>
+      <h2 class="pd-heading">Resumen del proyecto</h2>
+      <p class="pd-lead">Medical 360 es un caso de estudio personal de una app móvil de agendamiento médico. Nació como un MVP enfocado en un solo flujo — reservar horas médicas de forma simple — pero la investigación con usuarios reales reveló una oportunidad más grande: usar la misma app para reducir la congestión de los centros de salud, acortando tiempos de espera y evitando trámites presenciales que se pueden resolver de forma remota.</p>
+      <p class="pd-lead">El MVP se diseñó en 2023, y todo lo que se detalla a continuación — desde el research hasta la solución final — corresponde a esta primera etapa. En 2026 retomé el proyecto para una segunda etapa de mejora, que se detalla al final de este caso de estudio.</p>
+    </div>
+  </section>
+
+  <!-- 03. CONTEXTO -->
+  <section class="pd-section pd-section--alt" id="contexto">
+    <div class="container pd-grid-2">
+      <div>
+        <p class="pd-kicker"><span class="material-symbols-outlined">domain</span>03 · Contexto</p>
+        <h2 class="pd-heading">Contexto</h2>
+        <p class="pd-lead">El proyecto nace en el contexto post-pandemia: el COVID-19 obligó a que casi todos los trámites se volvieran digitales, y quedó en evidencia que el sistema de salud no estaba preparado para algo así — ni en sus procesos médicos ni en su servicio al paciente. Medical 360 es una app pensada principalmente para clínicas y consultas médicas privadas, con el objetivo de poner todo el servicio clínico al alcance de la mano, tanto para el equipo clínico como para los pacientes.</p>
+      </div>
+      <div class="pd-visual-frame pd-visual-frame--img">
+        <img src="../assets/img/proyecto-3-contexto.png" alt="Medical 360 — vista de la app en un mockup de iPhone">
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. PROBLEMA / OPORTUNIDAD -->
+  <section class="pd-section" id="problema">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">error</span>04 · Problema / Oportunidad</p>
+      <h2 class="pd-heading">Problema / Oportunidad</h2>
+      <p class="pd-lead">El acceso a la salud es, y siempre será, una prioridad: tarde o temprano todas las personas necesitamos algún tipo de atención médica. Aun así, conseguir una hora médica seguía siendo un trámite tedioso — largas esperas en el call center clínico, llamadas restringidas a ciertos días y horarios, y en muchos casos ni siquiera una respuesta resolutiva para el paciente.</p>
+      <p class="pd-lead">La mayoría de las clínicas seguían resolviendo sus trámites por teléfono o de forma presencial, generando filas, tiempos de espera y un riesgo de contagio evitable — mientras la gente ya llevaba su vida entera en el celular. La oportunidad era llevar el servicio clínico al dispositivo que las personas ya usan para casi todo.</p>
+      <div class="pd-stats">
+        <div class="pd-stat"><strong>64%</strong><span>de la población mundial ya tiene celular con datos móviles</span></div>
+        <div class="pd-stat"><strong>98,8%</strong><span>de los trámites en línea se hacen desde el celular (solo 0,02% desde un computador)</span></div>
+        <div class="pd-stat"><strong>3M+</strong><span>personas se atienden en salud privada solo en Chile</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05. OBJETIVOS -->
+  <section class="pd-section pd-section--alt" id="objetivos">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">flag</span>05 · Objetivos</p>
+      <h2 class="pd-heading">Objetivos</h2>
+      <p class="pd-lead">El objetivo era simple: que las personas obtuvieran respuestas más rápidas y eficientes a sus requerimientos, sin tener que trasladarse hasta un centro de salud, esperar en la línea telefónica ni depender de tener un computador a mano.</p>
+      <p class="pd-lead">La misión de Medical 360, en cuatro objetivos concretos.</p>
+      <ul class="pd-list">
+        <li><span class="material-symbols-outlined">flag</span>Optimizar la eficiencia y la eficacia de las clínicas y consultas médicas privadas.</li>
+        <li><span class="material-symbols-outlined">flag</span>Optimizar el tiempo de los usuarios (pacientes).</li>
+        <li><span class="material-symbols-outlined">flag</span>Acercar la relación paciente–médico, con información completa para ambas partes.</li>
+        <li><span class="material-symbols-outlined">flag</span>Mejorar el sistema de salud en general.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 06. MI ROL Y ALCANCE -->
+  <section class="pd-section" id="rol-alcance">
+    <div class="container pd-grid-2">
+      <div>
+        <p class="pd-kicker"><span class="material-symbols-outlined">badge</span>06 · Mi rol y alcance</p>
+        <h2 class="pd-heading">Mi rol y alcance</h2>
+        <p class="pd-lead">Medical 360 es un caso de estudio personal: llevé el proceso completo de punta a punta, siguiendo la metodología de Design Thinking — empatizar, definir, idear, prototipar y validar.</p>
+      </div>
+      <ul class="pd-list">
+        <li><span class="material-symbols-outlined">check_circle</span>Investigación: desktop research, benchmarking y entrevistas a usuarios reales.</li>
+        <li><span class="material-symbols-outlined">check_circle</span>Definición de persona, POV y arquitectura de la información (card sorting incluido).</li>
+        <li><span class="material-symbols-outlined">check_circle</span>Wireframes, UI y sistema de diseño.</li>
+        <li><span class="material-symbols-outlined">check_circle</span>Prototipado y testing de usabilidad.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 07. RESEARCH -->
+  <section class="pd-section pd-section--alt" id="research">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>07 · Research</p>
+      <h2 class="pd-heading">Research</h2>
+      <p class="pd-lead">Empecé revisando cifras y tendencias (desktop research) y comparando con otras clínicas y apps del rubro (benchmarking). Después encuesté y entrevisté a pacientes reales de una clínica en Puerto Varas para entender cómo piden horas médicas hoy, qué los frustra y qué esperan del servicio: en total se aplicaron 12 encuestas y se realizaron 3 entrevistas, que llevaron a definir el siguiente tipo de usuario como user persona. Más adelante hice un card sorting con Optimal Workshop para entender cómo los usuarios organizan mentalmente la información.</p>
+
+      <div class="pd-benchmark">
+        <p class="pd-kicker"><span class="material-symbols-outlined">query_stats</span>Benchmarking: evaluando la competencia</p>
+        <p class="pd-lead">Revisé la web en busca de apps que ya resolvieran este problema y encontré muy pocas: la mayoría de las clínicas y consultas orientaron sus mejoras a su página web y su agenda en línea, y no a implementar un servicio a través de dispositivos móviles — las pocas apps que existen, además, no cuentan con actualizaciones vigentes. Analicé en detalle dos de los principales referentes del rubro en Chile.</p>
+        <div class="pd-benchmark__grid">
+          <div class="pd-benchmark__card">
+            <p class="pd-benchmark__name">agendapro</p>
+            <div class="pd-benchmark__cols">
+              <div>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_up</span>Fortalezas</p>
+                <ul class="pd-benchmark__list">
+                  <li>Disponibilidad 24/7 para agendar de forma autónoma.</li>
+                  <li>Envío de recordatorios automáticos.</li>
+                  <li>Fichas clínicas digitales.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_down</span>Debilidades</p>
+                <ul class="pd-benchmark__list">
+                  <li>La app no está bien definida.</li>
+                  <li>Está más enfocada en satisfacer las necesidades de las clínicas que las de los pacientes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pd-benchmark__card">
+            <p class="pd-benchmark__name">RedSalud</p>
+            <div class="pd-benchmark__cols">
+              <div>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_up</span>Fortalezas</p>
+                <ul class="pd-benchmark__list">
+                  <li>Disponibilidad 24/7 para agendar de forma autónoma.</li>
+                  <li>Asociación con varias clínicas del país.</li>
+                  <li>Interfaz amigable.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_down</span>Debilidades</p>
+                <ul class="pd-benchmark__list">
+                  <li>App disponible solo para Android.</li>
+                  <li>Desde su lanzamiento no ha tenido las actualizaciones suficientes, por lo que va quedando cada vez más obsoleta.</li>
+                  <li>No está disponible para todas las clínicas y consultas.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <h2>Caso de estudio en construcción</h2>
-        <p>Estoy escribiendo el detalle completo de este proyecto: proceso, decisiones de diseño y resultados. Vuelve pronto o escríbeme si quieres conocer más ahora mismo.</p>
-        <a href="../index.html#contacto" class="btn btn--primary">Contactarme</a>
+      </div>
+
+      <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">poll</span>Resultado de encuestas</p>
+      <p class="pd-lead">Estas encuestas se realizaron en la ciudad de Puerto Varas, a pacientes de la Clínica Puerto Varas (18 respuestas).</p>
+
+      <p class="pd-benchmark__col-title" style="margin-top:28px;">Rango etáreo</p>
+      <div class="pd-stats">
+        <div class="pd-stat"><strong>16,7%</strong><span>Encuestados de 18 a 25 años</span></div>
+        <div class="pd-stat"><strong>44,4%</strong><span>Encuestados de 26 a 35 años</span></div>
+        <div class="pd-stat"><strong>33,3%</strong><span>Encuestados de 36 a 50 años</span></div>
+        <div class="pd-stat"><strong>11,1%</strong><span>Encuestados de 51 años o más</span></div>
+      </div>
+
+      <p class="pd-benchmark__col-title" style="margin-top:28px;">Frecuencia de controles médicos</p>
+      <div class="pd-stats">
+        <div class="pd-stat"><strong>44,4%</strong><span>Realiza controles médicos 2 veces al año</span></div>
+        <div class="pd-stat"><strong>16,7%</strong><span>Realiza controles médicos cada 3 meses</span></div>
+        <div class="pd-stat"><strong>38,9%</strong><span>Con una frecuencia menor (una vez al año, según necesidad, o casi nunca)</span></div>
+      </div>
+
+      <p class="pd-benchmark__col-title" style="margin-top:28px;">Tiempo de espera en call center</p>
+      <div class="pd-stats">
+        <div class="pd-stat"><strong>44,4%</strong><span>Esperó menos de 15 min en el call center</span></div>
+        <div class="pd-stat"><strong>38,9%</strong><span>Esperó 15 min en el call center</span></div>
+        <div class="pd-stat"><strong>11,1%</strong><span>Esperó 30 min en el call center</span></div>
+      </div>
+
+      <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">person</span>User Persona</p>
+      <p class="pd-lead">Una user persona es un perfil ficticio pero basado en datos reales, que representa las necesidades, motivaciones y frustraciones de un tipo de usuario. A partir de las entrevistas y encuestas realizadas, llegamos al siguiente tipo de usuario.</p>
+      <div class="pd-persona">
+        <div class="pd-persona__card">
+          <img src="../assets/img/proyecto-3-persona.png" alt="Andrea Almonacid, user persona de Medical 360" class="pd-persona__photo">
+          <dl class="pd-persona__facts">
+            <div><dt>Nombre</dt><dd>Andrea Almonacid</dd></div>
+            <div><dt>Edad</dt><dd>45 años</dd></div>
+            <div><dt>Género</dt><dd>Femenino</dd></div>
+            <div><dt>Educación</dt><dd>Universitaria completa</dd></div>
+            <div><dt>Estado civil</dt><dd>Casada</dd></div>
+            <div><dt>Hijos</dt><dd>3</dd></div>
+            <div><dt>Profesión</dt><dd>Profesora de Educación Media</dd></div>
+          </dl>
+        </div>
+
+        <blockquote class="pd-persona__quote">“Sin una buena salud, no se puede tener una buena vida.”</blockquote>
+
+        <div class="pd-persona__traits">
+          <div class="pd-persona__trait">
+            <p class="pd-persona__trait-title"><span class="material-symbols-outlined">sentiment_satisfied</span>Motivaciones</p>
+            <ul>
+              <li>Es diabética, por lo que pasa mucho tiempo en clínicas y hospitales — tener un mejor control de su tiempo es fundamental para ella.</li>
+              <li>Compatibilizar el tiempo entre su familia y el cuidado de su salud.</li>
+            </ul>
+          </div>
+          <div class="pd-persona__trait">
+            <p class="pd-persona__trait-title"><span class="material-symbols-outlined">sentiment_dissatisfied</span>Frustraciones</p>
+            <ul>
+              <li>Perder tiempo en esperas telefónicas y no lograr encontrar horas médicas.</li>
+              <li>No contar con una forma más simple y sencilla de agendar sus horas médicas.</li>
+              <li>Falta de tiempo para estar con su familia.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- 08. HALLAZGOS -->
+  <section class="pd-section" id="hallazgos">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>08 · Hallazgos</p>
+      <h2 class="pd-heading">Hallazgos</h2>
+      <p class="pd-lead">Lo más relevante que encontré durante el research, y que guió las decisiones de diseño.</p>
+      <ul class="pd-list">
+        <li><span class="material-symbols-outlined">insights</span>Casi no existen apps que resuelvan esto: la mayoría de las clínicas solo mejoraron su web y su agenda online, no su servicio móvil.</li>
+        <li><span class="material-symbols-outlined">insights</span>Las pocas apps del rubro que existen están limitadas a una red propia o desactualizadas.</li>
+        <li><span class="material-symbols-outlined">insights</span>Los pacientes odian las filas y la espera — y hoy siguen pidiendo horas por teléfono, web de escritorio o de forma presencial.</li>
+        <li><span class="material-symbols-outlined">insights</span>Hay dos usuarios distintos que atender: el paciente y el equipo clínico, cada uno con sus propias necesidades.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 09. IDEACIÓN -->
+  <section class="pd-section" id="ideacion">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">lightbulb</span>09 · Ideación</p>
+      <h2 class="pd-heading">Ideación</h2>
+      <p class="pd-lead">A partir de las entrevistas y las pruebas de usabilidad, prioricé qué funcionalidades tenía sentido incluir primero — separando lo esencial para un MVP de lo deseable para etapas futuras.</p>
+      <div class="pd-grid-2" style="margin-top:28px;">
+        <div>
+          <p class="pd-kicker" style="margin-bottom:8px;"><span class="material-symbols-outlined">check_circle</span>MVP — funcionalidades esenciales</p>
+          <ul class="pd-list">
+            <li><span class="material-symbols-outlined">check_circle</span>Perfil de usuario</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Reserva de horas</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Procedimientos médicos</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Especialidades médicas</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Regístrate</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Contáctanos</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Mis reservas</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Cómo llegar</li>
+          </ul>
+        </div>
+        <div>
+          <p class="pd-kicker" style="margin-bottom:8px;"><span class="material-symbols-outlined">add_circle</span>Deseables — próximas etapas</p>
+          <ul class="pd-list">
+            <li><span class="material-symbols-outlined">add_circle</span>Resultado de exámenes</li>
+            <li><span class="material-symbols-outlined">add_circle</span>Presupuestos médicos</li>
+            <li><span class="material-symbols-outlined">add_circle</span>Pagos</li>
+            <li><span class="material-symbols-outlined">add_circle</span>Chat online</li>
+            <li><span class="material-symbols-outlined">add_circle</span>Recetas médicas</li>
+            <li><span class="material-symbols-outlined">add_circle</span>Número online para toma de muestras</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. ARQUITECTURA / USER FLOW -->
+  <section class="pd-section pd-section--alt" id="arquitectura">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">account_tree</span>10 · Arquitectura / User Flow</p>
+      <h2 class="pd-heading">Arquitectura / User Flow</h2>
+      <p class="pd-lead">Para que la arquitectura reflejara cómo piensan realmente los usuarios (y no cómo yo creía que debía organizarse), hice un card sorting con Optimal Workshop: los usuarios agruparon y etiquetaron las funcionalidades por su cuenta. Esos resultados, analizados con una matriz de similitud y un dendograma, definieron la estructura final de la información.</p>
+      <div class="pd-gallery">
+        <div class="pd-visual-frame pd-visual-frame--img"><img src="../assets/img/proyecto-3-cardsorting.png" alt="Resultado del card sorting de Medical 360 — arquitectura de la información"></div>
+        <div class="pd-visual-frame pd-visual-frame--img"><img src="../assets/img/proyecto-3-matriz-similitud.png" alt="Matriz de similitud del card sorting de Medical 360"></div>
+        <div class="pd-visual-frame pd-visual-frame--img"><img src="../assets/img/proyecto-3-dendograma.png" alt="Dendograma del card sorting de Medical 360"></div>
+      </div>
+      <p class="pd-lead" style="margin-top:32px;">Con la información ya organizada, definí el taskflow — el camino ideal que recorre el usuario para completar una solicitud — y el userflow completo, incluyendo los posibles errores en el camino, para anticiparme a ellos antes de llegar a las pantallas.</p>
+      <div class="pd-visual-frame pd-visual-frame--wide">
+        <span class="material-symbols-outlined">alt_route</span>
+        <span class="pd-visual-frame__label">Taskflow y userflow</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. WIREFRAMES -->
+  <section class="pd-section" id="wireframes">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">grid_view</span>11 · Wireframes</p>
+      <h2 class="pd-heading">Wireframes</h2>
+      <p class="pd-lead">El proceso pasó por tres niveles de fidelidad: primero bocetos a mano para darle forma rápida a la idea, después una digitalización en Figma en fidelidad media (todavía sin aplicar los patrones visuales definitivos), y finalmente wireframes de alta fidelidad ya con la interfaz visual definida.</p>
+      <div class="pd-gallery">
+        <div class="pd-visual-frame pd-visual-frame--img pd-visual-frame--fill"><img src="../assets/img/proyecto-3-wireframe-boceto.png" alt="Boceto a mano de Medical 360 — baja fidelidad"></div>
+        <div class="pd-visual-frame pd-visual-frame--img pd-visual-frame--fill"><img src="../assets/img/proyecto-3-wireframe-media.png" alt="Wireframes de Medical 360 en Figma — fidelidad media"></div>
+        <div class="pd-visual-frame pd-visual-frame--img pd-visual-frame--fill"><img src="../assets/img/proyecto-3-wireframe-alta.png" alt="Wireframes de Medical 360 en Figma — fidelidad alta"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. UI KIT -->
+  <section class="pd-section pd-section--alt" id="design-system">
+    <div class="container pd-grid-2">
+      <div>
+        <p class="pd-kicker"><span class="material-symbols-outlined">palette</span>12 · UI Kit</p>
+        <h2 class="pd-heading">UI Kit</h2>
+        <p class="pd-lead">La base visual partió de un moodboard — toda creación necesita una inspiración — y de un sistema de grillas: usé las grillas estándar de iOS para que la app fuera consistente, con cada elemento ubicado donde tenía que estar. A partir de ahí definí la paleta, la tipografía y el UI kit propio de Medical 360: botones, campos de texto, switches, íconos, tarjetas, teclados, pickers, toolbar, barras de navegación y alertas.</p>
+        <div class="pd-token-list">
+          <div class="pd-token-group">
+            <strong>Color</strong>
+            <div class="pd-token-swatches">
+              <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+                <span class="pd-token-swatch" style="background:#007AFF"></span>
+                <span style="font-size:11px; color:var(--pd-text-muted);">#007AFF</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+                <span class="pd-token-swatch" style="background:#CEE0F8"></span>
+                <span style="font-size:11px; color:var(--pd-text-muted);">#CEE0F8</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+                <span class="pd-token-swatch" style="background:#F7941D"></span>
+                <span style="font-size:11px; color:var(--pd-text-muted);">#F7941D</span>
+              </div>
+              <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+                <span class="pd-token-swatch" style="background:#FFFFFF; border:1px solid var(--pd-border);"></span>
+                <span style="font-size:11px; color:var(--pd-text-muted);">#FFFFFF</span>
+              </div>
+            </div>
+          </div>
+          <div class="pd-token-group">
+            <strong>Tipografía</strong>
+            <p style="font-family:var(--pd-font-display); font-size:24px; font-weight:700; color:var(--pd-text-primary); margin-bottom:12px;">Aa — Títulos principales</p>
+            <div style="display:flex; flex-direction:column; gap:4px; font-size:13px; color:var(--pd-text-body);">
+              <span><b style="color:var(--pd-text-primary); font-weight:600;">Títulos principales</b> — SF Pro Display Bold 34</span>
+              <span><b style="color:var(--pd-text-primary); font-weight:600;">Títulos contenedores</b> — SF Pro Display Regular 15</span>
+              <span><b style="color:var(--pd-text-primary); font-weight:600;">Subtítulos</b> — SF Pro Display Regular 13</span>
+              <span><b style="color:var(--pd-text-primary); font-weight:600;">Textos</b> — SF Pro Display Regular 13</span>
+              <span><b style="color:var(--pd-text-primary); font-weight:600;">Botones</b> — SF Pro Display Regular 17</span>
+              <span><b style="color:var(--pd-text-primary); font-weight:600;">Íconos</b> — SF Pro Display Regular 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pd-visual-frame pd-visual-frame--img">
+        <img src="../assets/img/proyecto-3-ui-kit.png" alt="UI Kit de Medical 360 — paleta, tipografía, botones, campos, íconos y componentes">
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. PROTOTIPO -->
+  <section class="pd-section" id="prototipo">
+    <div class="container pd-section__inner pd-section__inner--wide" style="text-align:center;">
+      <p class="pd-kicker" style="justify-content:center;"><span class="material-symbols-outlined">smartphone</span>13 · Prototipo</p>
+      <h2 class="pd-heading">Prototipo</h2>
+      <p class="pd-lead">Con las pantallas de alta fidelidad armé un prototipo navegable en Figma con el flujo completo, listo para las pruebas de usabilidad.</p>
+      <div class="pd-visual-frame pd-visual-frame--img" style="margin:24px auto 0; max-width:320px; aspect-ratio:9/16;">
+        <img src="../assets/img/proyecto-3-prototipo.png" alt="Prototipo navegable de Medical 360 en Figma — pantalla de inicio de sesión">
+      </div>
+      <a href="https://www.figma.com/proto/3Uf2TqQkd7eTBneGAmzlQa/Medical360_Jennifer?node-id=2-5518&page-id=0%3A1&starting-point-node-id=2%3A5518&t=gUWpL3yGnP8UaZMH-1" class="btn btn--ghost" style="margin-top:24px;" target="_blank" rel="noopener">
+        <span class="material-symbols-outlined">open_in_new</span>
+        Ver prototipo en Figma
+      </a>
+    </div>
+  </section>
+
+  <!-- 14. TESTING / VALIDACIÓN -->
+  <section class="pd-section pd-section--alt" id="testing">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">fact_check</span>14 · Testing / Validación</p>
+      <h2 class="pd-heading">Testing / Validación</h2>
+      <p class="pd-lead">Con el prototipo funcional en fidelidad media, testeé a usuarios reales para revelar problemas de usabilidad, y complementé el proceso con una evaluación heurística.</p>
+      <div class="pd-stats">
+        <div class="pd-stat"><strong>—</strong><span>N.º de usuarios testeados</span></div>
+        <div class="pd-stat"><strong>90%</strong><span>Tasa de éxito de la tarea (reservar una hora médica)</span></div>
+        <div class="pd-stat"><strong>6/10</strong><span>Principios de Nielsen cumplidos en la evaluación heurística</span></div>
+      </div>
+
+      <p class="pd-lead" style="margin-top:28px;">Complementé el testing con usuarios con una evaluación heurística basada en los 10 principios de usabilidad de Nielsen, para detectar problemas de usabilidad que no siempre salen a la luz en las pruebas con usuarios.</p>
+      <div class="pd-heuristics">
+        <table class="pd-heuristics__table">
+          <thead>
+            <tr>
+              <th>Principio</th>
+              <th>Cumple</th>
+              <th>No cumple</th>
+              <th>Detalle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Visibilidad del estado del sistema</td>
+              <td class="pd-heuristics__cumple"><span class="material-symbols-outlined">sentiment_satisfied</span></td>
+              <td></td>
+              <td>La app es amigable y le hace saber al usuario en dónde se encuentra.</td>
+            </tr>
+            <tr>
+              <td>Relación entre sistema y mundo real</td>
+              <td class="pd-heuristics__cumple"><span class="material-symbols-outlined">sentiment_satisfied</span></td>
+              <td></td>
+              <td>El usuario lo siente como algo cotidiano.</td>
+            </tr>
+            <tr>
+              <td>Libertad y control por parte del usuario</td>
+              <td class="pd-heuristics__cumple"><span class="material-symbols-outlined">sentiment_satisfied</span></td>
+              <td></td>
+              <td>El usuario tiene la libertad de corregir sus errores.</td>
+            </tr>
+            <tr>
+              <td>Consistencia y estándares</td>
+              <td class="pd-heuristics__cumple"><span class="material-symbols-outlined">sentiment_satisfied</span></td>
+              <td></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Prevención de errores</td>
+              <td></td>
+              <td class="pd-heuristics__no-cumple"><span class="material-symbols-outlined">sentiment_dissatisfied</span></td>
+              <td>Hace falta un mejor trabajo en cuanto a la prevención de errores.</td>
+            </tr>
+            <tr>
+              <td>Minimizar el uso de memoria</td>
+              <td class="pd-heuristics__cumple"><span class="material-symbols-outlined">sentiment_satisfied</span></td>
+              <td></td>
+              <td>Hace falta un mejor trabajo en cuanto a la prevención de errores.</td>
+            </tr>
+            <tr>
+              <td>Flexibilidad y eficiencia de uso</td>
+              <td class="pd-heuristics__cumple"><span class="material-symbols-outlined">sentiment_satisfied</span></td>
+              <td></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Diseño minimalista</td>
+              <td></td>
+              <td></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Reconocer, diagnosticar y recuperarse de los errores</td>
+              <td></td>
+              <td class="pd-heuristics__no-cumple"><span class="material-symbols-outlined">sentiment_dissatisfied</span></td>
+              <td>Hay que realizar mejoras en las próximas versiones.</td>
+            </tr>
+            <tr>
+              <td>Ayuda y documentación</td>
+              <td></td>
+              <td class="pd-heuristics__no-cumple"><span class="material-symbols-outlined">sentiment_dissatisfied</span></td>
+              <td>No hay documentación.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">sentiment_very_satisfied</span>Métricas de satisfacción</p>
+      <div class="pd-stats">
+        <div class="pd-stat"><strong>80%</strong><span>Encontró fácil el registro en la aplicación</span></div>
+        <div class="pd-stat"><strong>90%</strong><span>No se le dificultó reservar una hora médica</span></div>
+        <div class="pd-stat"><strong>100%</strong><span>Tuvo una buena experiencia en la app</span></div>
+        <div class="pd-stat"><strong>90%</strong><span>Encontró amigables las funcionalidades</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. SOLUCIÓN FINAL -->
+  <section class="pd-section" id="solucion-final">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">check_circle</span>15 · Solución final</p>
+      <h2 class="pd-heading">Solución final</h2>
+      <p class="pd-lead">Medical 360 busca que las clínicas privadas y consultas médicas entreguen, cada vez, un mejor servicio — evitando que sus pacientes pierdan tiempo de forma innecesaria y logrando que se sientan más satisfechos con la atención clínica que reciben.</p>
+      <p class="pd-lead">El resultado: una app que centraliza la reserva de horas, los procedimientos médicos, las especialidades y el historial clínico del paciente — pensada tanto para el paciente como para el equipo clínico.</p>
+      <div class="pd-gallery">
+        <div class="pd-visual-frame"><span class="material-symbols-outlined">devices</span><span class="pd-visual-frame__label">Pantalla final 1</span></div>
+        <div class="pd-visual-frame"><span class="material-symbols-outlined">devices</span><span class="pd-visual-frame__label">Pantalla final 2</span></div>
+        <div class="pd-visual-frame"><span class="material-symbols-outlined">devices</span><span class="pd-visual-frame__label">Pantalla final 3</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. RESULTADOS / IMPACTO -->
+  <section class="pd-section pd-section--alt" id="resultados">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">trending_up</span>16 · Resultados / Impacto</p>
+      <h2 class="pd-heading">Resultados / Impacto</h2>
+      <p class="pd-lead">El impacto real y medible del proyecto una vez implementado (métricas de negocio o de producto).</p>
+      <div class="pd-stats">
+        <div class="pd-stat"><strong>—</strong><span>Métrica de impacto real #1</span></div>
+        <div class="pd-stat"><strong>—</strong><span>Métrica de impacto real #2</span></div>
+        <div class="pd-stat"><strong>—</strong><span>Métrica de impacto real #3</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17. APRENDIZAJES -->
+  <section class="pd-section" id="aprendizajes">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">school</span>17 · Aprendizajes</p>
+      <h2 class="pd-heading">Aprendizajes</h2>
+      <p class="pd-lead">Qué me llevo de este proyecto como diseñadora, dando mis primeros pasos en UX/UI.</p>
+      <ul class="pd-list">
+        <li><span class="material-symbols-outlined">school</span>Medical 360 fue mi primer acercamiento real al UX/UI: el proyecto final del curso de Diseño UX/UI de Coderhouse, donde aprendí de cero todo el proceso completo — research, metodología, definición del problema, prototipado en Figma y testing.</li>
+        <li><span class="material-symbols-outlined">school</span>Aprendí a conocer de verdad al usuario: a levantar información a través de entrevistas, entender sus frustraciones reales y traducir eso en decisiones de diseño, no solo en pantallas.</li>
+        <li><span class="material-symbols-outlined">school</span>Fue también mi primer contacto con Figma, así que buena parte del tiempo se fue en aprender la herramienta al mismo tiempo que diseñaba — por eso el proceso se alargó más de lo esperado y los prototipos de esta primera etapa no llegaron al nivel de pulido que me hubiese gustado.</li>
+        <li><span class="material-symbols-outlined">school</span>Con la base que dejó este primer proyecto entendí que la solución del MVP era un buen punto de partida, pero no la más integral posible — esa fue justamente la motivación para retomarlo en la segunda etapa, ya con más experiencia.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 18. SEGUNDA ETAPA — MEJORA (2026) -->
+  <section class="pd-section pd-section--alt" id="segunda-etapa">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">rocket_launch</span>18 · Segunda etapa (2026)</p>
+      <h2 class="pd-heading">Segunda etapa: de MVP a solución integral</h2>
+      <p class="pd-lead">El MVP de Medical 360 se diseñó en 2023 y validó lo esencial: que resolver el agendamiento médico desde el celular ya resolvía un problema real para los pacientes. En 2026 retomé el proyecto para una segunda etapa de mejora, con foco en ampliar la propuesta más allá de solo agendar horas — acercando a la app trámites que hoy obligan a una visita presencial y que perfectamente se pueden resolver a distancia — siempre con el mismo objetivo de fondo: descongestionar los centros de salud y reducir los tiempos de espera.</p>
+      <ul class="pd-list">
+        <li><span class="material-symbols-outlined">add_circle</span>Resultado de exámenes disponibles directamente en la app.</li>
+        <li><span class="material-symbols-outlined">add_circle</span>Presupuestos médicos consultables sin tener que llamar o ir de forma presencial.</li>
+        <li><span class="material-symbols-outlined">add_circle</span>Pagos integrados dentro del mismo flujo.</li>
+        <li><span class="material-symbols-outlined">add_circle</span>Chat online directo con la clínica.</li>
+        <li><span class="material-symbols-outlined">add_circle</span>Recetas médicas disponibles desde la app.</li>
+        <li><span class="material-symbols-outlined">add_circle</span>Número online para toma de muestras, sin sacarlo de forma presencial.</li>
+      </ul>
+      <div class="pd-placeholder">
+        <span class="material-symbols-outlined">hourglass_empty</span>
+        <p>Esta segunda etapa sigue en desarrollo de contenido — capturas, decisiones de diseño y resultados de esta mejora se irán agregando aquí.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19. SIGUIENTE PROYECTO -->
+  <section class="pd-next" id="siguiente-proyecto">
+    <div class="container">
+      <p class="pd-kicker"><span class="material-symbols-outlined">arrow_forward</span>Siguiente proyecto</p>
+      <h2>Landing page para startup de viajes</h2>
+      <p>Diseño de marca y landing con enfoque en conversión para el lanzamiento de un nuevo producto.</p>
+      <a href="proyecto-4.html" class="btn--pd-next">
+        Ver caso de estudio
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
 </main>
 <footer class="footer">
   <div class="container footer__inner">
