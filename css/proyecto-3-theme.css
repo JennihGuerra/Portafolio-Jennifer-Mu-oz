@@ -35,6 +35,15 @@
      nativo (Segoe UI / Roboto), que visualmente es muy cercano. */
   --pd-font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --pd-font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Colores de las etiquetas de tipo de evidencia (Fase 2) — distintos del
+     azul de marca para que cada tipo de información se distinga de un
+     vistazo, siempre combinados con ícono + texto (nunca solo color). */
+  --pd-tag-validado: #1E8E5A;
+  --pd-tag-desk: #007AFF;
+  --pd-tag-hipotesis: #B8720A;
+  --pd-tag-oportunidad: #7C3AED;
+  --pd-tag-vision: #6B7785;
 }
 
 /* ============================================================
@@ -63,6 +72,14 @@
   /* El degradado de marca (azul → naranjo) se deja igual: ya es lo
      bastante oscuro/saturado para funcionar también sobre fondo oscuro,
      y se usa con texto blanco (--pd-on-accent) en tarjetas y CTA. */
+
+  /* Evidence tags — versiones más claras/saturadas para contraste AA
+     sobre el fondo azul marino oscuro. */
+  --pd-tag-validado: #4ADE80;
+  --pd-tag-desk: #5EC8FF;
+  --pd-tag-hipotesis: #FFB65C;
+  --pd-tag-oportunidad: #C4A6FF;
+  --pd-tag-vision: #9FB7D6;
 }
 
 /* --pd-accent pasa a ser un celeste CLARO en oscuro (para que resalte
