@@ -12,7 +12,7 @@ Portafolio profesional construido con **HTML5, CSS3 y JavaScript Vanilla** (sin 
 │   └── script.js           # Menú móvil, dark mode, scroll suave, animaciones, formulario
 ├── assets/
 │   ├── favicon.svg
-│   └── cv-jennifer-munoz.pdf    # CV real, descargable desde el botón del hero
+│   └── cv-jennifer-munoz.pdf    # CV actualizado, descargable desde el botón del hero
 ├── proyectos/
 │   ├── proyecto-1.html     # Páginas de detalle de cada proyecto (placeholder "en construcción")
 │   ├── proyecto-2.html
@@ -29,7 +29,7 @@ El texto del sitio está en `index.html`, marcado en español y organizado por s
 - **Nombre y logo**: clase `.logo` en el header y footer.
 - **Foto de "Sobre mí"**: `assets/img/about-photo.jpg`, mostrada dentro de `.about__avatar`. Para cambiarla, reemplaza ese archivo manteniendo el mismo nombre (recorte cuadrado recomendado).
 - **Proyectos**: cada tarjeta en `#proyectos` enlaza a `proyectos/proyecto-N.html`. Cuando tengas el caso de estudio completo, reemplaza el contenido de esa página (mantiene el mismo header/footer del sitio).
-- **CV**: `assets/cv-jennifer-munoz.pdf` es el CV real subido por Jennifer, enlazado desde el botón "Descargar CV" del hero. Si se actualiza el CV, reemplaza este archivo manteniendo el mismo nombre.
+- **CV**: `assets/cv-jennifer-munoz.pdf` es el CV actualizado de Jennifer, enlazado desde el botón "Descargar CV" del hero. Si se vuelve a actualizar el CV, reemplaza este archivo manteniendo el mismo nombre.
 - **Formulario de contacto**: ya está configurado para **Netlify Forms** (atributo `data-netlify="true"`), por lo que funciona sin backend una vez publicado en Netlify. Los mensajes llegan al panel *Forms* de tu sitio en Netlify.
 
 ## Modo oscuro

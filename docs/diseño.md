@@ -51,6 +51,7 @@ Redefine el mismo set de variables: fondo `#150019`, texto primario `#F6ECFB`, y
 
 ### Componentes globales
 - **Botones (`.btn`):** sistema con variantes `--primary`, `--ghost`, `--sm`, `--block`. Por diseño usan `white-space: nowrap`; en páginas de detalle de proyecto esto se sobreescribe en mobile cuando el texto del botón es largo (ver más abajo).
+- **Botón "Descargar CV":** en el hero de `index.html` conserva la variante visual `.btn--ghost`; el cambio de CV se resuelve reemplazando `assets/cv-jennifer-munoz.pdf`, sin modificar estilos ni comportamiento.
 - Header/nav fijo con estado de scroll y menú móvil.
 - Hero, tarjetas de proyecto, secciones de proceso/habilidades/recomendaciones, formulario de contacto — todos construidos sobre los mismos tokens de color/tipografía/radio.
 - **Iconografía:** Material Symbols Outlined en todo el sitio.
@@ -88,6 +89,7 @@ Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`
 - `.pd-benchmark__cols--compact` — variante de benchmark en tres columnas compactas: fortaleza, limitación observada e implicación. En mobile colapsa a una columna.
 - `.pd-heuristics` — tabla de heurísticas de usabilidad.
 - `.pd-iteration__tag--pending` — etiqueta para distinguir mejoras priorizadas pero no implementadas dentro de iteraciones, evitando presentar pendientes como cambios ya realizados.
+- `.pd-result-metric` — bloque de resultado destacado para métricas reales de testing. En Medical 360 se usa para mostrar `9/10` como dato protagonista del MVP, con label "Resultado de testing · 2023" y sin agregar KPIs no documentados.
 - `.pd-persona__trait` — rasgos de persona/usuario.
 - `.pd-visual-frame` (+ `--img` con `object-fit:contain` y padding, o `--fill` con `object-fit:cover` sin padding) — marcos para incrustar fotos reales del proyecto.
 - `.pd-list` — listas simples (ej. preguntas de investigación).
@@ -121,6 +123,7 @@ Solo **Medical 360** tiene hoy tema propio, modo oscuro y contenido real. `proye
 - Tamaños de toque adecuados en elementos interactivos en mobile.
 - El sistema respeta `prefers-reduced-motion` de forma global (una sola regla en `style.css` cubre todo el sitio, incluidos componentes agregados después).
 - **Regla de "nunca solo color":** cualquier indicador de estado o nivel de certeza (por ejemplo, las etiquetas de evidencia de Fase 2 o los símbolos ✓/◐/? de la matriz de benchmark) siempre combina ícono + color + texto explícito, nunca depende solo del color para transmitir información.
+- En Fase 1 de Medical 360, las decisiones de diseño priorizan lectura UX antes que branding: arquitectura de información, sistema visual, reconocimiento de contenido e identidad. Las notas visibles de fuente deben ser breves y externas al proceso interno de edición.
 
 ## Responsive
 - Tablas se convierten en scroll horizontal controlado (`.pd-matrix`) en vez de comprimirse ilegiblemente.
