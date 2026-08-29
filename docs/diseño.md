@@ -75,14 +75,19 @@ Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`
 - `.pd-flow` — diagrama de flujo simple.
 - `.pd-triad` — grilla de 3 columnas para contrastar 3 dimensiones (ej. Mercado/Tecnología/Producto).
 - `.pd-iteration` — componente "antes/después" de dos paneles; se ha reutilizado para varios contrastes no cronológicos además de iteraciones de diseño (pregunta 2023 vs. 2026, mercado-resuelve vs. queremos-investigar, app vs. plataforma).
+- `.pd-context-strip`, `.pd-research-question`, `.pd-validation-note`, `.pd-research-close` — bloques de síntesis para Fase 2: resumen rápido del antes del MVP, pregunta central de diseño, aclaración de hipótesis no validadas y cierre hacia evidencia primaria.
+- `.pd-source-note` — nota breve para declarar origen de datos externos o propios. En Medical 360 se usa para separar dato oficial SUBTEL/Cadem 2023, encuesta propia 2023 y testing original, evitando que el recruiter confunda evidencia externa, encuesta propia y hallazgos de validación.
 - `.pd-note` — texto pequeño en cursiva para aclaraciones metodológicas.
 - `.pd-methods` — grilla de áreas de investigación.
 - `.pd-insight-grid` — grilla de hallazgos/hipótesis (auto-fit).
+- `.pd-insight--structured` — variante de insight con dos niveles de lectura: evidencia observada e implicación de diseño. Se incorporó en Fase 1 de Medical 360 para hacer más escaneable la relación research → decisión de producto.
 - `.pd-facts-grid`, `.pd-chip` — tarjetas de datos puntuales / etiquetas sueltas.
 - `.pd-decisions` / `.pd-decision` — lista de decisiones de diseño con justificación.
 - `.pd-quote` — cita destacada.
 - `.pd-benchmark__list` — lista dentro de comparaciones.
+- `.pd-benchmark__cols--compact` — variante de benchmark en tres columnas compactas: fortaleza, limitación observada e implicación. En mobile colapsa a una columna.
 - `.pd-heuristics` — tabla de heurísticas de usabilidad.
+- `.pd-iteration__tag--pending` — etiqueta para distinguir mejoras priorizadas pero no implementadas dentro de iteraciones, evitando presentar pendientes como cambios ya realizados.
 - `.pd-persona__trait` — rasgos de persona/usuario.
 - `.pd-visual-frame` (+ `--img` con `object-fit:contain` y padding, o `--fill` con `object-fit:cover` sin padding) — marcos para incrustar fotos reales del proyecto.
 - `.pd-list` — listas simples (ej. preguntas de investigación).
@@ -91,6 +96,8 @@ Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`
 **Componentes nuevos, agregados para Fase 2 de Medical 360** (reutilizables para cualquier proyecto que necesite documentar evidencia por nivel de certeza, diagramas jerárquicos, comparativas de benchmark o una línea de tiempo de research):
 - **`.pd-evidence-tag`** (+ modificadores `--validado`, `--desk`, `--hipotesis`, `--oportunidad`, `--vision`) — etiqueta de nivel de evidencia. Siempre combina ícono + color + texto explícito (nunca solo color), para cumplir contraste AA y no depender del color como único diferenciador. `.pd-evidence-row` agrupa varias en fila.
 - **`.pd-chapter`** — banda de apertura de capítulo (borde superior degradado + fondo levemente teñido con el color de acento), con `.pd-chapter__evolution` / `.pd-chapter__year` (+ `--now`) para marcar una progresión temporal (ej. 2023 → 2026).
+- **`.pd-exploration-marker`** — bloque separador para marcar que las secciones de visión, modelo conceptual y ecosistema son exploración preliminar derivada de research secundario, no solución validada.
+- **`.pd-hypothesis-list` / `.pd-hypothesis`** — lista de hipótesis integrada con preguntas de investigación asociadas. En Medical 360 reemplaza la separación anterior entre "Hipótesis" y "Research Questions", manteniendo H1–H5 y diferenciando validación con pacientes vs. validación futura con prestadores/factibilidad técnica.
 - **`.pd-hierarchy`** — diagrama jerárquico genérico: nodo central (`.pd-hierarchy__node`, con variante `--outline`) + flecha (`.pd-hierarchy__drop`) + hasta 3 tarjetas rama (`.pd-hierarchy__branches` / `.pd-hierarchy__branch`, en grilla que colapsa a 1 columna en mobile). Reutilizado tanto para un diagrama de modelo de producto como para un diagrama de ecosistema/integraciones.
 - **`.pd-matrix`** — tabla comparativa (ej. benchmark competitivo), con el mismo estilo visual que `.pd-heuristics`, envuelta en un contenedor `overflow-x:auto` para scroll horizontal controlado en mobile en vez de comprimir la tabla. Incluye `.pd-matrix__legend` para explicar los símbolos usados.
 - **`.pd-roadmap`** — línea de tiempo vertical de investigación, agrupada por fase (`.pd-roadmap__phase`), con ítems en 3 estados visuales (`--done`, `--active`, `--future`) y un punto pulsante en el ítem activo (animación neutralizada automáticamente por la regla global de `prefers-reduced-motion`).

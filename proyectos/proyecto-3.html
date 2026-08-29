@@ -108,14 +108,15 @@
     <div class="container pd-section__inner">
       <p class="pd-kicker"><span class="material-symbols-outlined">start</span>02 · El punto de partida</p>
       <h2 class="pd-heading" data-animate>El punto de partida</h2>
-      <p class="pd-lead" style="font-family:var(--pd-font-display); font-weight:600; color:var(--pd-text-primary);" data-animate data-animate-delay="1">Antes de pensar en una aplicación completa, necesitábamos resolver una necesidad prioritaria.</p>
-      <p class="pd-lead" data-animate data-animate-delay="2">Medical 360 nace en el contexto post-pandemia: el COVID-19 volvió digitales casi todos los trámites y dejó en evidencia que la salud privada no estaba preparada para eso — ni en sus procesos, ni en su servicio al paciente. En vez de intentar resolverlo todo de una vez, este primer proyecto se planteó como un MVP (Minimum Viable Product): un producto mínimo viable, enfocado en una sola necesidad concreta, para validarla antes de construir algo más grande.</p>
+      <p class="pd-lead" style="font-family:var(--pd-font-display); font-weight:600; color:var(--pd-text-primary);" data-animate data-animate-delay="1">Antes de pensar en una aplicación completa, el proyecto necesitaba resolver una fricción prioritaria.</p>
+      <p class="pd-lead" data-animate data-animate-delay="2">Medical 360 nació en 2023 como un MVP móvil para probar una necesidad concreta: facilitar la reserva de horas médicas. El punto de partida no era crear una app de salud total, sino validar si un flujo simple podía reducir la dependencia de llamadas, filas y tiempos de espera.</p>
       <div class="pd-facts-grid">
         <div class="pd-fact-tile" data-animate><strong>2023</strong><span>Proyecto original</span></div>
         <div class="pd-fact-tile" data-animate data-animate-delay="1"><strong>Mobile</strong><span>Plataforma</span></div>
         <div class="pd-fact-tile" data-animate data-animate-delay="2"><strong>UX/UI Design</strong><span>Mi rol</span></div>
         <div class="pd-fact-tile" data-animate data-animate-delay="3"><strong>MVP</strong><span>Alcance inicial</span></div>
       </div>
+      <blockquote class="pd-quote" data-animate data-animate-delay="4">El desafío era decidir qué problema merecía convertirse primero en producto.<span>Contexto inicial · MVP 2023</span></blockquote>
     </div>
   </section>
 
@@ -127,22 +128,22 @@
       <div class="pd-triad">
         <div class="pd-triad__card" data-animate>
           <h3><span class="material-symbols-outlined">report</span>Problema</h3>
-          <p>Conseguir una hora médica seguía siendo un trámite tedioso: llamadas restringidas a ciertos horarios, largas esperas en el call center clínico y, muchas veces, ni siquiera una respuesta resolutiva para el paciente.</p>
+          <p>Conseguir una hora médica seguía dependiendo de llamadas, horarios restringidos y espera en call center.</p>
         </div>
         <div class="pd-triad__card" data-animate data-animate-delay="1">
           <h3><span class="material-symbols-outlined">block</span>Fricción</h3>
-          <p>La mayoría de las clínicas resolvía esto por teléfono o de forma presencial — filas, tiempos de espera y trámites que perfectamente podían resolverse a distancia, mientras las personas ya llevaban su vida entera en el celular.</p>
+          <p>La gestión presencial o telefónica agregaba pasos evitables justo en una tarea que podía resolverse a distancia.</p>
         </div>
         <div class="pd-triad__card" data-animate data-animate-delay="2">
           <h3><span class="material-symbols-outlined">lightbulb</span>Oportunidad</h3>
-          <p>Solo el 1,2% de los trámites en línea se hace desde un computador; el resto ya se hace desde un celular. La oportunidad era llevar el servicio clínico al dispositivo que las personas ya usan para casi todo.</p>
+          <p>Si el smartphone ya era el principal dispositivo de acceso digital, la reserva médica podía diseñarse desde una lógica mobile-first.</p>
         </div>
       </div>
       <div class="pd-stats">
-        <div class="pd-stat" data-animate><strong data-count-to="64" data-count-suffix="%">0</strong><span>de la población mundial ya tiene celular con datos móviles</span></div>
-        <div class="pd-stat" data-animate data-animate-delay="1"><strong data-count-to="98.8" data-count-suffix="%" data-count-decimals="1">0</strong><span>de los trámites en línea se hacen desde el celular</span></div>
-        <div class="pd-stat" data-animate data-animate-delay="2"><strong data-count-to="3" data-count-suffix="M+">0</strong><span>personas se atienden en salud privada solo en Chile</span></div>
+        <div class="pd-stat" data-animate><strong data-count-to="99.1" data-count-suffix="%" data-count-decimals="1">0</strong><span>usa teléfono móvil o smartphone para acceder a internet en el hogar en Chile</span></div>
+        <div class="pd-stat" data-animate data-animate-delay="1"><strong>2023</strong><span>dato oficial de contexto digital usado para reformular la oportunidad móvil</span></div>
       </div>
+      <p class="pd-source-note" data-animate data-animate-delay="2">Fuente externa: SUBTEL / Cadem, Encuesta de Acceso y Uso de Internet 2023. Reemplaza una referencia anterior no verificable sobre trámites desde computador.</p>
     </div>
   </section>
 
@@ -151,86 +152,96 @@
     <div class="container pd-section__inner">
       <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>04 · Investigación</p>
       <h2 class="pd-heading" data-animate>¿Qué necesitábamos entender?</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Antes de diseñar nada, necesitaba entender cómo los pacientes piden hoy una hora médica, qué los frustra y qué esperan del servicio. Para eso combiné distintos métodos de investigación.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">Antes de diseñar, necesitaba entender cómo las personas pedían una hora médica, qué las frustraba y qué esperaban de una experiencia móvil.</p>
       <div class="pd-methods">
         <div class="pd-method" data-animate>
           <span class="material-symbols-outlined">public</span>
-          <h3>Desktop research</h3>
-          <p>Cifras sobre uso de celular y trámites digitales en Chile y el mundo, para dimensionar la oportunidad real.</p>
+          <h3>Desk Research</h3>
+          <p>Contexto digital y adopción móvil para dimensionar la oportunidad.</p>
         </div>
         <div class="pd-method" data-animate data-animate-delay="1">
           <span class="material-symbols-outlined">query_stats</span>
           <h3>Benchmarking</h3>
-          <p>Análisis de agendapro y RedSalud, los referentes del rubro en Chile, para entender qué ya existía y dónde estaban sus vacíos.</p>
+          <p>Comparación de referentes para detectar patrones y vacíos.</p>
         </div>
         <div class="pd-method" data-animate data-animate-delay="2">
           <span class="material-symbols-outlined">poll</span>
           <h3>Encuestas</h3>
-          <p>18 respuestas de pacientes reales de la Clínica Puerto Varas, sobre edad, frecuencia de controles médicos y tiempos de espera.</p>
+          <p>18 respuestas de pacientes de Clínica Puerto Varas.</p>
         </div>
         <div class="pd-method" data-animate data-animate-delay="3">
           <span class="material-symbols-outlined">record_voice_over</span>
           <h3>Entrevistas</h3>
-          <p>Conversaciones guiadas por un guion con preguntas de golden zone, para entender el comportamiento real al pedir horas médicas.</p>
+          <p>Conversaciones guiadas para entender el comportamiento al pedir horas.</p>
         </div>
         <div class="pd-method" data-animate data-animate-delay="4">
           <span class="material-symbols-outlined">dashboard_customize</span>
           <h3>Card sorting</h3>
-          <p>Un ejercicio con Optimal Workshop para que los propios usuarios agruparan y nombraran las funcionalidades.</p>
+          <p>Ejercicio con Optimal Workshop para organizar funcionalidades.</p>
         </div>
       </div>
 
       <div class="pd-benchmark">
-        <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">query_stats</span>Benchmarking: evaluando la competencia</p>
-        <p class="pd-lead" data-animate>Revisé la web en busca de apps que ya resolvieran este problema y encontré muy pocas: la mayoría de las clínicas y consultas orientaron sus mejoras a su página web y su agenda en línea, y no a implementar un servicio a través de dispositivos móviles — las pocas apps que existen, además, no cuentan con actualizaciones vigentes.</p>
+        <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">query_stats</span>Benchmark 2023</p>
+        <p class="pd-lead" data-animate>Comparé referentes que ya resolvían parte de la agenda médica. El foco no fue copiar funciones, sino entender qué experiencia ofrecían y dónde seguía habiendo espacio para una solución centrada en pacientes.</p>
         <div class="pd-benchmark__grid">
           <div class="pd-benchmark__card" data-animate>
-            <p class="pd-benchmark__name">agendapro</p>
-            <div class="pd-benchmark__cols">
+            <p class="pd-benchmark__name">AgendaPro</p>
+            <div class="pd-benchmark__cols pd-benchmark__cols--compact">
               <div>
-                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_up</span>Fortalezas</p>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_up</span>Fortaleza</p>
                 <ul class="pd-benchmark__list">
-                  <li>Disponibilidad 24/7 para agendar de forma autónoma.</li>
-                  <li>Envío de recordatorios automáticos.</li>
-                  <li>Fichas clínicas digitales.</li>
+                  <li>Agenda autónoma 24/7, recordatorios y fichas digitales.</li>
                 </ul>
               </div>
               <div>
-                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_down</span>Debilidades</p>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">search_off</span>Limitación observada</p>
                 <ul class="pd-benchmark__list">
-                  <li>La app no está bien definida.</li>
-                  <li>Está más enfocada en satisfacer las necesidades de las clínicas que las de los pacientes.</li>
+                  <li>La experiencia estaba más orientada a clínicas que a pacientes.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">east</span>Implicación</p>
+                <ul class="pd-benchmark__list">
+                  <li>Medical 360 debía priorizar claridad y autonomía desde la mirada del paciente.</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="pd-benchmark__card" data-animate data-animate-delay="1">
             <p class="pd-benchmark__name">RedSalud</p>
-            <div class="pd-benchmark__cols">
+            <div class="pd-benchmark__cols pd-benchmark__cols--compact">
               <div>
-                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_up</span>Fortalezas</p>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_up</span>Fortaleza</p>
                 <ul class="pd-benchmark__list">
-                  <li>Disponibilidad 24/7 para agendar de forma autónoma.</li>
-                  <li>Asociación con varias clínicas del país.</li>
-                  <li>Interfaz amigable.</li>
+                  <li>Agenda 24/7, asociación con clínicas e interfaz amigable.</li>
                 </ul>
               </div>
               <div>
-                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">thumb_down</span>Debilidades</p>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">search_off</span>Limitación observada</p>
                 <ul class="pd-benchmark__list">
-                  <li>App disponible solo para Android.</li>
-                  <li>Desde su lanzamiento no ha tenido las actualizaciones suficientes, por lo que va quedando cada vez más obsoleta.</li>
-                  <li>No está disponible para todas las clínicas y consultas.</li>
+                  <li>Disponibilidad limitada y señales de poca actualización.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="pd-benchmark__col-title"><span class="material-symbols-outlined">east</span>Implicación</p>
+                <ul class="pd-benchmark__list">
+                  <li>Había espacio para una experiencia móvil más consistente y escalable.</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        <div class="pd-validation-note pd-validation-note--evidence" data-animate data-animate-delay="2">
+          <span class="material-symbols-outlined">insights</span>
+          <p><strong>Insight del benchmark:</strong> la agenda digital ya existía, pero la experiencia móvil del paciente seguía débil o fragmentada.</p>
+        </div>
       </div>
 
-      <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">poll</span>Resultado de encuestas — Clínica Puerto Varas (18 respuestas)</p>
+      <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">poll</span>Encuesta propia — Clínica Puerto Varas</p>
+      <p class="pd-source-note">Fuente: encuesta propia · 18 participantes · 2023. Las cifras se mantienen como evidencia original del MVP.</p>
 
-      <p class="pd-benchmark__col-title" style="margin-top:28px;">Rango etario</p>
+      <p class="pd-benchmark__col-title" style="margin-top:24px;">Perfil de participantes</p>
       <div class="pd-stats">
         <div class="pd-stat" data-animate><strong data-count-to="16.7" data-count-suffix="%" data-count-decimals="1">0</strong><span>Encuestados de 18 a 25 años</span></div>
         <div class="pd-stat" data-animate data-animate-delay="1"><strong data-count-to="44.4" data-count-suffix="%" data-count-decimals="1">0</strong><span>Encuestados de 26 a 35 años</span></div>
@@ -253,18 +264,15 @@
       </div>
 
       <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">person</span>User Persona</p>
-      <p class="pd-lead">A partir de las entrevistas y encuestas realizadas, llegamos al siguiente tipo de usuario.</p>
+      <p class="pd-lead">La persona sintetiza comportamientos y tensiones detectadas en entrevistas y encuestas. El foco está en su relación con la reserva de horas, no en datos demográficos decorativos.</p>
       <div class="pd-persona">
         <div class="pd-persona__card" data-animate>
           <img src="../assets/img/proyecto-3-persona.png" alt="Andrea Almonacid, user persona de Medical 360" class="pd-persona__photo">
-          <dl class="pd-persona__facts">
+          <dl class="pd-persona__facts pd-persona__facts--compact">
             <div><dt>Nombre</dt><dd>Andrea Almonacid</dd></div>
             <div><dt>Edad</dt><dd>45 años</dd></div>
-            <div><dt>Género</dt><dd>Femenino</dd></div>
-            <div><dt>Educación</dt><dd>Universitaria completa</dd></div>
-            <div><dt>Estado civil</dt><dd>Casada</dd></div>
-            <div><dt>Hijos</dt><dd>3</dd></div>
-            <div><dt>Profesión</dt><dd>Profesora de Educación Media</dd></div>
+            <div><dt>Contexto</dt><dd>Controles médicos frecuentes</dd></div>
+            <div><dt>Necesidad</dt><dd>Agendar sin perder tiempo</dd></div>
           </dl>
         </div>
 
@@ -296,49 +304,42 @@
     <div class="container pd-section__inner">
       <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>05 · Insights</p>
       <h2 class="pd-heading" data-animate>Lo que descubrimos</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Cruzando las encuestas, las entrevistas y el mapa de empatía de Andrea, surgieron tres ideas que terminaron guiando las decisiones de diseño que siguen.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">Al cruzar encuestas, entrevistas, benchmark y mapa de empatía, aparecieron tres insights que orientaron la definición del MVP.</p>
       <div class="pd-insight-grid">
-        <div class="pd-insight" data-animate>
+        <div class="pd-insight pd-insight--structured" data-animate>
           <span class="pd-insight__num">Insight 01</span>
           <h3>El tiempo, no la tecnología, era la barrera</h3>
-          <p>Los pacientes no rechazan lo digital: rechazan perder tiempo. El POV del research fue literal — <em>“necesitas reservar horas sin que el tiempo sea un limitante”.</em></p>
+          <p><strong>Evidencia:</strong> el POV del research fue directo: <em>“necesitas reservar horas sin que el tiempo sea un limitante”.</em></p>
+          <p><strong>Implicación de diseño:</strong> el flujo debía reducir pasos y espera percibida.</p>
         </div>
-        <div class="pd-insight" data-animate data-animate-delay="1">
+        <div class="pd-insight pd-insight--structured" data-animate data-animate-delay="1">
           <span class="pd-insight__num">Insight 02</span>
           <h3>La reserva de horas es la fricción más repetida</h3>
-          <p>Pacientes con controles frecuentes, como Andrea (diabetes), viven la misma fricción una y otra vez: llamadas, filas y esperas cada vez que necesitan agendar.</p>
+          <p><strong>Evidencia:</strong> pacientes con controles frecuentes, como Andrea, repetían llamadas, filas y esperas.</p>
+          <p><strong>Implicación de diseño:</strong> agendar debía ser la tarea principal del MVP.</p>
         </div>
-        <div class="pd-insight" data-animate data-animate-delay="2">
+        <div class="pd-insight pd-insight--structured" data-animate data-animate-delay="2">
           <span class="pd-insight__num">Insight 03</span>
           <h3>El mercado no había resuelto esto en móvil</h3>
-          <p>El benchmarking mostró que las clínicas concentraron sus mejoras en la web de escritorio y las agendas en línea, dejando un vacío real en la experiencia móvil.</p>
+          <p><strong>Evidencia:</strong> el benchmark mostró mejoras enfocadas en web y agendas online.</p>
+          <p><strong>Implicación de diseño:</strong> había oportunidad para una experiencia mobile-first centrada en pacientes.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 06. OPORTUNIDADES -->
+  <!-- 06. OPORTUNIDADES Y PRIORIZACIÓN -->
   <section class="pd-section" id="oportunidades">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">explore</span>06 · Oportunidades</p>
-      <h2 class="pd-heading" data-animate>De los hallazgos a las oportunidades</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">La investigación no solo confirmó la fricción al agendar horas médicas — también dejó ver otras necesidades relacionadas con la experiencia completa de atención en salud. Antes de decidir qué construir primero, era importante ver el panorama completo de oportunidades.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">explore</span>06 · Oportunidades y priorización</p>
+      <h2 class="pd-heading" data-animate>De los hallazgos al MVP</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">La investigación abrió varias oportunidades alrededor de la atención médica, pero el MVP necesitaba concentrarse en una sola tarea con evidencia suficiente y alcance manejable.</p>
       <div class="pd-chips">
         <div class="pd-chip" data-animate><span class="material-symbols-outlined">description</span><div><strong>Resultado de exámenes</strong><span>Fuera del alcance del MVP</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="1"><span class="material-symbols-outlined">request_quote</span><div><strong>Presupuestos médicos</strong><span>Fuera del alcance del MVP</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="2"><span class="material-symbols-outlined">chat</span><div><strong>Chat online</strong><span>Fuera del alcance del MVP</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="3"><span class="material-symbols-outlined">medication</span><div><strong>Recetas médicas</strong><span>Fuera del alcance del MVP</span></div></div>
       </div>
-      <p class="pd-lead" style="margin-top:24px;" data-animate>De todas estas, la agenda de horas médicas fue la que concentró la mayor prioridad — es la que se aborda en el MVP que sigue.</p>
-    </div>
-  </section>
-
-  <!-- 07. PRIORIZACIÓN -->
-  <section class="pd-section pd-section--alt" id="priorizacion">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">low_priority</span>07 · Priorización</p>
-      <h2 class="pd-heading" data-animate>¿Qué resolvemos primero?</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">El research dejó claro que había muchas necesidades posibles para una app de salud — pero intentar resolverlas todas de una vez iba a diluir el impacto. Había que elegir una para partir.</p>
       <div class="pd-flow" data-animate data-animate-delay="2">
         <div class="pd-flow__step"><span class="material-symbols-outlined">checklist</span>Necesidades identificadas</div>
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
@@ -360,16 +361,16 @@
           </ul>
         </div>
       </div>
-      <p class="pd-lead" style="margin-top:24px;" data-animate>Agendar horas médicas fue, sin ambigüedad, la necesidad con más peso: era la más mencionada en las entrevistas, la que generaba más frustración según la encuesta, y la que ya tenía un vacío claro en el mercado. El resto de las necesidades quedó identificado, pero no se incluyó en este primer MVP.</p>
+      <p class="pd-lead" style="margin-top:24px;" data-animate>Agendar horas médicas fue la necesidad que concentró mayor evidencia dentro del research realizado: aparecía en entrevistas, se conectaba con la frustración de espera y tenía un vacío claro en el benchmark. El resto quedó identificado como oportunidad futura.</p>
     </div>
   </section>
 
-  <!-- 08. DEFINICIÓN DEL MVP -->
+  <!-- 07. DEFINICIÓN DEL MVP -->
   <section class="pd-section" id="definicion-mvp">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">verified</span>08 · Definición del MVP</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">verified</span>07 · Definición del MVP</p>
       <h2 class="pd-heading" data-animate>El MVP: resolver primero lo esencial</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">En lugar de intentar resolver toda la experiencia médica desde el primer lanzamiento, decidimos concentrarnos en una necesidad concreta: facilitar la reserva de horas médicas desde el móvil.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">El MVP se concentró en una tarea crítica: permitir que una persona encuentre disponibilidad y reserve una hora médica desde el móvil sin depender de una llamada.</p>
       <p class="pd-benchmark__col-title" style="margin-top:28px;">Objetivo del MVP</p>
       <div class="pd-flow" data-animate data-animate-delay="2">
         <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">search</span>Buscar</div>
@@ -388,9 +389,9 @@
             <li><span class="material-symbols-outlined">check_circle</span>Reserva de horas</li>
             <li><span class="material-symbols-outlined">check_circle</span>Procedimientos médicos</li>
             <li><span class="material-symbols-outlined">check_circle</span>Especialidades médicas</li>
-            <li><span class="material-symbols-outlined">check_circle</span>Regístrate</li>
-            <li><span class="material-symbols-outlined">check_circle</span>Contáctanos</li>
-            <li><span class="material-symbols-outlined">check_circle</span>Mis reservas</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Registro</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Contacto</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Reservas</li>
             <li><span class="material-symbols-outlined">check_circle</span>Cómo llegar</li>
           </ul>
         </div>
@@ -407,12 +408,12 @@
     </div>
   </section>
 
-  <!-- 09. USER FLOW ORIGINAL -->
+  <!-- 08. USER FLOW ORIGINAL -->
   <section class="pd-section pd-section--alt" id="user-flow">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">account_tree</span>09 · User flow original</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">account_tree</span>08 · User flow original</p>
       <h2 class="pd-heading" data-animate>El flujo principal</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">El camino feliz que recorre el usuario para completar una reserva, de principio a fin.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">El flujo traduce la prioridad del MVP en un camino claro: entrar, elegir el tipo de reserva y confirmar una hora.</p>
       <div class="pd-flow" data-animate data-animate-delay="2">
         <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">smartphone</span>Abre la app</div>
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
@@ -437,8 +438,8 @@
         <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Confirmar reserva</div>
       </div>
 
-      <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">dashboard_customize</span>Cómo llegamos a esta arquitectura</p>
-      <p class="pd-lead" data-animate>Para que la arquitectura reflejara cómo piensan realmente los usuarios (y no cómo yo creía que debía organizarse), hice un card sorting con Optimal Workshop: los usuarios agruparon y etiquetaron las funcionalidades por su cuenta, y esos resultados —analizados con una matriz de similitud y un dendrograma— definieron la estructura final de la información.</p>
+      <p class="pd-kicker" style="margin-top:36px;"><span class="material-symbols-outlined">dashboard_customize</span>Validando la arquitectura</p>
+      <p class="pd-lead" data-animate>Para ordenar el contenido desde la lógica de los usuarios, hice un card sorting con Optimal Workshop. La matriz de similitud y el dendrograma ayudaron a separar especialidades, procedimientos y acciones de reserva.</p>
       <div class="pd-gallery">
         <div class="pd-visual-frame pd-visual-frame--img" data-animate><img src="../assets/img/proyecto-3-cardsorting.png" alt="Resultado del card sorting de Medical 360 — arquitectura de la información"></div>
         <div class="pd-visual-frame pd-visual-frame--img" data-animate data-animate-delay="1"><img src="../assets/img/proyecto-3-matriz-similitud.png" alt="Matriz de similitud del card sorting de Medical 360"></div>
@@ -447,10 +448,10 @@
     </div>
   </section>
 
-  <!-- 10. DE LA EXPLORACIÓN A LA SOLUCIÓN -->
+  <!-- 09. DE LA EXPLORACIÓN A LA SOLUCIÓN -->
   <section class="pd-section" id="wireframes">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">grid_view</span>10 · De la exploración a la solución</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">grid_view</span>09 · De la exploración a la solución</p>
       <h2 class="pd-heading" data-animate>De la exploración a la solución</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">El proceso pasó por tres niveles de fidelidad, cada uno resolviendo un problema distinto.</p>
       <div class="pd-gallery">
@@ -473,12 +474,12 @@
     </div>
   </section>
 
-  <!-- 11. DISEÑO UI -->
+  <!-- 10. DISEÑO UI -->
   <section class="pd-section pd-section--alt" id="diseno-ui">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">design_services</span>11 · Diseño UI</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">design_services</span>10 · Diseño UI</p>
       <h2 class="pd-heading" data-animate>Construyendo la experiencia</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Con la estructura ya validada, diseñé la interfaz priorizando las pantallas que representan el corazón del flujo de reserva — sin convertir esto en una galería interminable de capturas.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">Con la arquitectura definida, diseñé las pantallas clave del flujo de reserva y el sistema visual base del MVP.</p>
       <p class="pd-benchmark__col-title" style="margin-top:28px;"><span class="material-symbols-outlined">search</span>Buscar y seleccionar especialidad</p>
       <div class="pd-visual-frame pd-visual-frame--img" style="aspect-ratio:16/9;" data-animate data-animate-delay="2">
         <img src="../assets/img/mvp/proyecto-3-mockup-duo-1.png" alt="Medical 360 — pantalla de inicio de sesión y especialidades médicas">
@@ -488,7 +489,7 @@
           <img src="../assets/img/mvp/proyecto-3-mockup-single-1.png" alt="Medical 360 — pantalla principal con especialidades y procedimientos">
         </div>
         <div>
-          <p class="pd-lead">La pantalla principal (a la izquierda) resuelve el punto de entrada a especialidades y procedimientos. La base visual partió de un moodboard y de un sistema de grillas — usé las grillas estándar de iOS para que la app fuera consistente, con cada elemento ubicado donde tenía que estar. A partir de ahí definí la paleta, la tipografía y el UI kit propio de Medical 360.</p>
+          <p class="pd-lead">La pantalla principal resuelve el acceso a especialidades y procedimientos. A partir del moodboard, la grilla y la tipografía del sistema, definí la paleta y el UI kit de Medical 360.</p>
           <div class="pd-token-list">
             <div class="pd-token-group">
               <strong>Color</strong>
@@ -520,10 +521,10 @@
     </div>
   </section>
 
-  <!-- 12. DECISIONES DE DISEÑO -->
+  <!-- 11. DECISIONES DE DISEÑO -->
   <section class="pd-section" id="decisiones">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">psychology</span>12 · Decisiones de diseño</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">psychology</span>11 · Decisiones de diseño</p>
       <h2 class="pd-heading" data-animate>Decisiones detrás de la interfaz</h2>
       <div class="pd-decisions">
         <div class="pd-decision" data-animate>
@@ -540,11 +541,11 @@
         <div class="pd-decision" data-animate data-animate-delay="1">
           <span class="pd-decision__num">02</span>
           <div>
-            <h3>Un sistema visual nativo de iOS</h3>
+            <h3>Patrones visuales familiares del ecosistema iOS</h3>
             <div class="pd-decision__grid">
               <div><span>Problema</span><p>Sin una base de grilla ni una tipografía definida, los elementos quedaban desalineados y la app no se sentía nativa.</p></div>
               <div><span>Decisión</span><p>Adopté las grillas estándar de iOS y usé la tipografía del sistema (SF Pro Display) en vez de una fuente descargada.</p></div>
-              <div><span>Motivo</span><p>Consistencia visual y una app que se siente nativa en cada sistema operativo, sin licenciar una fuente propietaria.</p></div>
+              <div><span>Motivo</span><p>Consistencia visual con el prototipo móvil y uso de una tipografía de sistema sin licenciar una fuente propietaria.</p></div>
             </div>
           </div>
         </div>
@@ -555,7 +556,7 @@
             <div class="pd-decision__grid">
               <div><span>Problema</span><p>Los wireframes de fidelidad media usaban placeholders grises que no ayudaban a reconocer las opciones.</p></div>
               <div><span>Decisión</span><p>Reemplacé los placeholders por fotografías reales en las tarjetas de especialidades y procedimientos.</p></div>
-              <div><span>Motivo</span><p>Ayudar a reconocer visualmente la opción antes de seleccionarla, reduciendo la carga cognitiva.</p></div>
+              <div><span>Motivo</span><p>Facilitar el reconocimiento visual de cada opción antes de seleccionarla y reducir dudas en la exploración.</p></div>
             </div>
           </div>
         </div>
@@ -563,10 +564,10 @@
     </div>
   </section>
 
-  <!-- 13. PROTOTIPO -->
+  <!-- 12. PROTOTIPO -->
   <section class="pd-section pd-section--alt" id="prototipo">
     <div class="container pd-section__inner pd-section__inner--wide" style="text-align:center;">
-      <p class="pd-kicker" style="justify-content:center;"><span class="material-symbols-outlined">smartphone</span>13 · Prototipo</p>
+      <p class="pd-kicker" style="justify-content:center;"><span class="material-symbols-outlined">smartphone</span>12 · Prototipo</p>
       <h2 class="pd-heading" data-animate>Una experiencia diseñada para móvil</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Con las pantallas de alta fidelidad armé un prototipo navegable en Figma con el flujo completo, listo para las pruebas de usabilidad.</p>
       <div class="pd-visual-frame pd-visual-frame--img pd-visual-frame--fill" style="margin:24px auto 0; max-width:320px; aspect-ratio:337/675;" data-animate data-animate-delay="2">
@@ -579,12 +580,13 @@
     </div>
   </section>
 
-  <!-- 14. VALIDACIÓN -->
+  <!-- 13. VALIDACIÓN -->
   <section class="pd-section" id="validacion">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">fact_check</span>14 · Validación</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">fact_check</span>13 · Validación</p>
       <h2 class="pd-heading" data-animate>¿Funcionaba la solución?</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Con el prototipo funcional en fidelidad media, testeé a usuarios reales para revelar problemas de usabilidad, y complementé el proceso con una evaluación heurística basada en los 10 principios de Nielsen.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">Probé el prototipo para observar si las tareas principales se entendían y complementé el análisis con una evaluación heurística basada en los 10 principios de Nielsen.</p>
+      <p class="pd-source-note">Fuente: testing de usuarios y evaluación heurística · proyecto original 2023.</p>
 
       <div class="pd-validation">
         <div class="pd-validation__row" data-animate>
@@ -592,7 +594,7 @@
           <div class="pd-validation__grid">
             <div><span>Observación</span><p>8 de cada 10 personas completaron el registro sin pedir ayuda.</p></div>
             <div><span>Hallazgo</span><p>El formulario era claro, aunque algunos dudaron en el campo de RUT.</p></div>
-            <div><span>Cambio</span><p>Se simplificó el formulario de registro en las siguientes iteraciones.</p></div>
+            <div><span>Cambio implementado</span><p>Se simplificó el formulario de registro en las siguientes iteraciones.</p></div>
           </div>
         </div>
         <div class="pd-validation__row" data-animate data-animate-delay="1">
@@ -600,7 +602,7 @@
           <div class="pd-validation__grid">
             <div><span>Observación</span><p>La evaluación heurística detectó baja prevención de errores.</p></div>
             <div><span>Hallazgo</span><p>El sistema no anticipaba datos inválidos ni ofrecía ayuda visible.</p></div>
-            <div><span>Cambio</span><p>Se identificó como mejora prioritaria para la siguiente iteración del login.</p></div>
+            <div><span>Mejora pendiente</span><p>Validación de campos, anticipación de errores y ayuda visible para login/recuperación.</p></div>
           </div>
         </div>
         <div class="pd-validation__row" data-animate data-animate-delay="2">
@@ -608,7 +610,7 @@
           <div class="pd-validation__grid">
             <div><span>Observación</span><p>9 de cada 10 personas no tuvo dificultad para completar la reserva.</p></div>
             <div><span>Hallazgo</span><p>El flujo de búsqueda, selección y confirmación resultaba intuitivo.</p></div>
-            <div><span>Cambio</span><p>Se mantuvo la estructura del flujo, con ajustes menores de jerarquía visual.</p></div>
+            <div><span>Cambio implementado</span><p>Se mantuvo la estructura del flujo, con ajustes menores de jerarquía visual.</p></div>
           </div>
         </div>
       </div>
@@ -659,7 +661,7 @@
               <td>Minimizar el uso de memoria</td>
               <td class="pd-heuristics__cumple"><span class="material-symbols-outlined">sentiment_satisfied</span></td>
               <td></td>
-              <td>Hace falta un mejor trabajo en cuanto a la prevención de errores.</td>
+              <td>Sin hallazgo relevante documentado.</td>
             </tr>
             <tr>
               <td>Flexibilidad y eficiencia de uso</td>
@@ -671,7 +673,7 @@
               <td>Diseño minimalista</td>
               <td></td>
               <td></td>
-              <td>—</td>
+              <td>Sin observaciones relevantes documentadas.</td>
             </tr>
             <tr>
               <td>Reconocer, diagnosticar y recuperarse de los errores</td>
@@ -696,15 +698,16 @@
         <div class="pd-stat" data-animate data-animate-delay="2"><strong data-count-to="100" data-count-suffix="%">0</strong><span>Tuvo una buena experiencia en la app</span></div>
         <div class="pd-stat" data-animate data-animate-delay="3"><strong data-count-to="90" data-count-suffix="%">0</strong><span>Encontró amigables las funcionalidades</span></div>
       </div>
+      <p class="pd-source-note">Estas métricas se conservan como resultados del testing original; la animación numérica sigue iniciando en 0.</p>
     </div>
   </section>
 
-  <!-- 15. ITERACIONES -->
+  <!-- 14. ITERACIONES -->
   <section class="pd-section pd-section--alt" id="iteraciones">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">sync</span>15 · Iteraciones</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">sync</span>14 · Iteraciones</p>
       <h2 class="pd-heading" data-animate>Lo que cambió después de probarlo</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">El diseño no fue un proceso lineal: el testing y la evaluación heurística devolvieron ajustes concretos, que se fueron incorporando de una iteración a otra.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">El testing y la evaluación heurística dejaron ajustes concretos. Algunos se incorporaron al prototipo; otros quedaron priorizados para una siguiente iteración.</p>
       <div class="pd-iterations">
         <div class="pd-iteration" data-animate>
           <div class="pd-iteration__panel pd-iteration__panel--before">
@@ -735,8 +738,8 @@
           </div>
           <span class="material-symbols-outlined pd-iteration__arrow">arrow_forward</span>
           <div class="pd-iteration__panel pd-iteration__panel--after">
-            <span class="pd-iteration__tag">Después</span>
-            <p><strong>Cambio realizado:</strong> se priorizó, para la siguiente iteración, incorporar validación de campos y mensajes de error claros en el login y el registro.</p>
+            <span class="pd-iteration__tag pd-iteration__tag--pending">Pendiente</span>
+            <p><strong>Mejora priorizada:</strong> incorporar validación de campos y mensajes de error claros en login y registro.</p>
           </div>
         </div>
         <div class="pd-iteration" data-animate data-animate-delay="3">
@@ -754,47 +757,52 @@
     </div>
   </section>
 
-  <!-- 16. RESULTADO DEL MVP -->
+  <!-- 15. RESULTADO DEL MVP -->
   <section class="pd-section" id="resultado-mvp">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">check_circle</span>16 · Resultado del MVP</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">check_circle</span>15 · Resultado del MVP</p>
       <h2 class="pd-heading" data-animate>El resultado</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">El resultado fue un MVP enfocado en simplificar y digitalizar la experiencia de reserva de horas médicas desde dispositivos móviles — validando que esa era, en efecto, la necesidad correcta para partir.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">El resultado fue un MVP mobile-first enfocado en simplificar la reserva de horas médicas. El testing mostró que el flujo principal era comprensible, mientras que login, registro y prevención de errores quedaron como oportunidades de mejora.</p>
       <div class="pd-chips">
         <div class="pd-chip" data-animate><span class="material-symbols-outlined">smartphone</span><div><strong>Mobile-first</strong><span>Agenda médica</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="1"><span class="material-symbols-outlined">route</span><div><strong>Flujo simplificado</strong><span>Buscar, seleccionar, agendar, confirmar</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="2"><span class="material-symbols-outlined">smartphone</span><div><strong>Prototipo funcional</strong><span>Navegable en Figma</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="3"><span class="material-symbols-outlined">fact_check</span><div><strong>Validación UX</strong><span>Testing + evaluación heurística</span></div></div>
       </div>
+      <div class="pd-validation-note pd-validation-note--evidence" data-animate data-animate-delay="4">
+        <span class="material-symbols-outlined">verified</span>
+        <p><strong>Resultado respaldado por testing:</strong> 9 de cada 10 personas no tuvo dificultad para completar la reserva médica.</p>
+      </div>
     </div>
   </section>
 
-  <!-- 17. APRENDIZAJES -->
+  <!-- 16. APRENDIZAJES -->
   <section class="pd-section pd-section--alt" id="aprendizajes">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">school</span>17 · Aprendizajes</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">school</span>16 · Aprendizajes</p>
       <h2 class="pd-heading" data-animate>Lo que aprendí</h2>
-      <ul class="pd-list" data-animate data-animate-delay="1">
-        <li><span class="material-symbols-outlined">school</span><span><strong>Priorizar es más difícil que idear.</strong> Fue fácil imaginar decenas de funcionalidades para una app de salud; lo difícil fue aceptar que un MVP se defiende por lo que no incluye. Aprender a decir “eso va después” fue tan importante como diseñar lo que sí quedó.</span></li>
-        <li><span class="material-symbols-outlined">school</span><span><strong>Diseñar para móvil obliga a simplificar de verdad.</strong> Cada pantalla tenía que resolver una sola cosa bien, sin depender de una pantalla grande — eso me obligó a repensar jerarquía, tamaños de toque y cantidad de información por vista.</span></li>
-        <li><span class="material-symbols-outlined">school</span><span><strong>Validar con usuarios reales cambia las decisiones.</strong> El testing y la evaluación heurística revelaron problemas que no habría visto solo — como la falta de prevención de errores — y esos hallazgos, más que mi intuición, terminaron guiando las siguientes iteraciones. Fue también mi primer proyecto real de UX/UI y mi primer contacto con Figma, así que gran parte del aprendizaje fue también sobre el proceso mismo.</span></li>
+      <p class="pd-lead" data-animate data-animate-delay="1">Medical 360 fue también mi primer proyecto UX/UI completo: research, arquitectura, interfaz, prototipo y testing conectados en una misma decisión de producto.</p>
+      <ul class="pd-list" data-animate data-animate-delay="2">
+        <li><span class="material-symbols-outlined">school</span><span><strong>Priorizar es parte del diseño.</strong> Un MVP se defiende tanto por lo que incluye como por lo que deja fuera.</span></li>
+        <li><span class="material-symbols-outlined">school</span><span><strong>Mobile obliga a simplificar.</strong> Cada pantalla tenía que resolver una tarea clara, con jerarquía y tamaños de toque adecuados.</span></li>
+        <li><span class="material-symbols-outlined">school</span><span><strong>Validar cambia la dirección.</strong> El testing y la evaluación heurística revelaron mejoras que no aparecían solo mirando el diseño.</span></li>
       </ul>
     </div>
   </section>
 
-  <!-- 18. SEGUNDA ETAPA (2026) -->
+  <!-- 17. SEGUNDA ETAPA (2026) -->
   <section class="pd-section" id="segunda-etapa">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">rocket_launch</span>18 · Segunda etapa (2026)</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">rocket_launch</span>17 · Segunda etapa (2026)</p>
       <h2 class="pd-heading" data-animate>¿Y si Medical 360 pudiera hacer más?</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">El MVP permitió abordar una necesidad concreta: facilitar la reserva de horas médicas. Sin embargo, durante la investigación también aparecieron otras oportunidades relacionadas con la experiencia completa de atención en salud.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">El MVP resolvió una necesidad concreta: reservar horas médicas. Pero la investigación también dejó oportunidades fuera del alcance inicial, vinculadas a una experiencia de salud más continua.</p>
       <div class="pd-chips">
         <div class="pd-chip" data-animate><span class="material-symbols-outlined">description</span><div><strong>Exámenes</strong><span>Resultados</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="1"><span class="material-symbols-outlined">medication</span><div><strong>Recetas</strong><span>Médicas</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="2"><span class="material-symbols-outlined">request_quote</span><div><strong>Presupuestos</strong><span>Médicos</span></div></div>
         <div class="pd-chip" data-animate data-animate-delay="3"><span class="material-symbols-outlined">folder_shared</span><div><strong>Historial</strong><span>Médico</span></div></div>
       </div>
-      <p class="pd-lead" style="margin-top:24px;">Estas oportunidades dieron origen a una nueva etapa del proyecto: evolucionar Medical 360 desde un MVP de agenda hacia una experiencia integral de gestión de salud.</p>
+      <p class="pd-lead" style="margin-top:24px;">Esa brecha abrió la evolución 2026: pasar de un MVP de agenda a una exploración de producto más amplia, todavía sujeta a validación.</p>
       <a href="#fase2-apertura" class="btn btn--ghost" style="margin-top:8px;">
         Explorar evolución del producto
         <span class="material-symbols-outlined">arrow_downward</span>
@@ -806,6 +814,7 @@
   <!-- FASE 2 · 01 — APERTURA -->
   <section class="pd-section pd-chapter" id="fase2-apertura">
     <div class="container pd-section__inner" style="text-align:center;">
+      <p class="pd-kicker" style="justify-content:center;"><span class="material-symbols-outlined">flag</span>Fase 2 · 01 — Apertura</p>
       <div class="project-stage-badge" style="justify-content:center;" data-animate>
         <span class="material-symbols-outlined">explore</span>
         Etapa 2 — Evolución del producto · 2026
@@ -837,8 +846,13 @@
       <p class="pd-kicker"><span class="material-symbols-outlined">start</span>Fase 2 · 02 — El punto de partida</p>
       <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--validado"><span class="material-symbols-outlined">verified</span>Validado — MVP 2023</span></div>
       <h2 class="pd-heading" data-animate>El MVP resolvía una necesidad concreta</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">La investigación original identificó distintas necesidades relacionadas con la gestión de salud. Para mantener un alcance viable, el MVP priorizó una de ellas: simplificar la reserva de horas médicas desde dispositivos móviles.</p>
-      <div class="pd-flow" data-animate data-animate-delay="2">
+      <p class="pd-lead" data-animate data-animate-delay="1">Medical 360 partió como un MVP móvil: resolvía la reserva de horas médicas y dejaba fuera otras gestiones para mantener un alcance viable.</p>
+      <div class="pd-context-strip" data-animate data-animate-delay="2">
+        <div><span>Resolvía</span><strong>Agendar una hora médica desde el celular.</strong></div>
+        <div><span>Dejaba fuera</span><strong>Exámenes, recetas, presupuestos e historial.</strong></div>
+        <div><span>Abría</span><strong>Una oportunidad para explorar continuidad.</strong></div>
+      </div>
+      <div class="pd-flow" data-animate data-animate-delay="3">
         <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">search</span>Buscar especialidad</div>
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
         <div class="pd-flow__step"><span class="material-symbols-outlined">person</span>Elegir profesional</div>
@@ -849,7 +863,7 @@
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
         <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Reserva realizada</div>
       </div>
-      <p class="pd-lead" style="font-family:var(--pd-font-display); font-weight:600; color:var(--pd-text-primary); margin-top:28px;" data-animate data-animate-delay="3">Pero la atención no termina cuando reservas una hora.</p>
+      <blockquote class="pd-quote pd-quote--compact" data-animate data-animate-delay="4">Pero la atención no termina cuando reservas una hora.<span>Ese límite del MVP abrió la pregunta de la evolución 2026.</span></blockquote>
     </div>
   </section>
 
@@ -861,19 +875,26 @@
       <div class="pd-triad">
         <div class="pd-triad__card" data-animate>
           <h3><span class="material-symbols-outlined">storefront</span>Mercado</h3>
-          <p>Los principales prestadores privados desarrollaron portales, apps y servicios de autogestión que en 2023 no existían con ese nivel de madurez.</p>
+          <p>Los prestadores privados maduraron sus portales, apps y servicios de autogestión.</p>
+          <p class="pd-card-consequence"><strong>Consecuencia:</strong> Medical 360 ya no podía diferenciarse solo por agendar.</p>
         </div>
         <div class="pd-triad__card" data-animate data-animate-delay="1">
           <h3><span class="material-symbols-outlined">hub</span>Tecnología</h3>
-          <p>Interoperabilidad, receta electrónica, sistemas de pago e integraciones permiten hoy imaginar experiencias más conectadas entre distintos servicios de salud.</p>
+          <p>Interoperabilidad, receta electrónica, pagos e integraciones permiten imaginar experiencias más conectadas.</p>
+          <p class="pd-card-consequence"><strong>Consecuencia:</strong> el producto podía pensarse como una capa conectada.</p>
         </div>
         <div class="pd-triad__card" data-animate data-animate-delay="2">
           <h3><span class="material-symbols-outlined">trending_up</span>Producto</h3>
-          <p>Si el mercado y la tecnología evolucionaron, Medical 360 también podía evolucionar — pero antes había que entender hacia dónde.</p>
+          <p>El MVP resolvía un punto del viaje, pero no la experiencia completa de atención.</p>
+          <p class="pd-card-consequence"><strong>Consecuencia:</strong> antes de diseñar, había que entender hacia dónde evolucionar.</p>
         </div>
       </div>
 
-      <div class="pd-iteration" style="margin-top:32px;" data-animate data-animate-delay="3">
+      <div class="pd-research-question" data-animate data-animate-delay="3">
+        <span>Pregunta de diseño 2026</span>
+        <strong>¿Cómo podríamos acompañar al paciente a través de una experiencia de salud más continua?</strong>
+      </div>
+      <div class="pd-iteration" style="margin-top:24px;" data-animate data-animate-delay="4">
         <div class="pd-iteration__panel pd-iteration__panel--before">
           <span class="pd-iteration__tag">2023</span>
           <p><strong>¿Cómo facilitar la reserva de una hora médica?</strong></p>
@@ -881,7 +902,7 @@
         <span class="material-symbols-outlined pd-iteration__arrow">arrow_forward</span>
         <div class="pd-iteration__panel pd-iteration__panel--after">
           <span class="pd-iteration__tag">2026 — pregunta de investigación</span>
-          <p><strong>¿Cómo podríamos acompañar al paciente a través de una experiencia de salud más continua?</strong></p>
+          <p><strong>Continuidad antes, durante y después de la atención.</strong></p>
         </div>
       </div>
       <p class="pd-note">Esta segunda pregunta todavía no tiene respuesta — es la pregunta que guía esta investigación, no una conclusión.</p>
@@ -894,8 +915,8 @@
       <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>Fase 2 · 04 — Desk Research</p>
       <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Desk Research</span></div>
       <h2 class="pd-heading" data-animate>Entendiendo el nuevo ecosistema</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Antes de diseñar nuevas funcionalidades, realicé una investigación exploratoria para comprender cómo había evolucionado la salud digital en Chile, qué servicios ofrecen hoy los prestadores privados, y qué cambios tecnológicos y regulatorios podrían afectar la evolución de Medical 360.</p>
-      <div class="pd-methods">
+      <p class="pd-lead" data-animate data-animate-delay="1">Para comprender cómo evolucionó el contexto de salud digital, analizamos cuatro dimensiones: mercado, usuarios, tecnología y regulación.</p>
+      <div class="pd-methods pd-methods--compact">
         <div class="pd-method" data-animate><span class="material-symbols-outlined">storefront</span><h3>Mercado</h3><p>Evolución de los prestadores privados.</p></div>
         <div class="pd-method" data-animate data-animate-delay="1"><span class="material-symbols-outlined">groups</span><h3>Usuarios</h3><p>Nuevas formas de autogestión.</p></div>
         <div class="pd-method" data-animate data-animate-delay="2"><span class="material-symbols-outlined">hub</span><h3>Tecnología</h3><p>Integraciones e interoperabilidad.</p></div>
@@ -910,30 +931,30 @@
       <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>Fase 2 · 05 — Hallazgos iniciales del Desk Research</p>
       <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Desk Research</span></div>
       <h2 class="pd-heading" data-animate>Lo que encontramos</h2>
-      <div class="pd-insight-grid" style="grid-template-columns:repeat(auto-fit, minmax(240px,1fr));">
+      <div class="pd-insight-grid pd-insight-grid--four">
         <div class="pd-insight" data-animate>
           <span class="pd-insight__num">01</span>
           <h3>La autogestión ya es parte de la experiencia</h3>
-          <p>Agenda, resultados, recetas, órdenes y otras gestiones ya aparecen en los ecosistemas digitales de importantes prestadores.</p>
-          <p style="margin-top:10px; padding-top:10px; border-top:1px dashed var(--pd-border); font-size:13px; color:var(--pd-text-body);"><strong style="color:var(--pd-accent);">Implicación → </strong>La autogestión dejó de ser un diferenciador: es la base esperada de cualquier experiencia de salud digital.</p>
+          <p>Agenda, resultados, recetas y órdenes ya aparecen en ecosistemas digitales de prestadores importantes.</p>
+          <p class="pd-implication"><strong>Implicación:</strong> la autogestión dejó de ser diferenciadora; ahora es base esperada.</p>
         </div>
         <div class="pd-insight" data-animate data-animate-delay="1">
           <span class="pd-insight__num">02</span>
           <h3>Web y app están convergiendo</h3>
-          <p>Los prestadores utilizan distintos canales digitales para relacionarse con sus pacientes, sin depender de una única aplicación.</p>
-          <p style="margin-top:10px; padding-top:10px; border-top:1px dashed var(--pd-border); font-size:13px; color:var(--pd-text-body);"><strong style="color:var(--pd-accent);">Implicación → </strong>La experiencia de Medical 360 podría no depender exclusivamente de instalar una app.</p>
+          <p>Los prestadores usan distintos canales digitales para relacionarse con pacientes.</p>
+          <p class="pd-implication"><strong>Implicación:</strong> Medical 360 podría no depender exclusivamente de instalar una app.</p>
         </div>
         <div class="pd-insight" data-animate data-animate-delay="2">
           <span class="pd-insight__num">03</span>
           <h3>La salud digital depende de sistemas conectados</h3>
-          <p>La experiencia del paciente está relacionada con sistemas clínicos, laboratorios, financiadores, pagos y otros actores.</p>
-          <p style="margin-top:10px; padding-top:10px; border-top:1px dashed var(--pd-border); font-size:13px; color:var(--pd-text-body);"><strong style="color:var(--pd-accent);">Implicación → </strong>Medical 360 no podría pensarse aislado: su valor depende de cómo se conecta con esos sistemas.</p>
+          <p>La experiencia del paciente depende de sistemas clínicos, laboratorios, financiadores y pagos.</p>
+          <p class="pd-implication"><strong>Implicación:</strong> el valor de Medical 360 dependería de cómo se conecta con esos sistemas.</p>
         </div>
         <div class="pd-insight" data-animate data-animate-delay="3">
           <span class="pd-insight__num">04</span>
           <h3>Centralizar funciones ya no es suficiente</h3>
           <p>Muchas de las ideas imaginadas originalmente para Medical 360 ya existen de alguna manera en el mercado.</p>
-          <p style="margin-top:10px; padding-top:10px; border-top:1px dashed var(--pd-border); font-size:13px; color:var(--pd-text-body);"><strong style="color:var(--pd-accent);">Implicación → </strong>La oportunidad debía buscarse más allá de agregar funcionalidades.</p>
+          <p class="pd-implication"><strong>Implicación:</strong> la oportunidad debía buscarse más allá de agregar funcionalidades.</p>
         </div>
       </div>
     </div>
@@ -941,12 +962,13 @@
 
   <!-- FASE 2 · 06 — BENCHMARK COMPETITIVO -->
   <section class="pd-section pd-section--alt" id="fase2-benchmark">
-    <div class="container pd-section__inner">
+    <div class="container pd-section__inner pd-section__inner--wide">
       <p class="pd-kicker"><span class="material-symbols-outlined">query_stats</span>Fase 2 · 06 — Benchmark competitivo</p>
       <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Desk Research</span></div>
-      <h2 class="pd-heading" data-animate>¿Cómo están resolviendo esta experiencia los principales prestadores?</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Analicé algunos de los principales ecosistemas digitales privados de salud en Chile para identificar patrones, capacidades consolidadas y oportunidades.</p>
-      <div class="pd-facts-grid" data-animate data-animate-delay="2">
+      <h2 class="pd-heading" data-animate>Benchmark competitivo</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Comparamos ecosistemas digitales privados de salud en Chile para observar capacidades consolidadas, patrones de autogestión y posibles espacios de oportunidad.</p>
+      <p class="pd-benchmark__col-title" style="margin-top:24px;">Referentes analizados</p>
+      <div class="pd-facts-grid pd-facts-grid--compact" data-animate data-animate-delay="2">
         <div class="pd-fact-tile"><strong>MiRedSalud</strong><span>RedSalud</span></div>
         <div class="pd-fact-tile"><strong>Mi Alemana Go</strong><span>Clínica Alemana</span></div>
         <div class="pd-fact-tile"><strong>Mi Bupa</strong><span>Bupa</span></div>
@@ -956,16 +978,8 @@
         <span class="material-symbols-outlined">hub</span>
         <div><strong>iMed</strong><span>Referente tecnológico / actor del ecosistema — no se analiza como competidor directo</span></div>
       </div>
-    </div>
-  </section>
-
-  <!-- FASE 2 · 07 — MATRIZ DE BENCHMARK -->
-  <section class="pd-section" id="fase2-matriz">
-    <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">table_chart</span>Fase 2 · 07 — Matriz de benchmark</p>
-      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Desk Research</span></div>
-      <h2 class="pd-heading" data-animate>Qué capacidades ya ofrece cada ecosistema</h2>
-      <div class="pd-matrix" data-animate data-animate-delay="1">
+      <p class="pd-benchmark__col-title" style="margin-top:28px;">Matriz comparativa</p>
+      <div class="pd-matrix" data-animate data-animate-delay="4">
         <table>
           <thead><tr><th>Capacidad</th><th>RedSalud</th><th>Alemana</th><th>Bupa</th><th>UC</th></tr></thead>
           <tbody>
@@ -992,65 +1006,56 @@
     </div>
   </section>
 
-  <!-- FASE 2 · 08 — QUÉ APRENDÍ DEL BENCHMARK -->
+  <!-- FASE 2 · 07 — INSIGHTS DEL BENCHMARK -->
   <section class="pd-section pd-section--alt" id="fase2-aprendizajes-benchmark">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">school</span>Fase 2 · 08 — Qué aprendí del benchmark</p>
-      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Desk Research</span></div>
-      <h2 class="pd-heading" data-animate>El benchmark cambió la dirección del proyecto</h2>
-      <div class="pd-decisions">
+      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>Fase 2 · 07 — Insights del benchmark</p>
+      <div class="pd-evidence-row">
+        <span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Evidencia</span>
+        <span class="pd-evidence-tag pd-evidence-tag--oportunidad"><span class="material-symbols-outlined">insights</span>Insight</span>
+      </div>
+      <h2 class="pd-heading" data-animate>Lo que el benchmark reveló</h2>
+      <div class="pd-decisions pd-decisions--compact">
         <div class="pd-decision" data-animate>
           <span class="pd-decision__num">01</span>
           <div>
             <h3>Autogestión = estándar</h3>
-            <div class="pd-decision__grid">
-              <div><span>Qué observamos</span><p>Agenda, recetas, órdenes y resultados ya no son diferenciadores por sí mismos — los cuatro prestadores los ofrecen.</p></div>
-              <div><span>Qué significa</span><p>Sumar otra función de autogestión no distinguiría a Medical 360 del resto del mercado.</p></div>
-              <div><span>Pregunta que abre</span><p>¿Dónde está entonces el espacio real de diferenciación?</p></div>
-            </div>
+            <p>Agenda, recetas, órdenes y resultados aparecen en los cuatro prestadores analizados.</p>
+            <p class="pd-implication"><strong>Implicación:</strong> sumar otra función de autogestión no distinguiría a Medical 360.</p>
           </div>
         </div>
         <div class="pd-decision" data-animate data-animate-delay="1">
           <span class="pd-decision__num">02</span>
           <div>
             <h3>Multidispositivo</h3>
-            <div class="pd-decision__grid">
-              <div><span>Qué observamos</span><p>Web y móvil funcionan como distintos puntos de acceso a un mismo ecosistema, no como canales aislados.</p></div>
-              <div><span>Qué significa</span><p>Una experiencia Medical 360 podría no depender exclusivamente de una app instalada.</p></div>
-              <div><span>Pregunta que abre</span><p>¿Qué tan importante es para el paciente acceder desde cualquier dispositivo, sin instalar nada?</p></div>
-            </div>
+            <p>Web y móvil funcionan como puntos de acceso a un mismo ecosistema.</p>
+            <p class="pd-implication"><strong>Implicación:</strong> Medical 360 podría no depender exclusivamente de una app instalada.</p>
           </div>
         </div>
         <div class="pd-decision" data-animate data-animate-delay="2">
           <span class="pd-decision__num">03</span>
           <div>
             <h3>Continuidad = oportunidad</h3>
-            <div class="pd-decision__grid">
-              <div><span>Qué observamos</span><p>Existen múltiples servicios digitales sueltos, pero ninguno muestra evidencia clara de guiar al paciente de un paso al siguiente.</p></div>
-              <div><span>Qué significa</span><p>La continuidad entre pasos de una misma atención podría ser un espacio todavía no resuelto por el mercado.</p></div>
-              <div><span>Pregunta que abre</span><p>¿El paciente realmente comprende qué debe hacer antes y después de cada atención?</p></div>
-            </div>
+            <p>Existen servicios digitales sueltos, pero no evidencia clara de guía entre pasos.</p>
+            <p class="pd-implication"><strong>Implicación:</strong> la continuidad de una atención podría ser un espacio no resuelto.</p>
           </div>
         </div>
         <div class="pd-decision" data-animate data-animate-delay="3">
           <span class="pd-decision__num">04</span>
           <div>
             <h3>Integrar &gt; reconstruir</h3>
-            <div class="pd-decision__grid">
-              <div><span>Qué observamos</span><p>Servicios como iMed permiten plantear Medical 360 como una capa de experiencia conectada a infraestructura ya existente.</p></div>
-              <div><span>Qué significa</span><p>No sería necesario reconstruir sistemas clínicos completos para ofrecer una mejor experiencia al paciente.</p></div>
-              <div><span>Pregunta que abre</span><p>¿Qué tan viable es técnicamente integrarse en vez de construir desde cero?</p></div>
-            </div>
+            <p>Servicios como iMed permiten imaginar una capa conectada a infraestructura existente.</p>
+            <p class="pd-implication"><strong>Implicación:</strong> habría que explorar viabilidad técnica antes de definir solución.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FASE 2 · 09 — OPPORTUNITY GAP -->
+  <!-- FASE 2 · 08 — OPPORTUNITY GAP -->
   <section class="pd-section" id="fase2-opportunity-gap">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">bolt</span>Fase 2 · 09 — Opportunity Gap</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">bolt</span>Fase 2 · 08 — Opportunity Gap</p>
       <div class="pd-evidence-row">
         <span class="pd-evidence-tag pd-evidence-tag--oportunidad"><span class="material-symbols-outlined">explore</span>Oportunidad</span>
         <span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Hipótesis</span>
@@ -1084,19 +1089,34 @@
         </div>
       </div>
       <blockquote class="pd-quote" style="margin-top:32px;" data-animate>La oportunidad podría no estar en ofrecer más funciones, sino en conectar mejor las que forman parte de una misma atención.<span>Todavía una hipótesis — no una conclusión.</span></blockquote>
+      <div class="pd-validation-note" data-animate data-animate-delay="4">
+        <span class="material-symbols-outlined">science</span>
+        <p>Estas oportunidades no representan todavía una solución validada. Funcionan como hipótesis que deberán contrastarse con pacientes y prestadores.</p>
+      </div>
     </div>
   </section>
 
-  <!-- FASE 2 · 10 — EVOLUCIÓN DE LA VISIÓN -->
+  <section class="pd-section pd-exploration-marker" aria-label="Exploración preliminar de producto">
+    <div class="container pd-section__inner">
+      <div class="pd-evidence-row">
+        <span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Hipótesis · no validada</span>
+      </div>
+      <p class="pd-kicker"><span class="material-symbols-outlined">auto_awesome</span>Exploración de producto</p>
+      <h2 class="pd-heading" data-animate>Exploración preliminar, no solución final</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Las siguientes propuestas representan una exploración preliminar derivada del research secundario. No constituyen la solución final y deberán validarse con pacientes, prestadores y factibilidad técnica.</p>
+    </div>
+  </section>
+
+  <!-- FASE 2 · 09 — EVOLUCIÓN DE LA VISIÓN -->
   <section class="pd-section pd-section--alt" id="fase2-vision">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">auto_awesome</span>Fase 2 · 10 — Evolución de la visión</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">auto_awesome</span>Fase 2 · 09 — Evolución de la visión</p>
       <div class="pd-evidence-row">
         <span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Hipótesis</span>
-        <span class="pd-evidence-tag pd-evidence-tag--vision"><span class="material-symbols-outlined">auto_awesome</span>Visión futura</span>
+        <span class="pd-evidence-tag pd-evidence-tag--vision"><span class="material-symbols-outlined">auto_awesome</span>Visión preliminar</span>
       </div>
       <h2 class="pd-heading" data-animate>Medical 360 necesitaba dejar de ser solo una app</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">La investigación inicial abrió una nueva dirección: explorar Medical 360 como una plataforma digital modular para prestadores privados de salud, capaz de adaptarse a diferentes instituciones e integrarse con sus sistemas existentes.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">La investigación secundaria abrió una dirección preliminar: explorar Medical 360 como plataforma digital modular para prestadores privados, adaptable e integrable con sistemas existentes.</p>
       <div class="pd-iteration" data-animate data-animate-delay="2">
         <div class="pd-iteration__panel pd-iteration__panel--before">
           <span class="pd-iteration__tag">2023</span>
@@ -1115,13 +1135,13 @@
     </div>
   </section>
 
-  <!-- FASE 2 · 11 — MODELO MODULAR -->
+  <!-- FASE 2 · 10 — MODELO MODULAR -->
   <section class="pd-section" id="fase2-modular">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">dashboard_customize</span>Fase 2 · 11 — ¿Cómo funcionaría conceptualmente?</p>
-      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Hipótesis</span></div>
+      <p class="pd-kicker"><span class="material-symbols-outlined">dashboard_customize</span>Fase 2 · 10 — ¿Cómo funcionaría conceptualmente?</p>
+      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Modelo conceptual · sujeto a validación</span></div>
       <h2 class="pd-heading" data-animate>Un producto base con módulos configurables</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Una clínica podría implementar múltiples módulos, mientras que un laboratorio podría utilizar únicamente registro, órdenes, turnos, resultados y pagos — la identidad y las necesidades de cada prestador definirían qué módulos activar.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">La exploración plantea un producto base con módulos configurables según el tipo de prestador y sus necesidades.</p>
       <div class="pd-hierarchy" data-animate data-animate-delay="2">
         <div class="pd-hierarchy__node"><span class="material-symbols-outlined">apps</span>Medical 360 — Producto base</div>
         <span class="material-symbols-outlined pd-hierarchy__drop">arrow_downward</span>
@@ -1144,11 +1164,11 @@
     </div>
   </section>
 
-  <!-- FASE 2 · 12 — ECOSISTEMA PRELIMINAR -->
+  <!-- FASE 2 · 11 — ECOSISTEMA PRELIMINAR -->
   <section class="pd-section pd-section--alt" id="fase2-ecosistema">
     <div class="container pd-section__inner pd-section__inner--wide">
-      <p class="pd-kicker"><span class="material-symbols-outlined">hub</span>Fase 2 · 12 — Ecosistema preliminar</p>
-      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Hipótesis</span></div>
+      <p class="pd-kicker"><span class="material-symbols-outlined">hub</span>Fase 2 · 11 — Ecosistema preliminar</p>
+      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Ecosistema preliminar · no validado</span></div>
       <h2 class="pd-heading" data-animate>Medical 360 no funcionaría de manera aislada</h2>
       <div class="pd-hierarchy" data-animate data-animate-delay="1">
         <div class="pd-hierarchy__node pd-hierarchy__node--outline"><span class="material-symbols-outlined">person</span>Paciente</div>
@@ -1161,14 +1181,16 @@
           <div class="pd-hierarchy__branch">
             <h3><span class="material-symbols-outlined">dns</span>Sistema del prestador</h3>
             <ul class="pd-benchmark__list"><li>Agenda</li><li>Órdenes</li><li>Resultados</li><li>Recetas</li></ul>
+            <p class="pd-note" style="margin:10px 0 0;">Ejemplo de integración potencial.</p>
           </div>
           <div class="pd-hierarchy__branch">
             <h3><span class="material-symbols-outlined">hub</span>iMed</h3>
             <ul class="pd-benchmark__list"><li>Fonasa / Isapre</li></ul>
+            <p class="pd-note" style="margin:10px 0 0;">Ejemplo de integración potencial.</p>
           </div>
           <div class="pd-hierarchy__branch">
             <h3><span class="material-symbols-outlined">payments</span>Pasarelas de pago</h3>
-            <p class="pd-note" style="margin:0;">Otros servicios del ecosistema.</p>
+            <p class="pd-note" style="margin:0;">Ejemplo de integración potencial con otros servicios del ecosistema.</p>
           </div>
         </div>
       </div>
@@ -1177,69 +1199,86 @@
     </div>
   </section>
 
-  <!-- FASE 2 · 13 — HIPÓTESIS -->
+  <!-- FASE 2 · 12 — HIPÓTESIS Y PREGUNTAS DE INVESTIGACIÓN -->
   <section class="pd-section" id="fase2-hipotesis">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">science</span>Fase 2 · 13 — Hipótesis</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">science</span>Fase 2 · 12 — Hipótesis y preguntas de investigación</p>
       <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Hipótesis — requieren validación</span></div>
       <h2 class="pd-heading" data-animate>Lo que necesitamos validar</h2>
-      <div class="pd-insight-grid" style="grid-template-columns:repeat(auto-fit, minmax(240px,1fr));">
-        <div class="pd-insight" data-animate>
-          <span class="pd-insight__num">H1</span>
-          <h3>Fragmentación</h3>
-          <p>Los pacientes podrían experimentar fricción al utilizar diferentes canales para completar una misma atención.</p>
-          <p class="pd-note" style="margin-top:12px;"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">group</span> A investigar con pacientes</p>
-        </div>
-        <div class="pd-insight" data-animate data-animate-delay="1">
-          <span class="pd-insight__num">H2</span>
-          <h3>Continuidad</h3>
-          <p>Los pacientes podrían necesitar mayor claridad sobre qué hacer antes y después de una atención.</p>
-          <p class="pd-note" style="margin-top:12px;"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">group</span> A investigar con pacientes</p>
-        </div>
-        <div class="pd-insight" data-animate data-animate-delay="2">
-          <span class="pd-insight__num">H3</span>
-          <h3>Autogestión</h3>
-          <p>Integrar determinadas gestiones podría reducir pasos administrativos y dependencia de otros canales.</p>
-          <p class="pd-note" style="margin-top:12px;"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">group</span> A investigar con pacientes</p>
-        </div>
-        <div class="pd-insight" data-animate data-animate-delay="3">
-          <span class="pd-insight__num">H4</span>
-          <h3>Multidispositivo</h3>
-          <p>Una experiencia responsive podría facilitar el acceso a Medical 360 sin depender exclusivamente de instalar una aplicación.</p>
-          <p class="pd-note" style="margin-top:12px;"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">group</span> A investigar con pacientes</p>
-        </div>
-        <div class="pd-insight" data-animate data-animate-delay="4">
-          <span class="pd-insight__num">H5</span>
-          <h3>Modularidad</h3>
-          <p>Diferentes tipos de prestadores podrían necesitar distintas combinaciones de funcionalidades dentro de una misma plataforma base.</p>
-          <p class="pd-note" style="margin-top:12px;"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">business</span> Hipótesis de producto — validación futura con prestadores</p>
-        </div>
+      <div class="pd-hypothesis-list">
+        <article class="pd-hypothesis" data-animate>
+          <div class="pd-hypothesis__head">
+            <span class="pd-insight__num">H1</span>
+            <div>
+              <h3>Fragmentación</h3>
+              <p>Los pacientes podrían experimentar fricción al utilizar diferentes canales para completar una misma atención.</p>
+            </div>
+          </div>
+          <p class="pd-note"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">group</span> Se validará con pacientes</p>
+          <ul class="pd-list pd-list--compact">
+            <li><span class="material-symbols-outlined">help</span><span>¿Cómo gestionan actualmente los pacientes una atención de principio a fin?</span></li>
+            <li><span class="material-symbols-outlined">help</span><span>¿Dónde aparecen las principales fricciones?</span></li>
+          </ul>
+        </article>
+        <article class="pd-hypothesis" data-animate data-animate-delay="1">
+          <div class="pd-hypothesis__head">
+            <span class="pd-insight__num">H2</span>
+            <div>
+              <h3>Continuidad</h3>
+              <p>Los pacientes podrían necesitar mayor claridad sobre qué hacer antes y después de una atención.</p>
+            </div>
+          </div>
+          <p class="pd-note"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">group</span> Se validará con pacientes</p>
+          <ul class="pd-list pd-list--compact">
+            <li><span class="material-symbols-outlined">help</span><span>¿Qué necesitan saber antes, durante y después de una atención?</span></li>
+            <li><span class="material-symbols-outlined">help</span><span>¿Qué oportunidades realmente merecen convertirse en funcionalidades?</span></li>
+          </ul>
+        </article>
+        <article class="pd-hypothesis" data-animate data-animate-delay="2">
+          <div class="pd-hypothesis__head">
+            <span class="pd-insight__num">H3</span>
+            <div>
+              <h3>Autogestión</h3>
+              <p>Integrar determinadas gestiones podría reducir pasos administrativos y dependencia de otros canales.</p>
+            </div>
+          </div>
+          <p class="pd-note"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">group</span> Se validará con pacientes</p>
+          <ul class="pd-list pd-list--compact">
+            <li><span class="material-symbols-outlined">help</span><span>¿Cómo gestionan órdenes, exámenes, resultados, pagos y seguimiento?</span></li>
+          </ul>
+        </article>
+        <article class="pd-hypothesis" data-animate data-animate-delay="3">
+          <div class="pd-hypothesis__head">
+            <span class="pd-insight__num">H4</span>
+            <div>
+              <h3>Multidispositivo</h3>
+              <p>Una experiencia responsive podría facilitar el acceso a Medical 360 sin depender exclusivamente de instalar una aplicación.</p>
+            </div>
+          </div>
+          <p class="pd-note"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">group</span> Se validará con pacientes</p>
+          <ul class="pd-list pd-list--compact">
+            <li><span class="material-symbols-outlined">help</span><span>¿Qué canales utilizan?</span></li>
+            <li><span class="material-symbols-outlined">help</span><span>¿Qué dispositivo utilizan?</span></li>
+          </ul>
+        </article>
+        <article class="pd-hypothesis" data-animate data-animate-delay="4">
+          <div class="pd-hypothesis__head">
+            <span class="pd-insight__num">H5</span>
+            <div>
+              <h3>Modularidad</h3>
+              <p>Diferentes tipos de prestadores podrían necesitar distintas combinaciones de funcionalidades dentro de una misma plataforma base.</p>
+            </div>
+          </div>
+          <p class="pd-note"><span class="material-symbols-outlined" style="font-size:15px; vertical-align:-2px;">business</span> Requiere validación futura con prestadores y factibilidad técnica</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- FASE 2 · 14 — RESEARCH QUESTIONS -->
-  <section class="pd-section pd-section--alt" id="fase2-research-questions">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">quiz</span>Fase 2 · 14 — Research Questions</p>
-      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--oportunidad"><span class="material-symbols-outlined">explore</span>Preguntas a investigar</span></div>
-      <h2 class="pd-heading" data-animate>Entonces necesitábamos responder…</h2>
-      <ul class="pd-list" data-animate data-animate-delay="1">
-        <li><span class="material-symbols-outlined">help</span><span>¿Cómo gestionan actualmente los pacientes una atención de principio a fin?</span></li>
-        <li><span class="material-symbols-outlined">help</span><span>¿Dónde aparecen las principales fricciones?</span></li>
-        <li><span class="material-symbols-outlined">help</span><span>¿Qué necesitan saber antes, durante y después de una atención?</span></li>
-        <li><span class="material-symbols-outlined">help</span><span>¿Qué canales utilizan?</span></li>
-        <li><span class="material-symbols-outlined">help</span><span>¿Qué dispositivo utilizan?</span></li>
-        <li><span class="material-symbols-outlined">help</span><span>¿Cómo gestionan órdenes, exámenes, resultados, pagos y seguimiento?</span></li>
-        <li><span class="material-symbols-outlined">help</span><span>¿Qué oportunidades realmente merecen convertirse en funcionalidades?</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FASE 2 · 15 — RESEARCH PLAN -->
+  <!-- FASE 2 · 13 — RESEARCH PLAN: DE LA HIPÓTESIS A LA EVIDENCIA -->
   <section class="pd-section" id="fase2-research-plan">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">route</span>Fase 2 · 15 — Research Plan</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">route</span>Fase 2 · 13 — Research Plan: de la hipótesis a la evidencia</p>
       <h2 class="pd-heading" data-animate>El camino desde acá</h2>
       <span class="pd-step" style="font-family:monospace; display:inline-block;" data-animate data-animate-delay="1">Research in progress · 2026</span>
       <div class="pd-roadmap" data-animate data-animate-delay="2">
@@ -1262,18 +1301,13 @@
         <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">low_priority</span><span class="pd-roadmap__label">Priorización</span><span class="pd-roadmap__status">Más adelante</span></div>
         <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">crop</span><span class="pd-roadmap__label">Product Scope</span><span class="pd-roadmap__status">Más adelante</span></div>
       </div>
-    </div>
-  </section>
 
-  <!-- FASE 2 · 16 — CIERRE TEMPORAL -->
-  <section class="pd-section pd-section--alt" id="fase2-cierre">
-    <div class="container pd-section__inner" style="text-align:center;">
-      <p class="pd-kicker" style="justify-content:center;"><span class="material-symbols-outlined">flag</span>Fase 2 · 16 — De la hipótesis a la evidencia</p>
-      <h2 class="pd-heading" data-animate>De la hipótesis a la evidencia</h2>
-      <p class="pd-lead" style="max-width:640px; margin-inline:auto;" data-animate data-animate-delay="1">El desk research y el benchmark permitieron identificar oportunidades y formular una nueva dirección para Medical 360. Sin embargo, estas conclusiones parten principalmente de investigación secundaria.</p>
-      <p class="pd-lead" style="max-width:640px; margin-inline:auto;" data-animate data-animate-delay="2">El siguiente paso será contrastarlas con usuarios reales, para comprender cómo gestionan actualmente sus atenciones y determinar qué problemas merecen convertirse en decisiones de producto.</p>
+      <div class="pd-research-close" data-animate data-animate-delay="3">
+        <h3>De la hipótesis a la evidencia</h3>
+        <p>Hasta aquí, el research secundario permitió identificar oportunidades e hipótesis de producto. La siguiente etapa busca contrastarlas con evidencia primaria mediante encuestas y entrevistas, antes de avanzar hacia decisiones definitivas de arquitectura, funcionalidades y experiencia.</p>
+      </div>
 
-      <div class="pd-flow" style="justify-content:center;" data-animate data-animate-delay="3">
+      <div class="pd-flow" style="justify-content:center;" data-animate data-animate-delay="4">
         <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">psychology</span>Lo que creemos</div>
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
         <div class="pd-flow__step"><span class="material-symbols-outlined">science</span>Hipótesis</div>
@@ -1290,7 +1324,7 @@
     </div>
   </section>
 
-  <!-- 19. SIGUIENTE PROYECTO -->
+  <!-- SIGUIENTE PROYECTO -->
   <section class="pd-next" id="siguiente-proyecto">
     <div class="container">
       <p class="pd-kicker"><span class="material-symbols-outlined">arrow_forward</span>Siguiente proyecto</p>
