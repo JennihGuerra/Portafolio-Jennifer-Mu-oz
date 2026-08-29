@@ -69,7 +69,9 @@ CSS estructural **compartido por todas las páginas de proyecto**, construido en
 Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`, `--pd-border`, `--pd-text-primary`, `--pd-text-body`, `--pd-text-muted`, `--pd-accent`, `--pd-accent-2`, `--pd-on-accent`, `--pd-gradient`, `--pd-font-display`, `--pd-font-body`.
 
 **Librería de componentes reutilizables** (usada primero en Medical 360, pensada para reutilizarse en los próximos proyectos):
-- `.project-stage-badge` — badge de etapa del proyecto.
+- `.project-case-controls` + `.project-stage-nav` / `.project-stage-link` — controles fijos de navegación del proyecto. En Medical 360 el bloque queda fijo bajo el header durante toda la navegación, incluye el botón "Volver a proyectos" y luego la etiqueta "Selecciona etapa del proyecto" sobre los accesos a Etapa 1 (MVP 2023) y Etapa 2 (Evolución 2026). La etapa seleccionada usa `.is-active` y se pinta azul; la etapa no seleccionada queda en blanco.
+- `.project-detail__meta` — resumen inicial del caso, ubicado en el hero para lectura rápida de reclutadores. En Medical 360 muestra Rol, Duración, Responsabilidades y Herramientas; Equipo se omite. Usa una grilla de 4 columnas en desktop y 1 columna en mobile para que listas largas como herramientas no se compriman.
+- `.project-stage-badge` — badge de etapa del proyecto; queda disponible como componente heredado para proyectos que no necesiten navegación por etapas.
 - `.pd-flow` — diagrama de flujo simple.
 - `.pd-triad` — grilla de 3 columnas para contrastar 3 dimensiones (ej. Mercado/Tecnología/Producto).
 - `.pd-iteration` — componente "antes/después" de dos paneles; se ha reutilizado para varios contrastes no cronológicos además de iteraciones de diseño (pregunta 2023 vs. 2026, mercado-resuelve vs. queremos-investigar, app vs. plataforma).

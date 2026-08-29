@@ -60,26 +60,38 @@
 <main id="main" class="project-detail">
 
   <!-- 01. HERO DEL PROYECTO -->
-  <section class="project-hero">
+  <section class="project-hero" id="etapa-1">
     <div class="container">
-      <a href="../index.html#proyectos" class="btn btn--ghost btn--sm btn--back">
-        <span class="material-symbols-outlined">arrow_back</span>
-        Volver a proyectos
-      </a>
+      <div class="project-case-controls">
+        <a href="../index.html#proyectos" class="btn btn--ghost btn--sm btn--back">
+          <span class="material-symbols-outlined">arrow_back</span>
+          Volver a proyectos
+        </a>
+
+        <nav class="project-stage-nav" aria-label="Navegación por etapas de Medical 360">
+          <p class="project-stage-nav__hint">Selecciona etapa del proyecto</p>
+          <div class="project-stage-nav__inner">
+            <a href="#etapa-1" class="project-stage-link is-active" aria-current="true">
+              <span class="material-symbols-outlined" aria-hidden="true">flag</span>
+              <span>Etapa 1 — MVP · 2023</span>
+            </a>
+            <a href="#segunda-etapa" class="project-stage-link">
+              <span class="material-symbols-outlined" aria-hidden="true">rocket_launch</span>
+              <span>Etapa 2 — Evolución · 2026</span>
+            </a>
+          </div>
+        </nav>
+      </div>
 
       <p class="eyebrow">Caso de estudio personal · Salud</p>
-      <div class="project-stage-badge" data-animate>
-        <span class="material-symbols-outlined">flag</span>
-        Etapa 1 — MVP · 2023
-      </div>
       <h1 class="section-title" data-animate data-animate-delay="1">Medical 360</h1>
       <p class="section-lead" data-animate data-animate-delay="2"><strong>De un MVP de agenda médica a una experiencia integral de gestión de salud.</strong><br>Esta página documenta la Fase 1: el MVP original diseñado en 2023, enfocado únicamente en resolver la reserva de horas médicas.</p>
 
       <div class="project-detail__meta" data-animate data-animate-delay="3">
-        <div><strong>2023</strong><span>Proyecto original</span></div>
         <div><strong>Rol</strong><span>UX/UI Designer</span></div>
-        <div><strong>Plataforma</strong><span>Mobile</span></div>
-        <div><strong>Alcance</strong><span>UX Research · UX/UI · Prototyping · Testing</span></div>
+        <div><strong>Duración</strong><span>MVP 2023 · Evolución 2026</span></div>
+        <div><strong>Responsabilidades</strong><span>UX Research · Arquitectura de información · UX/UI · Prototipado · Testing</span></div>
+        <div><strong>Herramientas</strong><span>Figma · FigJam · Figma Make · Google Workspace · Claude · Codex · ChatGPT</span></div>
       </div>
 
       <div class="project-hero__media project-hero__media--img project-hero__media--responsive" data-animate data-animate-delay="4">

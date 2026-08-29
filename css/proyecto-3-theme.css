@@ -88,7 +88,22 @@
    debe pasar a oscuro para no perder el contraste (a diferencia de las
    piezas con degradado, que siguen con --pd-on-accent blanco). */
 [data-theme="dark"] .project-detail .project-stage-badge,
+[data-theme="dark"] .project-detail .project-stage-link.is-active,
 [data-theme="dark"] .project-detail .pd-heuristics__table thead th {
+  color: #0A1B33;
+}
+
+[data-theme="dark"] .project-detail .project-stage-link {
+  color: var(--pd-text-primary);
+}
+
+[data-theme="dark"] .project-detail .project-stage-link:hover,
+[data-theme="dark"] .project-detail .project-stage-link:focus-visible {
+  color: var(--pd-accent);
+}
+
+[data-theme="dark"] .project-detail .project-stage-link.is-active:hover,
+[data-theme="dark"] .project-detail .project-stage-link.is-active:focus-visible {
   color: #0A1B33;
 }
 

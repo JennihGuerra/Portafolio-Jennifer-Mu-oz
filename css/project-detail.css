@@ -42,25 +42,89 @@
   color: var(--pd-text-primary);
 }
 
-/* ---------- Badge de etapa (hero) ---------- */
+/* ---------- Controles fijos de navegación del proyecto ---------- */
+.project-case-controls {
+  position: fixed;
+  top: 76px;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  padding: 18px max(24px, calc((100vw - var(--container-w, 1200px)) / 2)) 16px;
+  background: color-mix(in srgb, var(--pd-accent) 12%, var(--pd-bg));
+  border-bottom: 1px solid color-mix(in srgb, var(--pd-border) 70%, transparent);
+  backdrop-filter: blur(14px);
+}
+.project-case-controls .btn--back {
+  margin-bottom: 22px;
+}
+.project-stage-nav {
+  margin-bottom: 0;
+}
+.project-stage-nav__inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.project-stage-nav__inner::-webkit-scrollbar { display: none; }
+.project-stage-nav__hint {
+  margin: 0 0 10px;
+  color: var(--pd-text-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+.project-stage-link,
 .project-stage-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 8px 18px;
   border-radius: 999px;
-  background: var(--pd-accent);
-  color: var(--pd-on-accent);
+  background: var(--pd-surface);
+  color: var(--pd-text-primary);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.02em;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  border: 1px solid var(--pd-border);
+  transition: transform var(--transition), background var(--transition), border-color var(--transition), color var(--transition);
+}
+.project-stage-link:hover,
+.project-stage-link:focus-visible {
+  transform: translateY(-1px);
+  background: color-mix(in srgb, var(--pd-accent) 10%, var(--pd-surface));
+  border-color: var(--pd-accent);
+  color: var(--pd-accent);
+}
+.project-stage-link.is-active,
+.project-stage-badge {
+  background: var(--pd-accent);
+  color: var(--pd-on-accent);
+  border-color: transparent;
+}
+.project-stage-link.is-active:hover,
+.project-stage-link.is-active:focus-visible {
+  background: color-mix(in srgb, var(--pd-accent) 90%, var(--pd-accent-2));
+  color: var(--pd-on-accent);
+}
+.project-stage-badge {
   margin-bottom: 16px;
 }
+.project-stage-link .material-symbols-outlined,
 .project-stage-badge .material-symbols-outlined { font-size: 17px; }
+
+.project-detail #etapa-1,
+.project-detail #segunda-etapa {
+  scroll-margin-top: 250px;
+}
 
 /* ---------- Hero (reutiliza .project-hero de style.css, recolor) ---------- */
 .project-detail .project-hero {
   background: color-mix(in srgb, var(--pd-accent) 12%, var(--pd-bg));
+  padding-top: calc(76px + 210px);
 }
 .project-detail .project-hero .eyebrow { color: var(--pd-accent); }
 .project-detail .project-hero .btn--back {
@@ -93,10 +157,16 @@
   aspect-ratio: 4 / 1;
 }
 .project-detail .project-detail__meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
   border-top-color: var(--pd-border);
 }
 .project-detail .project-detail__meta div strong { color: var(--pd-accent); }
-.project-detail .project-detail__meta div span { color: var(--pd-text-primary); }
+.project-detail .project-detail__meta div span {
+  color: var(--pd-text-primary);
+  line-height: 1.45;
+}
 .project-detail .project-detail__meta .is-pending span {
   color: var(--pd-text-muted);
   font-style: italic;
@@ -1303,9 +1373,20 @@
 .pd-roadmap__status { font-size: 12px; color: var(--pd-text-muted); margin-left: auto; padding-left: 12px; white-space: nowrap; }
 
 @media (max-width: 600px) {
+  .project-case-controls {
+    padding: 14px 20px 14px;
+  }
+  .project-case-controls .btn--back {
+    margin-bottom: 18px;
+  }
+  .project-stage-link { padding-inline: 14px; font-size: 12.5px; }
+  .project-detail .project-hero {
+    padding-top: calc(76px + 210px);
+  }
   .pd-section { padding-block: 60px; }
   .pd-stats { grid-template-columns: 1fr 1fr; }
   .pd-facts-grid { grid-template-columns: 1fr 1fr; }
+  .project-detail .project-detail__meta { grid-template-columns: 1fr; gap: 18px; }
   .pd-insight-grid { grid-template-columns: 1fr; }
   .pd-triad { grid-template-columns: 1fr; }
   .project-hero__media--responsive { aspect-ratio: 1 / 1; max-width: 420px; margin-inline: auto; }

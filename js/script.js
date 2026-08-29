@@ -116,7 +116,42 @@
     sections.forEach(function (section) { navObserver.observe(section); });
   }
 
-  /* ---------- 8. Animaciones al hacer scroll (reveal) ---------- */
+  /* ---------- 8. Navegación activa por etapas del case study ---------- */
+  var stageLinks = document.querySelectorAll('.project-stage-link');
+  var stageTargets = Array.from(stageLinks)
+    .map(function (link) {
+      var href = link.getAttribute('href') || '';
+      return href.charAt(0) === '#' ? document.getElementById(href.slice(1)) : null;
+    })
+    .filter(Boolean);
+
+  function setActiveStage(id) {
+    stageLinks.forEach(function (link) {
+      var isActive = link.getAttribute('href') === '#' + id;
+      link.classList.toggle('is-active', isActive);
+      if (isActive) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
+    });
+  }
+
+  stageLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      var href = link.getAttribute('href') || '';
+      if (href.charAt(0) === '#') setActiveStage(href.slice(1));
+    });
+  });
+
+  if ('IntersectionObserver' in window && stageTargets.length) {
+    var stageObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) setActiveStage(entry.target.getAttribute('id'));
+      });
+    }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+    stageTargets.forEach(function (section) { stageObserver.observe(section); });
+  }
+
+  /* ---------- 9. Animaciones al hacer scroll (reveal) ---------- */
   var animatedEls = document.querySelectorAll('[data-animate]');
   if ('IntersectionObserver' in window && animatedEls.length) {
     var revealObserver = new IntersectionObserver(function (entries, obs) {
@@ -133,7 +168,7 @@
     animatedEls.forEach(function (el) { el.classList.add('in-view'); });
   }
 
-  /* ---------- 9. Contador animado (stats del hero) ---------- */
+  /* ---------- 10. Contador animado (stats del hero) ---------- */
   var countEls = document.querySelectorAll('[data-count-to]');
   var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -192,7 +227,7 @@
     }
   }
 
-  /* ---------- 10. Recomendaciones: modal de carta completa ---------- */
+  /* ---------- 11. Recomendaciones: modal de carta completa ---------- */
   var recTriggers = document.querySelectorAll('[data-recommendation-trigger]');
   var openRecModal = null;
 
@@ -227,7 +262,7 @@
     if (e.key === 'Escape') closeRecommendation();
   });
 
-  /* ---------- 11. Formulario de contacto (Netlify Forms + AJAX) ---------- */
+  /* ---------- 12. Formulario de contacto (Netlify Forms + AJAX) ---------- */
   var contactForm = document.getElementById('contactForm');
   var formStatus = document.getElementById('formStatus');
 
