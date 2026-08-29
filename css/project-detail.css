@@ -447,6 +447,12 @@
   line-height: 1.5;
   color: var(--pd-text-primary);
 }
+.pd-persona__quote-label {
+  margin: 0 0 8px 32px;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  color: var(--pd-text-muted);
+}
 .pd-persona__traits {
   display: grid;
   grid-template-columns: 1fr 1fr;
