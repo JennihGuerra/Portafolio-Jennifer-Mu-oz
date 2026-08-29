@@ -17,11 +17,11 @@ Portafolio profesional de **Jennifer Muñoz**, UX/UI & Product Designer. Sitio w
 Contiene, en este orden:
 
 1. **Header/nav** — fijo, con estado de scroll, menú móvil, toggle de tema claro/oscuro.
-2. **`#inicio` — Hero.** Título "Diseño de productos que resuelven problemas reales", eyebrow "UX / Product Designer", tags (UX/Product Design · UI · Frontend · IA), CTAs "Ver proyectos" y "Descargar CV" (descarga el CV actualizado desde `assets/cv-jennifer-munoz.pdf`), estadísticas animadas (2+ años, 10+ proyectos, "UX/UI + Frontend" como enfoque), y una tarjeta visual decorativa tipo skeleton-UI con tags flotantes ("Design System", "User Research").
+2. **`#inicio` — Hero.** Título "Diseño de productos que resuelven problemas reales", eyebrow "UX / Product Designer", tags (UX/Product Design · UI · Desarrollo web · IA), CTAs "Ver proyectos" y "Descargar CV" (descarga el CV actualizado desde `assets/cv-jennifer-munoz.pdf`), estadísticas animadas (2+ años, 10+ proyectos, "UX/UI + Frontend" como enfoque), y una tarjeta visual decorativa tipo skeleton-UI con tags flotantes ("Design System", "User Research").
 3. **`#proyectos` — Grilla de proyectos.** 4 tarjetas, cada una enlaza a su propia página de detalle:
    - **Proyecto 1** — "Rediseño de checkout para app de retail" (tags: UX Research, E-commerce).
    - **Proyecto 2** — "Sistema de diseño para plataforma financiera" (tags: Product Design, Fintech).
-   - **Proyecto 3** — "Medical 360" (tags: UI Design, Salud) — con imagen hero real.
+   - **Proyecto 3** — "Medical 360" (tags: UX / Product Design · Salud) — con imagen hero real.
    - **Proyecto 4** — "Landing page para startup de viajes" (tags: Branding, SaaS).
 4. **`#sobre-mi` — Sobre mí**, incluye un modal de certificaciones (`#cert-modal`).
 5. **`#proceso` — Proceso de trabajo.** 5 etapas: Descubrir, Definir, Diseñar, Validar, Iterar.
@@ -74,3 +74,15 @@ El botón "Descargar CV" del hero de `index.html` apunta a `assets/cv-jennifer-m
 - Fase 2 de Medical 360 está diseñada para crecer: cuando exista research real con usuarios (encuestas/entrevistas), esos resultados deben conectarse explícitamente a las hipótesis H1–H5 ya planteadas, continuando la numeración después de "Fase 2 · 13".
 - En Fase 1 de Medical 360 no se debe inventar el número de usuarios testeados si Jennifer no lo confirma; las métricas existentes se presentan como resultados del testing original sin agregar muestra nueva. En "Resultado del MVP", el dato protagonista es "9/10 completaron la reserva médica sin dificultad".
 - Confirmar que todos los cambios recientes efectivamente llegaron a GitHub/Netlify (el flujo depende de que Jennifer haga el push desde GitHub Desktop).
+
+## Cambios recientes de contenido
+
+Ajustes de copy realizados en la sesión de agosto 2026, orientados a posicionar mejor a Jennifer como Product Designer y a evitar compromisos métricos innecesarios:
+
+- **Hero (`index.html`):** nuevo lead ("UX / Product Designer con experiencia transformando necesidades de usuarios y negocio...") y el tag "Frontend" pasó a "Desarrollo web", para no parecer Frontend Developer.
+- **`#proyectos`:** el lead de la sección ya no habla de "resultados medibles" ("Una muestra de proyectos donde investigación, diseño y producto se conectan para resolver problemas reales."). La card de Medical 360 usó un solo tag "UX / Product Design · Salud" y una descripción nueva ("Evolución de un MVP de agendamiento médico hacia una experiencia de salud más continua...").
+- **`#sobre-mi`:** el lead ya no repite el cargo ("Me especializo en comprender problemas complejos..."), seguido de un segundo párrafo de menor jerarquía (`.about__extended`) con la experiencia ("Mi experiencia abarca research, arquitectura de información, prototipado, UI, testing, QA y acompañamiento a usuarios."). La descripción del puesto en Prosys se amplió para reflejar todo el alcance (levantamiento, UX Research, arquitectura, UX/UI, prototipado, validación, QA y handoff).
+- **`#habilidades`:** el título "Caja de herramientas" fue reemplazado por "Habilidades y competencias", y se eliminó la etiqueta "IA" de la card Product Design (ya queda cubierta en la categoría Development & AI).
+- **`#proceso`:** la descripción de la etapa "Validar" dejó de usar "cada solución" ("Valido las principales decisiones mediante testing con usuarios...").
+- **`#contacto`:** el lead ahora habla de disponibilidad para "oportunidades en UX / Product Design y proyectos donde pueda conectar research, diseño y tecnología" (se quitó la pregunta "¿Hablamos de tu proyecto?" del párrafo; el título de la sección la conserva).
+- **Medical 360 (`proyecto-3.html`):** la cita de la user persona cambió a "Quiero poder agendar mis horas médicas de forma rápida y sin tener que llamar.", con la etiqueta "frase representativa del perfil" (en minúscula, menor jerarquía) ubicada **arriba** de la cita, vía la clase nueva `.pd-persona__quote-label`.

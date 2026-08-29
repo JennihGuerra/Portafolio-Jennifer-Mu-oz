@@ -54,6 +54,7 @@ Redefine el mismo set de variables: fondo `#150019`, texto primario `#F6ECFB`, y
 - **Botón "Descargar CV":** en el hero de `index.html` conserva la variante visual `.btn--ghost`; el cambio de CV se resuelve reemplazando `assets/cv-jennifer-munoz.pdf`, sin modificar estilos ni comportamiento.
 - Header/nav fijo con estado de scroll y menú móvil.
 - Hero, tarjetas de proyecto, secciones de proceso/habilidades/recomendaciones, formulario de contacto — todos construidos sobre los mismos tokens de color/tipografía/radio.
+- **`.about__extended`** — segundo párrafo de "Sobre mí" con jerarquía menor que `.about__lead` (tipografía más pequeña y color atenuado), usado para complementar el lead sin repetir el cargo.
 - **Iconografía:** Material Symbols Outlined en todo el sitio.
 
 ### Sistema de animación (`js/script.js`)
@@ -91,6 +92,7 @@ Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`
 - `.pd-iteration__tag--pending` — etiqueta para distinguir mejoras priorizadas pero no implementadas dentro de iteraciones, evitando presentar pendientes como cambios ya realizados.
 - `.pd-result-metric` — bloque de resultado destacado para métricas reales de testing. En Medical 360 se usa para mostrar `9/10` como dato protagonista del MVP, con label "Resultado de testing · 2023" y sin agregar KPIs no documentados.
 - `.pd-persona__trait` — rasgos de persona/usuario.
+- `.pd-persona__quote-label` — etiqueta de menor jerarquía ubicada sobre la cita de la persona (`.pd-persona__quote`) en Medical 360: muestra "frase representativa del perfil" en minúscula y color atenuado (`--pd-text-muted`).
 - `.pd-visual-frame` (+ `--img` con `object-fit:contain` y padding, o `--fill` con `object-fit:cover` sin padding) — marcos para incrustar fotos reales del proyecto.
 - `.pd-list` — listas simples (ej. preguntas de investigación).
 - `.pd-steps` / `.pd-step` — chips de metodología/etapas.

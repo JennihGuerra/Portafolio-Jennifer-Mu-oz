@@ -36,6 +36,20 @@ El texto del sitio está en `index.html`, marcado en español y organizado por s
 
 El sitio carga en **modo claro por defecto**. El botón de sol/luna en el header alterna el tema y la preferencia se guarda en `localStorage` del navegador de cada visitante.
 
+## Cambios recientes
+
+Ajustes de copy enfocados en posicionar a Jennifer como Product Designer:
+
+- **Hero:** nuevo lead y tag "Desarrollo web" (reemplaza "Frontend").
+- **Proyectos:** lead de la sección reescrito (sin comprometer "resultados medibles"); card de Medical 360 con un solo tag "UX / Product Design · Salud" y descripción nueva.
+- **Sobre mí:** lead reescrito en dos párrafos (el segundo usa la clase `.about__extended`, con menor jerarquía); descripción de experiencia en Prosys ampliada.
+- **Habilidades:** título ahora "Habilidades y competencias"; se eliminó la etiqueta "IA" de la card Product Design.
+- **Proceso:** descripción de la etapa "Validar" reescrita.
+- **Contacto:** lead reescrito (disponibilidad para oportunidades UX / Product Design), sin la pregunta final.
+- **proyecto-3 (Medical 360):** cita de la user persona actualizada con la etiqueta "frase representativa del perfil" sobre ella (clase `.pd-persona__quote-label`).
+
+Detalle completo en `docs/contexto.md` → *Cambios recientes de contenido*. Las clases nuevas están documentadas en `docs/diseño.md`.
+
 ## Publicar en Netlify
 
 **Opción 1 — Arrastrar y soltar:**
