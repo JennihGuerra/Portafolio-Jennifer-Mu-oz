@@ -501,6 +501,14 @@ section { padding-block: var(--section-py); }
   line-height: 1.55;
   color: var(--color-text-primary);
   max-width: 56ch;
+  margin-bottom: 16px;
+}
+
+.about__extended {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  max-width: 56ch;
   margin-bottom: 28px;
 }
 
