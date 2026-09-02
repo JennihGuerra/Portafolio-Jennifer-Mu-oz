@@ -290,6 +290,16 @@
    proporción ya calza bien con el marco y no necesitan aire extra alrededor). */
 .pd-visual-frame--img.pd-visual-frame--fill { padding: 0; }
 .pd-visual-frame--fill img { object-fit: cover; }
+.pd-visual-frame--wireframe {
+  aspect-ratio: 1 / 1;
+  background: #FFFFFF;
+}
+.pd-visual-frame--wireframe img {
+  object-fit: contain;
+}
+.pd-visual-frame.pd-visual-frame--ui-kit {
+  background: #F2F2F7;
+}
 
 .pd-gallery {
   display: grid;
@@ -672,6 +682,21 @@
   border-radius: 10px;
   border: 1px solid var(--pd-border);
 }
+/* Fila de swatch + nombre + hex (paleta de marca con leyenda visible,
+   para no depender solo del color como portador de significado). */
+.pd-swatch-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  margin-top: 18px;
+}
+.pd-swatch-row__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+}
+.pd-swatch-row__item .pd-token-swatch { width: 28px; height: 28px; flex-shrink: 0; }
 
 /* ---------- CTA final: siguiente proyecto ---------- */
 .pd-next {
@@ -1632,6 +1657,222 @@
   font-size: 14.5px;
   line-height: 1.65;
   color: var(--pd-text-body);
+}
+
+/* ============================================================
+   COMPONENTES REUTILIZABLES — case studies tipo "brand + product"
+   (usados por primera vez en Proyecto Vibra, pensados para
+   cualquier caso de estudio futuro con marca propia)
+   ------------------------------------------------------------
+   - .pd-hero-tags        → fila de tags en el hero
+   - .pd-confidential     → nota de confidencialidad
+   - .pd-decision__grid--2→ variante 2 columnas de .pd-decision__grid
+   - .pd-figma-embed      → "FigmaEmbed": placeholder o iframe real
+                             según data-figma-url (ver js/script.js)
+   - .pd-prototype-cta    → "PrototypeCTA": estado deshabilitado o
+                             habilitado según data-prototype-url
+   - .pd-visual-frame--device → "DeviceMockup": marco tipo teléfono
+   - .pd-kpi-grid / .pd-kpi-card → "KpiCard": KPIs propuestos (no
+                             resultados) con nota de hipótesis
+   ============================================================ */
+
+.pd-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 0;
+}
+.pd-hero-tag {
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.pd-confidential {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 28px;
+  padding: 22px 26px;
+  border-radius: 16px;
+  border: 1px solid var(--pd-border);
+  background: var(--pd-surface);
+}
+.pd-confidential .material-symbols-outlined {
+  color: var(--pd-accent);
+  font-size: 22px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.pd-confidential p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.65;
+  font-style: italic;
+  color: var(--pd-text-muted);
+}
+
+.pd-decision__grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 700px) {
+  .pd-decision__grid--2 { grid-template-columns: 1fr; }
+}
+
+/* ---------- FigmaEmbed: placeholder (sin URL) o iframe real ---------- */
+.pd-figma-embed {
+  margin-top: 32px;
+}
+.pd-figma-embed__placeholder {
+  padding: 56px 32px;
+  border-radius: 20px;
+  border: 1.5px dashed var(--pd-border);
+  background: var(--pd-surface);
+  text-align: center;
+}
+.pd-figma-embed__placeholder .material-symbols-outlined {
+  font-size: 34px;
+  color: var(--pd-accent);
+}
+.pd-figma-embed__placeholder p {
+  margin: 14px 0 4px;
+  font-family: var(--pd-font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--pd-text-primary);
+}
+.pd-figma-embed__placeholder span {
+  display: block;
+  max-width: 460px;
+  margin-inline: auto;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--pd-text-muted);
+}
+.pd-figma-embed__frame {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--pd-border);
+  box-shadow: var(--shadow-md);
+  background: var(--pd-surface);
+}
+.pd-figma-embed__frame-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  background: var(--pd-bg-alt);
+  border-bottom: 1px solid var(--pd-border);
+}
+.pd-figma-embed__frame-bar span.pd-figma-embed__dot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--pd-border);
+}
+.pd-figma-embed__frame iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 0;
+}
+.pd-figma-embed__cta {
+  margin-top: 16px;
+  text-align: center;
+}
+.pd-figma-embed[hidden],
+.pd-prototype-cta__frame[hidden] { display: none !important; }
+
+/* ---------- PrototypeCTA: deshabilitado hasta tener finalPrototypeUrl ---------- */
+.pd-prototype-cta {
+  margin-top: 32px;
+  padding: 40px 32px;
+  border-radius: 20px;
+  background: var(--pd-gradient);
+  color: var(--pd-on-accent);
+  text-align: center;
+}
+.pd-prototype-cta p {
+  margin: 0 0 20px;
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 460px;
+  margin-inline: auto;
+}
+.pd-prototype-cta .btn {
+  background: #fff;
+  color: var(--pd-text-primary, #1A1A1A);
+}
+.pd-prototype-cta .btn[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- DeviceMockup: marco tipo teléfono para el hero / responsive ----------
+   Variante de .project-hero__media (igual patrón que --img/--responsive ya
+   definidas en la sección de Hero más arriba): un marco angosto centrado,
+   con proporción de teléfono, para heroes que aún no tienen una captura real. */
+.project-hero__media--device {
+  height: auto;
+  aspect-ratio: 9 / 18;
+  max-width: 300px;
+  margin-inline: auto;
+  border-radius: 36px;
+  border: 6px solid rgba(255, 255, 255, 0.14);
+}
+.pd-visual-frame--device {
+  aspect-ratio: 9 / 18;
+  max-width: 300px;
+  margin-inline: auto;
+  border-radius: 36px;
+  border: 6px solid rgba(255, 255, 255, 0.14);
+  background: var(--pd-gradient);
+}
+
+/* ---------- KpiCard: KPIs propuestos (no resultados medidos) ---------- */
+.pd-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+@media (max-width: 900px) {
+  .pd-kpi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .pd-kpi-grid { grid-template-columns: 1fr; }
+}
+.pd-kpi-card {
+  padding: 20px 20px 18px;
+  border-radius: 16px;
+  background: var(--pd-surface);
+  border: 1px solid var(--pd-border);
+}
+.pd-kpi-card .material-symbols-outlined {
+  color: var(--pd-tag-hipotesis, var(--pd-accent));
+  font-size: 22px;
+}
+.pd-kpi-card strong {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--pd-font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--pd-text-primary);
+}
+.pd-kpi-card span {
+  display: block;
+  margin-top: 4px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--pd-text-muted);
 }
 
 @media (max-width: 600px) {

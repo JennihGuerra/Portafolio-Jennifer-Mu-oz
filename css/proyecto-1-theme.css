@@ -1,0 +1,248 @@
+/* ============================================================
+   TEMA — Proyecto Vibra (proyecto-1.html)
+   ------------------------------------------------------------
+   Case study de producto digital para una marca ficticia,
+   "Vibra" — creada para proteger la confidencialidad del
+   proyecto real de ticketing en el que se basa (ver sección
+   de confidencialidad dentro del HTML).
+
+   Paleta de marca Vibra (fija, no debe sustituirse):
+     Violeta Pulso   #6C3BFF  — marca / acción principal
+     Coral Vivo      #FF4D6D  — acento controlado
+     Lima Eléctrica  #C7F464  — acento controlado
+     Cian Ritmo      #31D7E8  — acento controlado
+     Tinta Noche     #171523  — base oscura / alto impacto
+     Nube Clara      #F7F6FB  — base clara / contenido
+
+   Tipografía: Plus Jakarta Sans (ver <link> de Google Fonts en
+   proyecto-1.html) — deliberadamente distinta de Aldrich/Roboto
+   del resto del portafolio, para que Vibra tenga personalidad
+   propia sin romper la estructura compartida de project-detail.css.
+   ============================================================ */
+
+.project-detail {
+  --pd-bg: #F7F6FB;
+  --pd-bg-alt: #FFFFFF;
+  --pd-surface: #FFFFFF;
+  --pd-border: rgba(23, 21, 35, 0.10);
+
+  --pd-text-primary: #171523;
+  --pd-text-body: #423F52;
+  --pd-text-muted: #8A8698;
+
+  --pd-accent: #6C3BFF;
+  --pd-accent-2: #FF4D6D;
+  --pd-on-accent: #FFFFFF;
+
+  /* Degradado de marca: Violeta Pulso → Coral Vivo — la combinación con
+     más energía de la paleta, reservada para CTA, hero y acentos de alto impacto. */
+  --pd-gradient: linear-gradient(135deg, #6C3BFF 0%, #FF4D6D 100%);
+
+  --pd-font-display: 'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --pd-font-body: 'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Acentos de marca disponibles como utilidades puntuales (no reemplazan
+     --pd-accent): se usan de forma controlada, nunca los tres a la vez. */
+  --vibra-coral: #FF4D6D;
+  --vibra-lima: #C7F464;
+  --vibra-cian: #31D7E8;
+  --vibra-noche: #171523;
+  --vibra-nube: #F7F6FB;
+
+  /* Etiquetas de tipo de evidencia — deliberadamente conservadoras: este
+     case study evita mostrar "validado" salvo que corresponda a research
+     real, y usa "hipótesis"/"oportunidad" para todo lo no confirmado
+     (Proto Persona, KPIs propuestos, oportunidad B2B). */
+  --pd-tag-validado: #1E8E5A;
+  --pd-tag-desk: #6C3BFF;
+  --pd-tag-hipotesis: #B8720A;
+  --pd-tag-oportunidad: #7C3AED;
+  --pd-tag-vision: #8A8698;
+}
+
+/* ---------- Barra fija "Volver a proyectos" ----------
+   Vibra es un case study de una sola fase, así que no necesita el bloque
+   completo .project-case-controls (con navegación por etapas) que usa
+   Medical 360 — pero sí debe mostrar el botón "Volver a proyectos" como lo
+   primero que se ve al entrar, y mantenerlo visible durante todo el scroll,
+   igual que el patrón de Medical 360. Fondo fijo en Tinta Noche (no depende
+   de --pd-bg / del theme toggle) porque siempre queda sobre la banda de
+   identidad y el hero, que son oscuros por diseño de marca en todo momento. */
+.project-detail .vibra-back-bar {
+  position: fixed;
+  top: 76px;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  padding: 16px max(24px, calc((100vw - var(--container-w, 1200px)) / 2));
+  background: rgba(23, 21, 35, 0.86);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.project-detail .vibra-back-bar .btn--back {
+  margin-bottom: 0;
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+}
+.project-detail .vibra-back-bar .btn--back:hover {
+  border-color: var(--vibra-cian);
+  color: var(--vibra-cian);
+}
+
+/* ---------- Hero de marca: siempre Tinta Noche, independiente del tema ----------
+   La identidad de Vibra pide un hero de alto impacto en Tinta Noche tanto en
+   modo claro como oscuro del sitio — es una decisión de marca, no del theme
+   toggle. Se aplica solo a .project-hero de esta página vía modificador. */
+.project-detail .project-hero.vibra-hero {
+  background: var(--vibra-noche);
+  /* Ojo: esta sección ya NO es la primera de la página (la banda de
+     Identidad Visual la precede) y ambas comparten el mismo fondo Tinta
+     Noche sin separador visual — para el ojo es una sola franja continua.
+     Por eso NO repite el padding-top que despeja el header/barra fija (eso
+     ya lo hizo la banda anterior); solo necesita un respiro interno breve
+     para no pegarse al párrafo de arriba. */
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+.project-detail .project-hero.vibra-hero .eyebrow { color: var(--vibra-cian); }
+.project-detail .project-hero.vibra-hero .section-title,
+.project-detail .project-hero.vibra-hero .section-lead strong { color: #FFFFFF; }
+.project-detail .project-hero.vibra-hero .section-lead { color: rgba(255, 255, 255, 0.82); }
+.project-detail .project-hero.vibra-hero .project-detail__meta { border-top-color: rgba(255, 255, 255, 0.16); }
+.project-detail .project-hero.vibra-hero .project-detail__meta div strong { color: var(--vibra-cian); }
+.project-detail .project-hero.vibra-hero .project-detail__meta div span { color: #FFFFFF; }
+.project-detail .project-hero.vibra-hero .project-detail__meta .is-pending span { color: rgba(255, 255, 255, 0.5); }
+.project-detail .project-hero.vibra-hero .pd-hero-tags { color: #FFFFFF; }
+
+/* Acento puntual: Lima Eléctrica solo como detalle chico (ícono del CTA),
+   nunca como fondo grande de texto (falla contraste AA en texto pequeño). */
+.project-detail .vibra-hero .project-hero__media--device {
+  background: linear-gradient(160deg, #1F1B33 0%, var(--vibra-noche) 70%);
+  border-color: rgba(199, 244, 100, 0.18);
+}
+
+/* ---------- 00 · Banda de identidad de marca (Tinta Noche fija) ----------
+   Ahora es solo un espacio de imagen (antes tenía kicker/título/cita/párrafo,
+   retirados a pedido explícito) — mismo rol que el hero-image de Medical 360,
+   pero con el marco placeholder .pd-visual-frame--wide hasta tener la imagen
+   real de identidad visual de Vibra. */
+.project-detail .vibra-brand-band {
+  background: var(--vibra-noche);
+  color: #FFFFFF;
+  /* Es la primera sección de la página — despeja el header fijo (76px) y la
+     barra fija "Volver a proyectos" (~72px) que queda encima de todo, más un
+     respiro adicional para que la imagen no quede pegada al borde inferior
+     de esa barra. */
+  padding-top: calc(76px + 116px);
+  padding-bottom: 40px;
+}
+.project-detail .vibra-brand-band .vibra-identity-media {
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  /* Mismo tamaño de marco que el hero-image de Medical 360
+     (.project-hero__media--responsive: 4/1 en desktop, 1/1 en mobile), para
+     mantener armonía visual entre proyectos aunque el contenido sea
+     distinto. El logo no se recorta (object-fit:contain) porque, a
+     diferencia de una foto, no admite crop. */
+  aspect-ratio: 4 / 1;
+}
+.project-detail .vibra-brand-band .vibra-identity-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 600px) {
+  .project-detail .vibra-brand-band .vibra-identity-media { aspect-ratio: 1 / 1; }
+}
+
+/* ---------- Nota de confidencialidad: franja compacta, no un capítulo ---------- */
+.project-detail .vibra-confidential-strip { padding-block: 40px; }
+
+/* ---------- Hallazgo con prominencia especial (seat map) ---------- */
+.project-detail .vibra-featured-finding {
+  border-block: 1px solid var(--pd-border);
+  background: color-mix(in srgb, var(--pd-accent) 6%, var(--pd-bg));
+}
+
+/* ---------- Ficha 00 · Identidad visual ---------- */
+.pd-brand-specimen {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+.pd-brand-specimen strong {
+  font-family: var(--pd-font-display);
+  font-weight: 800;
+}
+.pd-brand-specimen .pd-brand-specimen__display { font-size: clamp(28px, 4vw, 44px); }
+.pd-brand-specimen .pd-brand-specimen__body { font-family: var(--pd-font-body); font-weight: 400; font-size: 16px; color: var(--pd-text-body); }
+
+/* ============================================================
+   MODO OSCURO — mismo interruptor global del sitio.
+   Fuera del hero (fijo en Tinta Noche por marca), el resto de
+   Vibra pasa a una versión oscura coherente con el resto del
+   portafolio: base casi Tinta Noche, Cian Ritmo como acento de
+   texto/ícono (mejor contraste que Violeta Pulso sobre fondo
+   muy oscuro), y los mismos acentos controlados de marca.
+   ============================================================ */
+[data-theme="dark"] .project-detail {
+  --pd-bg: #171523;
+  --pd-bg-alt: #1D1A2E;
+  --pd-surface: #211E33;
+  --pd-border: rgba(199, 187, 255, 0.16);
+
+  --pd-text-primary: #FFFFFF;
+  --pd-text-body: #E4E1EF;
+  --pd-text-muted: #A29DBB;
+
+  --pd-accent: #B79CFF;
+  --pd-accent-2: #31D7E8;
+  --pd-on-accent: #171523;
+
+  /* El degradado de marca se mantiene (violeta → coral), ya suficientemente
+     saturado para funcionar sobre fondo oscuro con texto blanco encima. */
+
+  --pd-tag-validado: #4ADE80;
+  --pd-tag-desk: #B79CFF;
+  --pd-tag-hipotesis: #FFB65C;
+  --pd-tag-oportunidad: #C4A6FF;
+  --pd-tag-vision: #A29DBB;
+}
+
+/* --pd-accent pasa a lila claro en oscuro (para texto/ícono), pero las
+   piezas que lo usan como FONDO SÓLIDO necesitan texto oscuro encima. */
+[data-theme="dark"] .project-detail .project-stage-badge,
+[data-theme="dark"] .project-detail .project-stage-link.is-active,
+[data-theme="dark"] .project-detail .pd-heuristics__table thead th,
+[data-theme="dark"] .project-detail .pd-matrix thead th {
+  color: #171523;
+}
+[data-theme="dark"] .project-detail .project-stage-link { color: var(--pd-text-primary); }
+[data-theme="dark"] .project-detail .project-stage-link:hover,
+[data-theme="dark"] .project-detail .project-stage-link:focus-visible { color: var(--pd-accent); }
+[data-theme="dark"] .project-detail .project-stage-link.is-active:hover,
+[data-theme="dark"] .project-detail .project-stage-link.is-active:focus-visible { color: #171523; }
+
+/* Botón blanco del degradado (CTA final / PrototypeCTA / siguiente proyecto):
+   se fija a texto oscuro para no perder contraste sobre fondo blanco fijo. */
+[data-theme="dark"] .project-detail .pd-next .btn--pd-next,
+[data-theme="dark"] .project-detail .pd-prototype-cta .btn:not([aria-disabled="true"]) {
+  color: #171523;
+}
+
+/* El hero de Vibra ya es Tinta Noche en claro y oscuro por diseño de marca:
+   en modo oscuro del sitio no necesita cambios adicionales de color, solo
+   se asegura que su ícono de device-mockup conserve el mismo tratamiento. */
+[data-theme="dark"] .project-detail .vibra-hero .project-hero__media--device {
+  background: linear-gradient(160deg, #24203B 0%, var(--vibra-noche) 70%);
+}
+
+/* Placeholders de UI kit / wireframes: mantienen fondo claro fijo (representan
+   futuras capturas reales sobre lienzo blanco), igual que en Medical 360. */
+[data-theme="dark"] .project-detail .pd-visual-frame--ui-kit,
+[data-theme="dark"] .project-detail .pd-visual-frame--wireframe,
+[data-theme="dark"] .project-detail .pd-figma-embed__frame-bar { background: #F2F2F7; }

@@ -676,6 +676,11 @@ section { padding-block: var(--section-py); }
 .project-card:hover .project-card__media .material-symbols-outlined { transform: scale(1.12) rotate(-4deg); }
 
 .project-card__media.project-card__media--img { background: #fff; padding: 0; }
+.project-card__media--img picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 .project-card__media--img img {
   width: 100%;
   height: 100%;
@@ -689,6 +694,28 @@ section { padding-block: var(--section-py); }
 .project-card__media--2 { background: linear-gradient(135deg, #2E0047, #6a2f8a); }
 .project-card__media--3 { background: linear-gradient(135deg, #F26666, #F27457); }
 .project-card__media--4 { background: linear-gradient(135deg, #F2884B, #F2C14E); }
+
+/* Tarjeta de Vibra (proyecto-1): logotipo real sobre su propio fondo — a
+   diferencia de las capturas de Medical 360, un logo no admite crop, así que
+   usa "contain" en vez de "cover" para mostrarlo completo. El color de fondo
+   es el mismo (muestreado con cuentagotas) que el fondo del propio archivo
+   proyecto-1-identidad.png — no el Tinta Noche de marca (#171523), que es
+   ligeramente distinto — para que el borde donde termina la imagen y empieza
+   el fondo del marco sea imperceptible. */
+.project-card__media--1.project-card__media--img { background: #110F1D; }
+/* La regla compartida ".project-card__media--img picture/img { width/height:100% }"
+   no resuelve bien el alto dentro de un grid con place-items:center (queda más
+   alto que el marco y el overflow:hidden del contenedor termina recortando el
+   logo igual que "cover"). Position:absolute con inset:0 lo evita: el tamaño
+   queda definido por el contenedor (position:relative), no por el grid. */
+.project-card__media--1.project-card__media--img picture,
+.project-card__media--1.project-card__media--img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.project-card__media--1.project-card__media--img img { object-fit: contain; }
 
 .project-card__body { padding: 26px; }
 .project-card__tags { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }

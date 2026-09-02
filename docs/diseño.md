@@ -7,7 +7,7 @@ El sitio usa **dos capas de tokens** que conviven:
 1. **Capa global (`css/style.css`)** — variables `--color-*`, `--gradient-*`, `--shadow-*`, tipografía, radios, breakpoints. Rige la home (`index.html`), el header y el footer en todas las páginas, y sirve de base a toda página nueva.
 2. **Capa de detalle de proyecto (`css/project-detail.css` + `css/proyecto-N-theme.css`)** — estructura de layout compartida (`project-detail.css`) más una paleta y tipografía **propias de cada proyecto** (`proyecto-N-theme.css`), sobre variables `--pd-*`. Esto permite que cada case study tenga identidad visual propia (por ejemplo, Medical 360 usa azul/naranjo, no la paleta violeta/coral de la home) sin tocar el CSS estructural compartido.
 
-Hoy solo existe un archivo de tema: `css/proyecto-3-theme.css` (Medical 360). Cuando se agregue contenido real a los proyectos 1, 2 y 4, cada uno necesita su propio `proyecto-N-theme.css` siguiendo el mismo patrón.
+Hoy existen dos archivos de tema: `css/proyecto-3-theme.css` (Medical 360) y `css/proyecto-1-theme.css` (Proyecto Vibra). Cuando se agregue contenido real a los proyectos 2 y 4, cada uno necesita su propio `proyecto-N-theme.css` siguiendo el mismo patrón.
 
 ## Tokens globales (`css/style.css`)
 
@@ -55,6 +55,7 @@ Redefine el mismo set de variables: fondo `#150019`, texto primario `#F6ECFB`, y
 - Header/nav fijo con estado de scroll y menú móvil.
 - Hero, tarjetas de proyecto, secciones de proceso/habilidades/recomendaciones, formulario de contacto — todos construidos sobre los mismos tokens de color/tipografía/radio.
 - **`.about__extended`** — segundo párrafo de "Sobre mí" con jerarquía menor que `.about__lead` (tipografía más pequeña y color atenuado), usado para complementar el lead sin repetir el cargo.
+- **Tarjeta de proyecto con imagen real que no admite crop (`.project-card__media--N.project-card__media--img`):** el patrón compartido (`.project-card__media--img picture/img { width/height:100% }`) no resuelve bien el alto dentro de `.project-card__media` (que es `display:grid; place-items:center`) — el porcentaje de alto queda indefinido y el `overflow:hidden` del contenedor termina recortando la imagen igual que `object-fit:cover`, aunque se pida `contain`. La tarjeta de Vibra (`--1`) lo resuelve con una regla propia que posiciona `picture`/`img` en `position:absolute; inset:0` (en vez de depender del alto porcentual del grid) más `object-fit:contain` y fondo propio (Tinta Noche) para el letterbox. Reutilizar este mismo patrón si otra tarjeta futura necesita mostrar un logo/isotipo sin recortarlo (a diferencia de una foto/captura, que sí puede usar `cover` como la tarjeta de Medical 360).
 - **Iconografía:** Material Symbols Outlined en todo el sitio.
 
 ### Sistema de animación (`js/script.js`)
@@ -72,6 +73,7 @@ Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`
 
 **Librería de componentes reutilizables** (usada primero en Medical 360, pensada para reutilizarse en los próximos proyectos):
 - `.project-case-controls` + `.project-stage-nav` / `.project-stage-link` — controles fijos de navegación del proyecto. En Medical 360 el bloque queda fijo bajo el header durante toda la navegación, incluye el botón "Volver a proyectos" y luego la etiqueta "Selecciona etapa del proyecto" sobre los accesos a Etapa 1 (MVP 2023) y Etapa 2 (Evolución 2026). La etapa seleccionada usa `.is-active` y se pinta azul; la etapa no seleccionada queda en blanco.
+- `.project-card__media--img picture` y `.project-hero__media--responsive picture` — patrón de imagen responsive usado en Medical 360: portada horizontal para desktop/tablet y portada cuadrada para mobile, manteniendo `object-fit: cover` en cards y el encuadre propio del hero.
 - `.project-detail__meta` — resumen inicial del caso, ubicado en el hero para lectura rápida de reclutadores. En Medical 360 muestra Rol, Duración, Responsabilidades y Herramientas; Equipo se omite. Usa una grilla de 4 columnas en desktop y 1 columna en mobile para que listas largas como herramientas no se compriman.
 - `.project-stage-badge` — badge de etapa del proyecto; queda disponible como componente heredado para proyectos que no necesiten navegación por etapas.
 - `.pd-flow` — diagrama de flujo simple.
@@ -94,6 +96,9 @@ Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`
 - `.pd-persona__trait` — rasgos de persona/usuario.
 - `.pd-persona__quote-label` — etiqueta de menor jerarquía ubicada sobre la cita de la persona (`.pd-persona__quote`) en Medical 360: muestra "frase representativa del perfil" en minúscula y color atenuado (`--pd-text-muted`).
 - `.pd-visual-frame` (+ `--img` con `object-fit:contain` y padding, o `--fill` con `object-fit:cover` sin padding) — marcos para incrustar fotos reales del proyecto.
+- `.pd-visual-frame--wireframe` — variante cuadrada para wireframes/capturas que deben verse completas. Usa fondo blanco y `object-fit: contain`; en Medical 360 reemplaza `--fill` en baja/media/alta fidelidad para evitar recortes en modo claro y oscuro.
+- `.pd-visual-frame--ui-kit` — variante específica para la captura del UI Kit de Medical 360. Usa fondo `#F2F2F7`, tomado del lienzo de la imagen, para que el marco parezca parte del asset en modo claro y oscuro.
+- En Medical 360, `.project-hero__media--img` y `.pd-visual-frame--img` mantienen fondo blanco también en modo oscuro, para que las capturas con fondo blanco no queden cortadas por franjas azul oscuro.
 - `.pd-list` — listas simples (ej. preguntas de investigación).
 - `.pd-steps` / `.pd-step` — chips de metodología/etapas.
 
@@ -107,6 +112,26 @@ Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`
 - **`.pd-roadmap`** — línea de tiempo vertical de investigación, agrupada por fase (`.pd-roadmap__phase`), con ítems en 3 estados visuales (`--done`, `--active`, `--future`) y un punto pulsante en el ítem activo (animación neutralizada automáticamente por la regla global de `prefers-reduced-motion`).
 - **`.pd-sr-only`** — utilidad de accesibilidad para texto visible solo a lectores de pantalla (usada, por ejemplo, para dar una etiqueta textual a los íconos ✓/◐/? de `.pd-matrix`).
 
+**Componentes nuevos, agregados para Proyecto Vibra** (reutilizables para cualquier case study futuro de tipo "marca + producto", no exclusivos de Vibra):
+- **`.pd-hero-tags` / `.pd-hero-tag`** — fila de tags en el hero (categorías del proyecto), pensada para heroes con fondo oscuro/de marca.
+- **`.pd-confidential`** — nota de confidencialidad: caja compacta con ícono, texto en cursiva atenuado, para declarar de forma subtil qué fue modificado por confidencialidad sin interrumpir la lectura del case study.
+- **`.pd-decision__grid--2`** — variante de 2 columnas de `.pd-decision__grid` (que por defecto es de 3), para cuando una decisión solo necesita dos campos (ej. "Contenido futuro" / "Problema relacionado").
+- **`.pd-figma-embed`** ("FigmaEmbed") — bloque configurable para incrustar un wireframe interactivo de Figma Make. Mientras el atributo `data-figma-url` esté vacío, muestra un estado placeholder (`.pd-figma-embed__placeholder`, "Wireframe interactivo próximamente"); al escribir la URL real ahí, `js/script.js` (sección 13) revela automáticamente el iframe (`.pd-figma-embed__frame`) dentro de un marco tipo navegador y activa el botón "Abrir wireframe" — no requiere tocar el JS.
+- **`.pd-prototype-cta`** ("PrototypeCTA") — CTA de cierre para el prototipo navegable final. Mientras `data-prototype-url` esté vacío, el botón queda deshabilitado (`aria-disabled="true"`, "Prototipo en desarrollo"); al escribir la URL real, `js/script.js` activa el enlace (`target="_blank"`) automáticamente.
+- **`.project-hero__media--device`** ("DeviceMockup") — variante angosta de `.project-hero__media` con proporción de teléfono (aspect-ratio 9/18, max-width 300px, centrada), para heroes que todavía no tienen una captura real del producto.
+- **`.pd-kpi-grid` / `.pd-kpi-card`** ("KpiCard") — grilla de métricas *propuestas* (no resultados medidos). Se usa siempre junto a `.pd-validation-note` con el disclaimer explícito de que son KPIs propuestos para una futura fase de validación.
+- **`.pd-swatch-row` / `.pd-swatch-row__item`** — fila de swatch de color + nombre + hex, para mostrar una paleta de marca con leyenda visible (nunca solo el color, para no depender del color como único portador de significado). Hoy vive fuera de la página (se reincorporará más adelante a una futura sección de Design System de Vibra); no se usa en `proyecto-1.html` por ahora.
+- **`.vibra-back-bar`** — barra fija propia de Vibra con el botón "Volver a proyectos", equivalente en rol a `.project-case-controls` de Medical 360 pero sin navegación por etapas (Vibra es un case study de una sola fase). Es el primer elemento dentro de `<main>`, con `position: fixed; top: 76px` (justo debajo del header sitewide) y `z-index: 90`, así queda visible durante todo el scroll de la página. Fondo fijo en Tinta Noche semitransparente con blur, independiente del theme toggle.
+
+### `css/proyecto-1-theme.css` (Proyecto Vibra) — paleta real
+- Marca ficticia creada para proteger la confidencialidad del proyecto original (ver `docs/contexto.md`). Paleta fija: Violeta Pulso `#6C3BFF` (acento principal), Coral Vivo `#FF4D6D`, Lima Eléctrica `#C7F464`, Cian Ritmo `#31D7E8`, Tinta Noche `#171523`, Nube Clara `#F7F6FB`.
+- Tipografía: **Plus Jakarta Sans** (Google Fonts) para `--pd-font-display` y `--pd-font-body` — deliberadamente distinta de Aldrich/Roboto del resto del sitio, cargada solo en `proyecto-1.html`.
+- Gradiente de marca: Violeta Pulso → Coral Vivo, reservado para CTA y acentos de alto impacto.
+- **El hero de Vibra es siempre Tinta Noche**, en modo claro y oscuro del sitio por igual — es una decisión de marca, no del theme toggle. Se logra con el modificador `.vibra-hero` sobre `.project-hero`.
+- **Banda "00 · Identidad visual" (`.vibra-brand-band`, primera sección de la página):** también fija en Tinta Noche, sin depender del theme toggle. Es la única sección que necesita el `padding-top` completo (`calc(76px + 116px)`) para despejar el header fijo y `.vibra-back-bar`, con un respiro adicional para que la imagen no quede pegada al borde inferior de esa barra; el `.vibra-hero` que la sigue inmediatamente comparte el mismo fondo sin separador visual, así que solo lleva un respiro interno corto (`padding-top: 32px`) en vez de repetir esa reserva. Hoy esta banda muestra el logotipo real de Vibra (`.vibra-identity-media`, imagen `assets/img/proyecto-1-identidad.png`) — el mismo rol que cumple la imagen del hero en Medical 360. El marco usa el mismo tamaño que `.project-hero__media--responsive` de Medical 360 (`aspect-ratio: 4/1` en desktop, `1/1` en mobile ≤600px) para mantener armonía visual entre proyectos, con `object-fit: contain` para no recortar nunca el isotipo/wordmark del logo (a diferencia de una foto, un logo no admite crop). El kicker, el título "Vibra", la cita de marca y el párrafo descriptivo que iban antes en esta banda se retiraron a pedido explícito.
+- Modo oscuro propio: fondo casi-Tinta-Noche (`#171523`/`#1D1A2E`/`#211E33`), lila claro (`#B79CFF`) para todo lo que en claro usa `--pd-accent` (mejor contraste sobre fondo muy oscuro que el violeta de marca). El degradado de marca se mantiene igual en ambos modos.
+- Colores propios de las etiquetas de evidencia (`--pd-tag-*`), usados de forma deliberadamente conservadora en Vibra: se evita "validado" salvo que corresponda a research real, y se prioriza "hipótesis"/"oportunidad" para todo lo no confirmado (Proto Persona, KPIs propuestos, oportunidad B2B del panel Productor).
+
 ### `css/proyecto-3-theme.css` (Medical 360) — paleta real
 - Azul primario `#007AFF`, naranjo de acento/CTA `#F7941D`, celeste suave `#CEE0F8`, base blanca.
 - Gradiente propio azul → naranjo para el hero y el CTA final.
@@ -115,7 +140,7 @@ Tokens `--pd-*` esperados de cada tema: `--pd-bg`, `--pd-bg-alt`, `--pd-surface`
 - Colores propios de las etiquetas de evidencia de Fase 2 (`--pd-tag-validado`, `--pd-tag-desk`, `--pd-tag-hipotesis`, `--pd-tag-oportunidad`, `--pd-tag-vision`), con variantes más claras/saturadas en modo oscuro para mantener contraste AA sobre el fondo azul marino.
 
 ## Estado de adopción del sistema de theming por proyecto
-Solo **Medical 360** tiene hoy tema propio, modo oscuro y contenido real. `proyecto-1.html`, `proyecto-2.html` y `proyecto-4.html` siguen usando contenido placeholder, sin `proyecto-N-theme.css` propio y sin modo oscuro — al construirlos, deben seguir el mismo patrón de dos capas descrito arriba (estructura compartida de `project-detail.css` + tema propio con su propia paleta, tipografía, gradiente y bloque `[data-theme="dark"]`).
+**Medical 360** y **Proyecto Vibra** tienen hoy tema propio, modo oscuro y contenido real (parcial en el caso de Vibra, con placeholders explícitos donde falta material). `proyecto-2.html` y `proyecto-4.html` siguen usando contenido placeholder, sin `proyecto-N-theme.css` propio y sin modo oscuro — al construirlos, deben seguir el mismo patrón de dos capas descrito arriba (estructura compartida de `project-detail.css` + tema propio con su propia paleta, tipografía, gradiente y bloque `[data-theme="dark"]`).
 
 ## Accesibilidad
 - Contraste mínimo AA en texto y componentes, verificado tanto en modo claro como oscuro.

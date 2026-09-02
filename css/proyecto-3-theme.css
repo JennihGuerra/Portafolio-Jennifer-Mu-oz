@@ -107,10 +107,15 @@
   color: #0A1B33;
 }
 
-/* Marco de la imagen real del hero: fondo blanco fijo pensado para
-   modo claro — en oscuro pasa a la superficie oscura del tema. */
-[data-theme="dark"] .project-detail .project-hero__media--img {
-  background: var(--pd-surface);
+/* Las imágenes reales del proyecto tienen fondo blanco propio. En modo oscuro
+   el marco se mantiene blanco para que el letterboxing parezca parte del asset. */
+[data-theme="dark"] .project-detail .project-hero__media--img,
+[data-theme="dark"] .project-detail .pd-visual-frame--img {
+  background: #FFFFFF;
+}
+
+[data-theme="dark"] .project-detail .pd-visual-frame--ui-kit {
+  background: #F2F2F7;
 }
 
 /* Botón del CTA final "Siguiente proyecto": fondo blanco fijo, con

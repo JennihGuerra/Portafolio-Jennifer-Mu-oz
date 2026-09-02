@@ -312,4 +312,35 @@
     });
   }
 
+  /* ---------- 13. FigmaEmbed / PrototypeCTA (componentes configurables) ----------
+     Usados en case studies tipo "brand + product" (ej. Proyecto Vibra).
+     Cada bloque .pd-figma-embed / .pd-prototype-cta declara su URL vía
+     atributo data-*; mientras esté vacío se muestra el estado placeholder
+     ya presente en el HTML. Para activarlos en el futuro basta con escribir
+     la URL real en ese atributo — no se necesita tocar este script. */
+  document.querySelectorAll('.pd-figma-embed').forEach(function (block) {
+    var url = block.getAttribute('data-figma-url');
+    var placeholder = block.querySelector('.pd-figma-embed__placeholder');
+    var frame = block.querySelector('.pd-figma-embed__frame');
+    if (!url) return;
+    if (placeholder) placeholder.hidden = true;
+    if (frame) {
+      frame.hidden = false;
+      var iframe = frame.querySelector('iframe');
+      if (iframe && !iframe.getAttribute('src')) iframe.setAttribute('src', url);
+    }
+  });
+
+  document.querySelectorAll('.pd-prototype-cta').forEach(function (block) {
+    var url = block.getAttribute('data-prototype-url');
+    var link = block.querySelector('a.btn');
+    if (!url || !link) return;
+    link.href = url;
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+    link.removeAttribute('aria-disabled');
+    var pending = block.querySelector('.pd-prototype-cta__pending-label');
+    if (pending) pending.hidden = true;
+  });
+
 })();
