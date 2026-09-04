@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..600,0..1,-25..0&display=swap">
 
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
@@ -87,16 +88,16 @@
     <div class="container">
       <p class="eyebrow" data-animate>CASE STUDY · PRODUCT DESIGN · UX/UI</p>
       <h1 class="section-title" data-animate data-animate-delay="1">Simplificar la compra sin romper lo que ya funcionaba.</h1>
-      <p class="section-lead" data-animate data-animate-delay="2">Proyecto Vibra documenta el rediseño de un flujo de compra de entradas de alta complejidad: cientos de asientos por evento, múltiples fechas y ciudades, y una identificación obligatoria que debía sentirse simple incluso bajo presión de tiempo. Este case study está basado en un proyecto real, con la identidad de la empresa protegida bajo la marca ficticia Vibra.</p>
+      <p class="section-lead" data-animate data-animate-delay="2">Rediseño Mobile First de una plataforma de ticketing orientado a reducir fricciones durante la compra, simplificar el descubrimiento de eventos y adaptar interacciones complejas al contexto móvil. Este case study está basado en un proyecto real, con la identidad de la empresa protegida bajo la marca ficticia Vibra.</p>
 
       <div class="pd-hero-tags" data-animate data-animate-delay="3">
         <span class="pd-hero-tag">UX Research</span>
         <span class="pd-hero-tag">Product Design</span>
-        <span class="pd-hero-tag">Arquitectura de información</span>
-        <span class="pd-hero-tag">Design System</span>
         <span class="pd-hero-tag">Mobile First</span>
-        <span class="pd-hero-tag">Ticketing</span>
-        <span class="pd-hero-tag">Progressive Disclosure</span>
+        <span class="pd-hero-tag">Information Architecture</span>
+        <span class="pd-hero-tag">Interaction Design</span>
+        <span class="pd-hero-tag">UX/UI</span>
+        <span class="pd-hero-tag">Design System</span>
       </div>
 
       <div class="project-detail__meta" style="grid-template-columns:repeat(3,minmax(0,1fr));" data-animate data-animate-delay="4">
@@ -121,55 +122,32 @@
   <section class="pd-section" id="contexto">
     <div class="container pd-section__inner">
       <p class="pd-kicker"><span class="material-symbols-outlined">flag</span>02 · Contexto</p>
-      <h2 class="pd-heading" data-animate>Un producto que ya funcionaba — pero que necesitaba evolucionar</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Vibra parte de una plataforma de venta de entradas ya operativa, con usuarios activos y un negocio en marcha. El desafío no era diseñar desde cero, sino intervenir un producto real sin perder lo que ya funcionaba para las personas que lo usaban todos los días.</p>
-      <p class="pd-lead" data-animate data-animate-delay="2">Esto definió tres restricciones que guiaron cada decisión del proyecto:</p>
+      <h2 class="pd-heading" data-animate>Una experiencia conocida que necesitaba evolucionar</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">El proyecto nació a partir de la necesidad de evolucionar la experiencia digital de una plataforma de venta de entradas para eventos. La información disponible durante el proyecto revelaba una situación particular: la percepción general del producto era positiva, pero existían fricciones específicas en momentos críticos del recorrido, especialmente al descubrir eventos, identificarse y completar una compra desde dispositivos móviles.</p>
+      <p class="pd-lead" data-animate data-animate-delay="2">Por eso, el desafío no consistía en reconstruir completamente la experiencia. Consistía en entender qué conservar, qué simplificar y qué modernizar — un criterio al que volvemos más adelante, en la síntesis del proyecto.</p>
 
-      <div class="pd-triad">
-        <div class="pd-triad__card" data-animate>
-          <h3><span class="material-symbols-outlined">verified</span>Conservar</h3>
-          <p>Lo que ya funcionaba para las personas usuarias no debía romperse solo por modernizar la interfaz.</p>
-        </div>
-        <div class="pd-triad__card" data-animate data-animate-delay="1">
-          <h3><span class="material-symbols-outlined">filter_alt</span>Simplificar</h3>
-          <p>Reducir la cantidad de decisiones simultáneas que exigía el flujo de compra, sin eliminar opciones reales del catálogo de eventos.</p>
-        </div>
-        <div class="pd-triad__card" data-animate data-animate-delay="2">
-          <h3><span class="material-symbols-outlined">auto_awesome</span>Modernizar</h3>
-          <p>Actualizar la experiencia visual e interactiva sin generar una curva de reaprendizaje para usuarios recurrentes.</p>
-        </div>
-      </div>
+      <p class="pd-note" data-animate data-animate-delay="3">Vibra conecta a dos tipos de usuarios: el <strong style="color:var(--pd-text-primary); font-style:normal;">Comprador</strong>, foco de este proyecto, y el <strong style="color:var(--pd-text-primary); font-style:normal;">Productor</strong>, que gestiona eventos desde un panel B2B y queda documentado como oportunidad futura.</p>
     </div>
   </section>
 
-  <!-- 03. NOTA DE CONFIDENCIALIDAD -->
-  <section class="pd-section pd-section--alt vibra-confidential-strip" id="confidencialidad">
+  <!-- 03. MI ROL -->
+  <section class="pd-section pd-section--alt" id="mi-rol">
     <div class="container pd-section__inner">
-      <div class="pd-confidential" data-animate>
-        <span class="material-symbols-outlined">lock</span>
-        <p>Por motivos de confidencialidad, la identidad de la empresa, contenidos y determinados elementos visuales han sido modificados. Este case study conserva los problemas, aprendizajes y decisiones UX desarrollados durante el proyecto.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 04. MI ROL -->
-  <section class="pd-section" id="mi-rol">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">badge</span>04 · Mi rol</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">badge</span>03 · Mi rol</p>
       <h2 class="pd-heading" data-animate>UX/UI Designer</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Participé en el proyecto cubriendo el proceso completo de diseño de producto, desde la comprensión del problema hasta la definición del sistema visual de la solución.</p>
 
-      <ul class="pd-list" data-animate data-animate-delay="2">
-        <li><span class="material-symbols-outlined">travel_explore</span>Investigación y análisis del producto existente</li>
-        <li><span class="material-symbols-outlined">account_tree</span>Arquitectura de información</li>
-        <li><span class="material-symbols-outlined">alt_route</span>Diseño de flujos de usuario</li>
-        <li><span class="material-symbols-outlined">design_services</span>UI Design</li>
-        <li><span class="material-symbols-outlined">widgets</span>Construcción de Design System</li>
-        <li><span class="material-symbols-outlined">draft</span>Prototipado</li>
-        <li><span class="material-symbols-outlined">fact_check</span>Preparación de testing de usabilidad</li>
-        <li><span class="material-symbols-outlined">groups</span>Colaboración con producto y desarrollo</li>
-        <li><span class="material-symbols-outlined">history_edu</span>Documentación de decisiones de diseño</li>
-      </ul>
+      <div class="pd-chips" data-animate data-animate-delay="2">
+        <div class="pd-chip"><span class="material-symbols-outlined">travel_explore</span><div><strong>Investigación y análisis</strong></div></div>
+        <div class="pd-chip"><span class="material-symbols-outlined">account_tree</span><div><strong>Arquitectura de información</strong></div></div>
+        <div class="pd-chip"><span class="material-symbols-outlined">alt_route</span><div><strong>Diseño de flujos</strong></div></div>
+        <div class="pd-chip"><span class="material-symbols-outlined">design_services</span><div><strong>UI Design</strong></div></div>
+        <div class="pd-chip"><span class="material-symbols-outlined">widgets</span><div><strong>Design System</strong></div></div>
+        <div class="pd-chip"><span class="material-symbols-outlined">draft</span><div><strong>Prototipado</strong></div></div>
+        <div class="pd-chip"><span class="material-symbols-outlined">fact_check</span><div><strong>Preparación de testing</strong></div></div>
+        <div class="pd-chip"><span class="material-symbols-outlined">groups</span><div><strong>Colaboración con producto y desarrollo</strong></div></div>
+        <div class="pd-chip"><span class="material-symbols-outlined">history_edu</span><div><strong>Documentación de decisiones</strong></div></div>
+      </div>
 
       <div class="project-detail__meta" style="grid-template-columns:repeat(3,minmax(0,1fr)); margin-top:36px;" data-animate data-animate-delay="3">
         <div class="is-pending"><strong>Duración</strong><span>Por precisar</span></div>
@@ -180,63 +158,172 @@
     </div>
   </section>
 
-  <!-- 05. EL GIRO DEL PROYECTO -->
-  <section class="pd-section pd-section--alt" id="giro">
+  <!-- 04. NOTA DE CONFIDENCIALIDAD -->
+  <section class="pd-section pd-section--alt vibra-confidential-strip" id="confidencialidad">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">sync_alt</span>05 · El giro del proyecto</p>
-      <h2 class="pd-heading" data-animate>No era "una plataforma mala que necesitaba un rediseño"</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">La primera tentación frente a un producto con fricciones es pensar en un rediseño completo. Pero Vibra ya tenía usuarios, un negocio funcionando y decisiones previas con razones detrás. El giro del proyecto fue dejar de preguntar "¿qué está mal?" y empezar a preguntar "¿dónde exactamente está la fricción, y por qué ahí?".</p>
-      <p class="pd-lead" data-animate data-animate-delay="2">Ese cambio de enfoque — de rediseñar todo a encontrar los puntos precisos donde una decisión simple exigía demasiado esfuerzo — es lo que ordenó el resto del proceso.</p>
-
-      <blockquote class="pd-quote" data-animate data-animate-delay="3">
-        “Reducir la complejidad en los momentos donde una decisión sencilla estaba exigiendo demasiado esfuerzo.”
-        <span>El reencuadre que guio el proyecto</span>
-      </blockquote>
+      <div class="pd-confidential" data-animate>
+        <span class="material-symbols-outlined">lock</span>
+        <p>Por motivos de confidencialidad, la identidad de la empresa, contenidos y determinados elementos visuales han sido modificados. Este case study conserva los problemas, aprendizajes y decisiones UX desarrollados durante el proyecto.</p>
+      </div>
     </div>
   </section>
 
-  <!-- 06. RESEARCH -->
+  <!-- 05. DIAGNÓSTICO INICIAL -->
+  <section class="pd-section" id="diagnostico-inicial">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>05 · Diagnóstico inicial</p>
+      <h2 class="pd-heading" data-animate>Antes de diseñar, identificamos dónde podía mejorar la experiencia.</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Antes de iniciar formalmente el proyecto realizamos un diagnóstico UX de la plataforma existente para identificar oportunidades de mejora en los principales momentos de la experiencia.</p>
+      <p class="pd-lead" data-animate data-animate-delay="2">A partir de este análisis detectamos una serie de oportunidades funcionales y visuales que dieron forma a nuestra propuesta inicial para el cliente.</p>
+
+      <div class="pd-decisions" data-animate data-animate-delay="3">
+        <div class="pd-decision">
+          <span class="pd-decision__num">01</span>
+          <div><h3>Mejorar el flujo de compra</h3><p>Identificamos oportunidades para simplificar el recorrido y hacer más claro el proceso desde la selección de entradas hasta completar la compra.</p></div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">02</span>
+          <div>
+            <h3>Reducir la repetición de eventos</h3>
+            <p>Un mismo evento podía aparecer en múltiples cards dependiendo de sus fechas o ubicaciones. Propusimos consolidarlo en una única entrada y presentar sus distintas funciones como alternativas dentro del evento.</p>
+            <div class="pd-iterations" style="margin-top:18px;">
+              <div class="pd-iteration">
+                <div class="pd-iteration__panel pd-iteration__panel--before">
+                  <span class="pd-iteration__tag">Antes</span>
+                  <p>1 evento × múltiples fechas / ubicaciones = múltiples cards</p>
+                </div>
+                <span class="material-symbols-outlined pd-iteration__arrow">arrow_forward</span>
+                <div class="pd-iteration__panel pd-iteration__panel--after">
+                  <span class="pd-iteration__tag">Propuesta</span>
+                  <p>1 evento ↓ múltiples fechas y ubicaciones</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">03</span>
+          <div><h3>Mejorar la búsqueda y exploración</h3><p>Identificamos oportunidades para facilitar la forma en que los usuarios encontraban eventos dentro de la plataforma, mejorando la utilidad del buscador y los mecanismos de filtrado — el buscador dependía demasiado de términos exactos y los filtros existentes estaban obsoletos.</p></div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">04</span>
+          <div><h3>Dar mayor jerarquía al Home</h3><p>La página de inicio estaba compuesta principalmente por cards de eventos, sin una jerarquía clara de contenidos ni espacios destacados. Propusimos reorganizar el Home incorporando un hero y secciones destacadas que facilitaran el descubrimiento y permitieran dar mayor protagonismo a determinados eventos.</p></div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">05</span>
+          <div><h3>Mejorar la experiencia mobile</h3><p>Identificamos oportunidades para optimizar la experiencia en pantallas pequeñas, especialmente en interacciones relacionadas con la exploración y el proceso de compra. Esta oportunidad se profundiza más adelante con evidencia concreta de research.</p></div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">06</span>
+          <div><h3>Modernizar la experiencia visual</h3><p>Propusimos actualizar visualmente la plataforma para construir una experiencia más contemporánea y coherente con el carácter de entretenimiento del producto, manteniendo la familiaridad de una experiencia que los usuarios ya conocían.</p></div>
+        </div>
+      </div>
+
+      <p class="pd-lead" style="margin-top:32px;" data-animate data-animate-delay="4">Estas oportunidades dieron forma a nuestra propuesta inicial. Una vez iniciado el proyecto, profundizamos en la experiencia para comprender cuáles eran las fricciones más relevantes y cómo debíamos abordarlas.</p>
+    </div>
+  </section>
+
+  <!-- 06. QUÉ NECESITABA EL CLIENTE / BUSINESS NEEDS -->
+  <section class="pd-section pd-section--alt" id="business-needs">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">handshake</span>06 · Business needs</p>
+      <h2 class="pd-heading" data-animate>El cliente buscaba una evolución visual y funcional de la plataforma.</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Además de las oportunidades detectadas durante el diagnóstico, el cliente planteó necesidades concretas relacionadas con la forma de descubrir, presentar y comprar eventos dentro de la plataforma.</p>
+
+      <div class="pd-decisions" data-animate data-animate-delay="2">
+        <div class="pd-decision">
+          <span class="pd-decision__num">01</span>
+          <div><h3>Mejorar el flujo de compra</h3><p>Optimizar el recorrido desde la selección de entradas hasta completar la compra, reduciendo fricciones y haciendo más comprensible cada etapa.</p></div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">02</span>
+          <div><h3>Mejorar el buscador y los filtros</h3><p>El buscador existente tenía dificultades para devolver resultados cuando la búsqueda no coincidía con términos exactos, mientras que los filtros disponibles habían quedado obsoletos. El cliente necesitaba mejorar ambos mecanismos para facilitar el descubrimiento de eventos.</p></div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">03</span>
+          <div><h3>Mejorar la experiencia mobile</h3><p>El cliente buscaba mejorar la experiencia desde dispositivos móviles, especialmente en los momentos críticos de exploración, selección y compra.</p></div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">04</span>
+          <div><h3>Dar a cada evento una experiencia propia</h3><p>El cliente identificaba una desconexión entre la forma en que los eventos eran promocionados en redes sociales y la manera en que posteriormente eran presentados dentro de la ticketera. La nueva experiencia debía permitir que cada evento tuviera mayor identidad visual sin perder el acceso rápido a la información necesaria para comprar.</p></div>
+        </div>
+      </div>
+
+      <div class="pd-research-question" data-animate data-animate-delay="3">
+        <span>Necesidad del cliente</span>
+        <strong>El evento debería verse tan bien en la plataforma como en las redes sociales donde se promociona.</strong>
+      </div>
+
+      <div class="pd-decisions" style="margin-top:32px;" data-animate data-animate-delay="4">
+        <div class="pd-decision">
+          <span class="pd-decision__num">05</span>
+          <div><h3>Incorporar información relevante para la compra</h3><p>La nueva página del evento también debía concentrar información relevante para la decisión de compra, permitiendo comunicar condiciones particulares como restricciones de acceso, edades de pago infantil u otras indicaciones específicas de cada evento — información que puede variar según el evento, no un conjunto fijo de campos.</p></div>
+        </div>
+        <div class="pd-decision">
+          <span class="pd-decision__num">06</span>
+          <div><h3>Modernizar visualmente la plataforma</h3><p>Actualizar la apariencia general de la plataforma para construir una experiencia más contemporánea, atractiva y coherente con el tipo de contenido que comercializa.</p></div>
+        </div>
+      </div>
+
+      <p class="pd-note" style="margin-top:24px;">Algunas necesidades del cliente coincidían con oportunidades detectadas durante el diagnóstico inicial. No es una contradicción — al contrario, confirma la alineación entre la necesidad del negocio y el diagnóstico UX.</p>
+    </div>
+  </section>
+
+  <!-- 07. RESEARCH -->
   <section class="pd-section" id="research">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>06 · Research</p>
-      <h2 class="pd-heading" data-animate>Cinco hallazgos que ordenaron el proyecto</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">El research combinó el análisis directo del producto existente con la experiencia de trabajar sobre él. De ese proceso surgieron cinco hallazgos que concentraron la mayor parte de la fricción del flujo de compra.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>07 · Research</p>
+      <h2 class="pd-heading" data-animate>Lo que descubrimos antes de tocar la interfaz</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Una vez iniciado el proyecto, profundizamos el análisis combinando información del producto, necesidades comunicadas por el cliente, feedback de usuarios y evaluación UX de los principales recorridos — desde encontrar un evento hasta guardar la entrada después de comprarla.</p>
 
-      <!-- Hallazgo 01 -->
-      <div style="margin-top:56px;">
-        <p class="pd-kicker" data-animate><span class="material-symbols-outlined">looks_one</span>Hallazgo 01</p>
-        <h3 class="pd-heading" style="font-size:22px;" data-animate data-animate-delay="1">El contexto de uso es, ante todo, mobile</h3>
-        <p class="pd-lead" data-animate data-animate-delay="2">La mayoría de las decisiones de compra ocurren en el celular, muchas veces en movimiento o bajo presión de tiempo (entradas que se agotan, eventos con alta demanda). Esto no se tradujo en una cifra — no hay una muestra verificable que respalde un porcentaje exacto — pero sí definió una prioridad clara: cada pantalla debía diseñarse primero para una mano, una pantalla pequeña y poca paciencia.</p>
+      <blockquote class="pd-quote" data-animate data-animate-delay="2">
+        “Reducir la complejidad en los momentos donde una decisión sencilla estaba exigiendo demasiado esfuerzo.”
+        <span>El reencuadre que guio el proyecto</span>
+      </blockquote>
+
+      <div class="pd-steps" data-animate data-animate-delay="3">
+        <span class="pd-step">Descubrimiento</span>
+        <span class="pd-step">Decisión</span>
+        <span class="pd-step">Identificación</span>
+        <span class="pd-step">Selección de asientos</span>
+        <span class="pd-step">Pago</span>
+        <span class="pd-step">Confirmación</span>
       </div>
+      <p class="pd-note">Etapas preliminares del recorrido de compra, usadas como guía para organizar los hallazgos que siguen.</p>
+    </div>
+  </section>
 
-      <!-- Hallazgo 02 -->
-      <div style="margin-top:56px;">
-        <p class="pd-kicker" data-animate><span class="material-symbols-outlined">looks_two</span>Hallazgo 02</p>
-        <h3 class="pd-heading" style="font-size:22px;" data-animate data-animate-delay="1">La identificación (RUT) interrumpe el impulso de compra</h3>
-        <p class="pd-lead" data-animate data-animate-delay="2">El flujo original pedía datos de identificación en un punto que cortaba el impulso inicial de compra, generando abandono silencioso — personas que simplemente cerraban la app sin completar la compra ni dejar registro del motivo.</p>
-        <div class="pd-flow" data-animate data-animate-delay="3">
-          <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">bolt</span>Intención de compra</div>
-          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
-          <div class="pd-flow__step"><span class="material-symbols-outlined">badge</span>Datos esenciales</div>
-          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
-          <div class="pd-flow__step"><span class="material-symbols-outlined">credit_card</span>Pago</div>
-          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
-          <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">confirmation_number</span>Entrada</div>
+  <!-- 08. PRINCIPALES HALLAZGOS -->
+  <section class="pd-section pd-section--alt" id="hallazgos">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>08 · Principales hallazgos</p>
+      <h2 class="pd-heading" data-animate>De encontrar un evento a guardar la entrada</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Organizamos lo aprendido según el momento del recorrido al que afecta. No todo tiene el mismo origen: algunos son hallazgos de research con usuarios, otros responden a necesidades del negocio, y otros fueron detectados durante el diagnóstico inicial.</p>
+
+      <!-- ENCONTRAR -->
+      <div style="margin-top:48px;">
+        <p class="pd-kicker" data-animate><span class="material-symbols-outlined">search</span>01 · Encontrar</p>
+        <h3 class="pd-heading" style="font-size:22px;" data-animate data-animate-delay="1">Más fechas no deberían significar más ruido</h3>
+        <div class="pd-evidence-row" data-animate data-animate-delay="1" style="margin:8px 0 20px;">
+          <span class="pd-evidence-tag pd-evidence-tag--vision"><span class="material-symbols-outlined">travel_explore</span>Diagnóstico UX inicial</span>
+          <span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">storefront</span>Reforzado por Benchmark</span>
         </div>
-        <p class="pd-note">Reordenar cuándo se pide cada dato — no eliminar la identificación — fue la decisión central derivada de este hallazgo.</p>
-      </div>
 
-      <!-- Hallazgo 03 -->
-      <div style="margin-top:56px;">
-        <p class="pd-kicker" data-animate><span class="material-symbols-outlined">looks_3</span>Hallazgo 03</p>
-        <h3 class="pd-heading" style="font-size:22px;" data-animate data-animate-delay="1">Un mismo evento se repetía por cada fecha y ciudad</h3>
-        <p class="pd-lead" data-animate data-animate-delay="2">Un mismo evento con múltiples fechas y ciudades aparecía duplicado en el catálogo, como si fueran eventos distintos. Esto multiplicaba innecesariamente las opciones que la persona debía comparar antes de decidir.</p>
+        <div class="pd-validation" data-animate data-animate-delay="2">
+          <div class="pd-validation__row">
+            <div class="pd-validation__grid">
+              <div><span>Problema</span><p>Un mismo evento o gira podía aparecer repetidamente en la cartelera al tener diferentes fechas o ciudades, generando múltiples tarjetas para una misma experiencia.</p></div>
+              <div><span>Insight</span><p>La unidad principal de información debía ser el evento, no cada combinación de evento, fecha y ciudad.</p></div>
+              <div><span>Decisión</span><p>Reorganizar el modelo para agrupar múltiples fechas y ubicaciones dentro de un mismo evento.</p></div>
+            </div>
+          </div>
+        </div>
 
         <div class="pd-iterations" data-animate data-animate-delay="3">
           <div class="pd-iteration">
             <div class="pd-iteration__panel pd-iteration__panel--before">
               <span class="pd-iteration__tag">Estructura anterior</span>
-              <p>Un evento aparece repetido una vez por cada combinación de fecha y ciudad — la persona debe comparar tarjetas casi idénticas para encontrar la que le sirve.</p>
+              <p>Evento — Santiago<br>Evento — Concepción<br>Evento — Temuco<br>Evento — Puerto Montt<br><span style="opacity:.7; font-style:italic;">Cuatro tarjetas casi idénticas para una misma experiencia.</span></p>
             </div>
             <span class="material-symbols-outlined pd-iteration__arrow">arrow_forward</span>
             <div class="pd-iteration__panel pd-iteration__panel--after">
@@ -260,225 +347,500 @@
           “Un evento. Todas sus posibilidades.”
         </blockquote>
       </div>
-    </div>
-  </section>
 
-  <!-- Hallazgo 04 — prominencia especial -->
-  <section class="pd-section vibra-featured-finding" id="hallazgo-mapa-asientos">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker" data-animate><span class="material-symbols-outlined">looks_4</span>Hallazgo 04 · El de mayor impacto en el diseño final</p>
-      <h3 class="pd-heading" data-animate data-animate-delay="1">Un mapa de ~300 asientos es ilegible en una pantalla de celular</h3>
-      <p class="pd-lead" data-animate data-animate-delay="2">Los recintos con capacidad alta podían tener cerca de 300 asientos visibles al mismo tiempo en el selector. En desktop eso ya es denso; en una pantalla móvil de unos pocos centímetros, se vuelve prácticamente imposible de leer o tocar con precisión.</p>
-      <p class="pd-lead" data-animate data-animate-delay="3">La solución no fue mostrar menos asientos — el catálogo real de opciones debía mantenerse intacto — sino agruparlos en subzonas de aproximadamente 100 asientos, cada una identificada con su propio código de color. La persona elige primero una subzona y luego, dentro de ella, un asiento concreto.</p>
-
-      <div class="pd-flow" data-animate data-animate-delay="4">
-        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">stadium</span>Recinto</div>
-        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
-        <div class="pd-flow__step"><span class="material-symbols-outlined">map</span>Localidad</div>
-        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
-        <div class="pd-flow__step"><span class="material-symbols-outlined">grid_view</span>Subzona</div>
-        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
-        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">event_seat</span>Asiento</div>
+      <!-- ENTENDER -->
+      <div style="margin-top:56px;">
+        <p class="pd-kicker" data-animate><span class="material-symbols-outlined">visibility</span>02 · Entender</p>
+        <h3 class="pd-heading" style="font-size:22px;" data-animate data-animate-delay="1">Entender el evento sin salir de él</h3>
+        <div class="pd-evidence-row" data-animate data-animate-delay="1" style="margin:8px 0 20px;">
+          <span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">handshake</span>Necesidad del negocio</span>
+        </div>
+        <div class="pd-decision__grid pd-decision__grid--2" data-animate data-animate-delay="2">
+          <div><span>Necesidad del negocio</span><p>El cliente identificaba una desconexión entre cómo se promocionaba un evento en redes sociales y cómo se presentaba después dentro de la ticketera.</p></div>
+          <div><span>Oportunidad de diseño</span><p>Evolucionar la ficha del evento hacia una experiencia propia, con más identidad visual sin perder el acceso a la información necesaria para comprar. Desarrollamos esta decisión en detalle más adelante.</p></div>
+        </div>
       </div>
 
-      <p class="pd-note" style="margin-top:20px;">Principio de diseño aplicado: <strong style="color:var(--pd-accent); font-style:normal;">Progressive Disclosure</strong> — revelar la complejidad por capas, en el momento en que corresponde, en lugar de exponerla toda de una vez.</p>
+      <!-- SELECCIONAR — Hallazgo protegido: modelo Sector / Subzona / Asiento -->
+      <div style="margin-top:56px;">
+        <p class="pd-kicker" data-animate><span class="material-symbols-outlined">grid_view</span>03 · Seleccionar</p>
+        <div class="pd-evidence-row" data-animate style="margin:0 0 4px;">
+          <span class="pd-evidence-tag pd-evidence-tag--validado"><span class="material-symbols-outlined">groups</span>Evidencia de usuarios</span>
+          <span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">storefront</span>Patrón confirmado por Benchmark</span>
+        </div>
+        <h3 class="pd-heading" style="font-size:22px;" data-animate data-animate-delay="1">De cientos de asientos a una decisión manejable</h3>
 
-      <blockquote class="pd-quote" data-animate data-animate-delay="4">
-        “No redujimos las opciones. Redujimos cuántas debía procesar el usuario al mismo tiempo.”
-      </blockquote>
-    </div>
-  </section>
+        <div class="pd-validation" data-animate data-animate-delay="2">
+          <div class="pd-validation__row">
+            <div class="pd-validation__grid">
+              <div><span>Problema</span><p>En determinados eventos con asiento numerado, seleccionar una localidad podía mostrar cientos de asientos simultáneamente. En mobile, esta densidad aumentaba la carga visual y la dificultad de interacción.</p></div>
+              <div><span>Insight</span><p>El problema no era cuántos asientos existían, sino cuántos debía procesar el usuario al mismo tiempo.</p></div>
+              <div><span>Solución</span><p>Dividir localidades grandes en subzonas más pequeñas, cada una con su propio código de color asociado a la localidad.</p></div>
+            </div>
+          </div>
+        </div>
 
-  <section class="pd-section" id="hallazgo-05">
-    <div class="container pd-section__inner">
-      <!-- Hallazgo 05 -->
-      <p class="pd-kicker" data-animate><span class="material-symbols-outlined">looks_5</span>Hallazgo 05</p>
-      <h3 class="pd-heading" data-animate data-animate-delay="1">Modernizar sin desorientar a quienes ya usan la plataforma</h3>
-      <p class="pd-lead" data-animate data-animate-delay="2">Vibra tiene usuarios recurrentes que ya conocen el producto actual. Un cambio visual demasiado brusco corre el riesgo de generar rechazo o confusión, incluso si el resultado es objetivamente mejor. La modernización necesitaba sentirse como una evolución reconocible, no como un producto completamente nuevo.</p>
+        <div class="pd-flow" data-animate data-animate-delay="4">
+          <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">stadium</span>Recinto</div>
+          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+          <div class="pd-flow__step"><span class="material-symbols-outlined">map</span>Localidad / Sector</div>
+          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+          <div class="pd-flow__step"><span class="material-symbols-outlined">grid_view</span>Subzona</div>
+          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+          <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">event_seat</span>Asiento</div>
+        </div>
 
-      <blockquote class="pd-quote" data-animate data-animate-delay="3">
-        “Evolución antes que disrupción.”
-      </blockquote>
-    </div>
-  </section>
+        <div class="pd-benchmark__card" style="margin-top:24px;" data-animate data-animate-delay="4">
+          <p class="pd-benchmark__name">Platea Baja — ejemplo conceptual</p>
+          <div class="pd-benchmark__cols pd-benchmark__cols--compact">
+            <div><div class="pd-benchmark__col-title"><span class="material-symbols-outlined">grid_view</span>Zona A</div><p class="pd-lead" style="font-size:14px; margin:0;">~100 asientos</p></div>
+            <div><div class="pd-benchmark__col-title"><span class="material-symbols-outlined">grid_view</span>Zona B</div><p class="pd-lead" style="font-size:14px; margin:0;">~100 asientos</p></div>
+            <div><div class="pd-benchmark__col-title"><span class="material-symbols-outlined">grid_view</span>Zona C</div><p class="pd-lead" style="font-size:14px; margin:0;">~100 asientos</p></div>
+          </div>
+        </div>
 
-  <!-- 07. SÍNTESIS DEL RESEARCH -->
-  <section class="pd-section pd-section--alt" id="sintesis">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">summarize</span>07 · Síntesis del research</p>
-      <h2 class="pd-heading" data-animate>De cinco hallazgos a una sola idea central</h2>
+        <p class="pd-note" style="margin-top:20px;">Las subzonas mantienen el mismo color asociado a su localidad, para conservar la relación visual. Principio de diseño aplicado: <strong style="color:var(--pd-accent); font-style:normal;">Progressive Disclosure</strong> — revelar la complejidad por capas, en el momento en que corresponde, en lugar de exponerla toda de una vez.</p>
 
-      <ul class="pd-list" data-animate data-animate-delay="1">
-        <li><span class="material-symbols-outlined">check_circle</span><span><strong>Mobile-first:</strong> diseñar primero para una mano y poca paciencia.</span></li>
-        <li><span class="material-symbols-outlined">check_circle</span><span><strong>Identificación:</strong> reordenar cuándo se pide cada dato, no eliminarlo.</span></li>
-        <li><span class="material-symbols-outlined">check_circle</span><span><strong>Evento duplicado:</strong> un evento, con fecha y ciudad como filtros internos.</span></li>
-        <li><span class="material-symbols-outlined">check_circle</span><span><strong>Mapa de asientos:</strong> revelar la complejidad por capas (Progressive Disclosure).</span></li>
-        <li><span class="material-symbols-outlined">check_circle</span><span><strong>Modernización:</strong> evolución reconocible, no ruptura visual.</span></li>
-      </ul>
+        <p class="pd-note">El Benchmark, especialmente PuntoTicket, ayudó a confirmar un patrón de selección espacial progresiva ya identificado — no fue el origen del hallazgo.</p>
 
-      <div class="pd-research-question" data-animate data-animate-delay="2">
-        <span>Idea central del proyecto</span>
-        <strong>Reducir complejidad sin reducir posibilidades.</strong>
+        <blockquote class="pd-quote" data-animate data-animate-delay="4">
+          “No redujimos las opciones. Redujimos cuántas debía procesar el usuario al mismo tiempo.”
+        </blockquote>
+      </div>
+
+      <!-- COMPRAR — protegido: Compra rápida / Login -->
+      <div style="margin-top:56px;">
+        <p class="pd-kicker" data-animate><span class="material-symbols-outlined">shopping_cart_checkout</span>04 · Comprar</p>
+        <div class="pd-evidence-row" data-animate style="margin:0 0 4px;">
+          <span class="pd-evidence-tag pd-evidence-tag--validado"><span class="material-symbols-outlined">groups</span>Evidencia de usuarios</span>
+          <span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">handshake</span>Necesidad del negocio</span>
+        </div>
+        <h3 class="pd-heading" style="font-size:22px;" data-animate data-animate-delay="1">El usuario quería comprar una entrada, no completar un registro</h3>
+
+        <div class="pd-validation" data-animate data-animate-delay="2">
+          <div class="pd-validation__row">
+            <div class="pd-validation__grid">
+              <div><span>Problema</span><p>Uno de los puntos de fricción identificados estaba relacionado con el acceso y la entrega de datos personales durante la compra. Información como el RUT podía aumentar la resistencia antes de completar la transacción.</p></div>
+              <div><span>Insight</span><p>Cada requisito previo al pago debía justificar su existencia.</p></div>
+              <div><span>Decisión</span><p>Reducir la fricción de identificación y priorizar únicamente la información necesaria para completar la transacción.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-flow" data-animate data-animate-delay="3">
+          <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">bolt</span>Intención de compra</div>
+          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+          <div class="pd-flow__step"><span class="material-symbols-outlined">badge</span>Datos esenciales</div>
+          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+          <div class="pd-flow__step"><span class="material-symbols-outlined">credit_card</span>Pago</div>
+          <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+          <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">confirmation_number</span>Entrada</div>
+        </div>
+        <p class="pd-note">Reordenar cuándo se pide cada dato — no eliminar la identificación — fue la decisión central derivada de este hallazgo.</p>
+
+        <div class="pd-evidence-row" data-animate data-animate-delay="4" style="margin-top:28px;">
+          <span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">psychology_alt</span>Hipótesis de diseño — por validar</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:14px;" data-animate data-animate-delay="4">
+          <div class="pd-chip"><span class="material-symbols-outlined">login</span><div><strong>Iniciar sesión</strong></div></div>
+          <span class="pd-lead" style="margin:0; font-weight:700;">o</span>
+          <div class="pd-chip"><span class="material-symbols-outlined">bolt</span><div><strong>Compra rápida</strong><span>Correo electrónico</span></div></div>
+        </div>
+        <p class="pd-note" style="margin-top:14px;">La compra rápida es una solución propuesta: se presenta como hipótesis de diseño a validar, no como una funcionalidad implementada.</p>
+      </div>
+
+      <!-- GUARDAR -->
+      <div style="margin-top:56px;">
+        <p class="pd-kicker" data-animate><span class="material-symbols-outlined">account_balance_wallet</span>05 · Guardar</p>
+        <div class="pd-evidence-row" data-animate style="margin:0 0 4px;">
+          <span class="pd-evidence-tag pd-evidence-tag--validado"><span class="material-symbols-outlined">support_agent</span>Evidencia real — consultas de usuarios</span>
+        </div>
+        <h3 class="pd-heading" style="font-size:22px;" data-animate data-animate-delay="1">La compra no termina en la confirmación</h3>
+
+        <div class="pd-validation" data-animate data-animate-delay="2">
+          <div class="pd-validation__row">
+            <div class="pd-validation__grid">
+              <div><span>Evidencia</span><p>Durante el proyecto identificamos consultas de usuarios que contactaban al servicio porque habían perdido o no lograban encontrar sus entradas.</p></div>
+              <div><span>Problema</span><p>El acceso al ticket podía generar fricción incluso después de haber completado correctamente la compra.</p></div>
+              <div><span>Oportunidad</span><p>Facilitar la conservación y recuperación de la entrada después de comprarla — desarrollamos esta oportunidad como propuesta UX más adelante.</p></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 08. HOW MIGHT WE -->
-  <section class="pd-section" id="hmw">
+  <!-- 09. SÍNTESIS -->
+  <section class="pd-section" id="sintesis">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">quiz</span>08 · How Might We</p>
-      <div class="pd-research-question" data-animate>
-        <strong>¿Cómo podríamos ayudar a las personas a comprar entradas con la misma facilidad con la que deciden ir a un evento?</strong>
-      </div>
-      <p class="pd-lead" style="margin-top:24px;" data-animate data-animate-delay="1">Esta pregunta se tradujo en tres objetivos concretos para el flujo de compra:</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">summarize</span>09 · Síntesis</p>
+      <h2 class="pd-heading" data-animate>Un mismo patrón detrás de cada hallazgo</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Sin importar el origen — diagnóstico, negocio, research o benchmark — casi todas las decisiones respondían a la misma lógica: entender qué conservar, qué simplificar y qué modernizar.</p>
 
       <div class="pd-triad" data-animate data-animate-delay="2">
         <div class="pd-triad__card">
-          <h3><span class="material-symbols-outlined">search</span>Encontrar</h3>
-          <p>Que localizar el evento correcto —con su fecha y ciudad— sea inmediato, sin comparar tarjetas duplicadas.</p>
+          <h3><span class="material-symbols-outlined">verified</span>Conservar</h3>
+          <p>Patrones que los usuarios ya reconocían.</p>
         </div>
         <div class="pd-triad__card">
-          <h3><span class="material-symbols-outlined">tune</span>Elegir</h3>
-          <p>Que seleccionar asiento o sector se sienta manejable incluso en recintos con cientos de opciones.</p>
+          <h3><span class="material-symbols-outlined">filter_alt</span>Simplificar</h3>
+          <p>Interacciones que añadían esfuerzo innecesario.</p>
         </div>
         <div class="pd-triad__card">
-          <h3><span class="material-symbols-outlined">task_alt</span>Comprar</h3>
-          <p>Que completar el pago y la identificación no interrumpa el impulso que llevó a la persona hasta ahí.</p>
+          <h3><span class="material-symbols-outlined">auto_awesome</span>Modernizar</h3>
+          <p>Una experiencia principalmente móvil que necesitaba evolucionar.</p>
         </div>
       </div>
+
+      <div class="pd-research-question" style="margin-top:32px;" data-animate data-animate-delay="3">
+        <span>Idea central del proyecto</span>
+        <strong>Reducir complejidad sin reducir posibilidades.</strong>
+      </div>
+
+      <p class="pd-note" style="margin-top:24px;" data-animate data-animate-delay="4">Dos principios transversales guiaron además cada decisión, más que ser hallazgos de una etapa específica: diseñar primero para el contexto móvil, y evolucionar la experiencia sin obligar a los usuarios a aprender todo de nuevo.</p>
     </div>
   </section>
 
-  <!-- 09. PRINCIPIOS DE DISEÑO -->
-  <section class="pd-section pd-section--alt" id="principios">
+  <!-- 10. BENCHMARK FUNCIONAL -->
+  <section class="pd-section pd-section--alt" id="benchmark">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">architecture</span>09 · Principios de diseño</p>
-      <h2 class="pd-heading" data-animate>Seis principios que guiaron cada decisión</h2>
-
-      <div class="pd-decisions pd-decisions--compact" data-animate data-animate-delay="1">
-        <div class="pd-decision">
-          <span class="pd-decision__num">01</span>
-          <div><h3>Progressive Disclosure</h3><p>Mostrar solo lo necesario en cada paso; revelar más complejidad únicamente cuando corresponde.</p></div>
-        </div>
-        <div class="pd-decision">
-          <span class="pd-decision__num">02</span>
-          <div><h3>Evolución antes que disrupción</h3><p>Modernizar sin desorientar a quienes ya conocen el producto.</p></div>
-        </div>
-        <div class="pd-decision">
-          <span class="pd-decision__num">03</span>
-          <div><h3>Una decisión a la vez</h3><p>Nunca pedir dos decisiones simultáneas si es posible secuenciarlas.</p></div>
-        </div>
-        <div class="pd-decision">
-          <span class="pd-decision__num">04</span>
-          <div><h3>Claridad sobre densidad</h3><p>Priorizar que la información se pueda leer y tocar con precisión, por sobre mostrarlo todo de una vez.</p></div>
-        </div>
-        <div class="pd-decision">
-          <span class="pd-decision__num">05</span>
-          <div><h3>Un mismo sistema, dos expresiones</h3><p>Mobile y desktop son expresiones del mismo producto, no proyectos separados.</p></div>
-        </div>
-        <div class="pd-decision">
-          <span class="pd-decision__num">06</span>
-          <div><h3>Confianza en cada paso</h3><p>Cada pantalla debe comunicar con claridad en qué parte del proceso está la persona usuaria.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10. USUARIOS DEL ECOSISTEMA -->
-  <section class="pd-section" id="usuarios">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">groups</span>10 · Usuarios del ecosistema</p>
-      <h2 class="pd-heading" data-animate>Dos perfiles, un mismo ecosistema</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Vibra conecta a dos tipos de usuarios con necesidades muy distintas. Este proyecto se enfocó en el Comprador; el Productor queda documentado como contexto del ecosistema y como oportunidad futura.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>10 · Benchmark funcional</p>
+      <h2 class="pd-heading" data-animate>Mirar el mercado para entender patrones, no para copiarlos</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Analizamos dos plataformas de ticketing y un referente transaccional para entender cómo el mercado resolvía algunos de los momentos más críticos identificados durante el research: eventos con múltiples funciones, distintos modelos de entrada, identificación, selección de asientos y experiencia postcompra.</p>
+      <p class="pd-note">El Benchmark no descubrió nuestros problemas — el diagnóstico inicial y el research los identificaron primero. El Benchmark ayudó a reconocer patrones ya conocidos en el mercado para resolverlos.</p>
 
       <div class="pd-benchmark" data-animate data-animate-delay="2">
-        <div class="pd-benchmark__grid">
-          <div class="pd-benchmark__card">
-            <p class="pd-benchmark__name">Comprador</p>
-            <div class="pd-benchmark__col-title"><span class="material-symbols-outlined">smartphone</span>Contexto principal</div>
-            <ul class="pd-benchmark__list">
-              <li>Uso predominantemente mobile</li>
-              <li>Decisiones bajo presión de tiempo (stock limitado)</li>
-              <li>Busca, elige y compra en una sola sesión</li>
-            </ul>
-            <div class="pd-evidence-row" style="margin-top:16px;"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Foco de este proyecto</span></div>
+        <div class="pd-benchmark__card" style="margin-bottom:20px;">
+          <p class="pd-benchmark__name">Puntoticket</p>
+          <div class="pd-evidence-row" style="margin-bottom:16px;"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">storefront</span>Competidor directo</span></div>
+          <div class="pd-benchmark__col-title"><span class="material-symbols-outlined">checklist</span>Aspectos relevantes</div>
+          <ul class="pd-benchmark__list">
+            <li>Descubrimiento de eventos</li>
+            <li>Categorías</li>
+            <li>Sectores</li>
+            <li>Precios</li>
+            <li>Disponibilidad</li>
+            <li>Identificación</li>
+            <li>E-ticket</li>
+          </ul>
+          <div class="pd-decision__grid pd-decision__grid--2" style="margin-top:18px;">
+            <div><span>Hallazgo relevante</span><p>Su modelo confirma la importancia de sectores, disponibilidad, precio total e identificación dentro de la experiencia de ticketing.</p></div>
+            <div><span>Oportunidad para Vibra</span><p>Explorar una identificación con menor fricción antes del pago.</p></div>
           </div>
-          <div class="pd-benchmark__card">
-            <p class="pd-benchmark__name">Productor</p>
-            <div class="pd-benchmark__col-title"><span class="material-symbols-outlined">desktop_windows</span>Contexto principal</div>
-            <ul class="pd-benchmark__list">
-              <li>Uso predominantemente desktop</li>
-              <li>Gestión de eventos, aforos y reportes</li>
-              <li>Sesiones más largas, orientadas a administración</li>
-            </ul>
-            <div class="pd-evidence-row" style="margin-top:16px;"><span class="pd-evidence-tag pd-evidence-tag--oportunidad"><span class="material-symbols-outlined">rocket_launch</span>Oportunidad futura — B2B</span></div>
+        </div>
+
+        <div class="pd-benchmark__card" style="margin-bottom:20px;">
+          <p class="pd-benchmark__name">Passline</p>
+          <div class="pd-evidence-row" style="margin-bottom:16px;"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">storefront</span>Competidor directo</span></div>
+          <div class="pd-benchmark__col-title"><span class="material-symbols-outlined">checklist</span>Aspectos relevantes</div>
+          <ul class="pd-benchmark__list">
+            <li>Descubrimiento</li>
+            <li>Diferentes tipos de entradas</li>
+            <li>Cantidad</li>
+            <li>Funciones</li>
+            <li>Ticket digital</li>
+            <li>Experiencia para productores</li>
+            <li>Wallet</li>
+            <li>Experiencia postcompra</li>
+          </ul>
+          <div class="pd-decision__grid pd-decision__grid--2" style="margin-top:18px;">
+            <div><span>Hallazgo relevante</span><p>Passline demuestra cómo un ecosistema de ticketing puede extenderse desde la compra hacia la gestión del evento y la experiencia posterior.</p></div>
+            <div><span>Oportunidad para Vibra</span><p>Separar claramente la experiencia del comprador y productor, manteniendo posibilidades de evolución postcompra.</p></div>
+          </div>
+        </div>
+
+        <div class="pd-benchmark__card">
+          <p class="pd-benchmark__name">Cinépolis</p>
+          <div class="pd-evidence-row" style="margin-bottom:16px;"><span class="pd-evidence-tag pd-evidence-tag--vision"><span class="material-symbols-outlined">theaters</span>Referente de interacción — no es competidor directo</span></div>
+          <div class="pd-benchmark__col-title"><span class="material-symbols-outlined">checklist</span>Aspectos relevantes</div>
+          <ul class="pd-benchmark__list">
+            <li>Selección de función</li>
+            <li>Fecha</li>
+            <li>Horario</li>
+            <li>Cantidad</li>
+            <li>Selección de asiento</li>
+            <li>Checkout</li>
+          </ul>
+          <div class="pd-decision__grid pd-decision__grid--2" style="margin-top:18px;">
+            <div><span>Hallazgo relevante</span><p>Una transacción con múltiples decisiones puede distribuirse en pasos progresivos sin mostrar toda la complejidad simultáneamente.</p></div>
+            <div><span>Oportunidad para Vibra</span><p>Aplicar progressive disclosure en procesos de selección complejos.</p></div>
           </div>
         </div>
       </div>
-      <p class="pd-note">El panel de Productor (B2B) no forma parte del alcance principal de este case study — se documenta en la sección 21, Oportunidades de evolución.</p>
     </div>
   </section>
 
-  <!-- 11. PROTO PERSONA -->
-  <section class="pd-section pd-section--alt" id="proto-persona">
+  <!-- 11. MATRIZ DEL BENCHMARK -->
+  <section class="pd-section" id="benchmark-conclusiones">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">person</span>11 · Proto Persona — Hipótesis de diseño</p>
-      <h2 class="pd-heading" data-animate>Un punto de partida, no una conclusión</h2>
-      <div class="pd-evidence-row" data-animate data-animate-delay="1">
-        <span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">psychology_alt</span>Hipótesis — pendiente de validar</span>
-      </div>
-      <p class="pd-lead" data-animate data-animate-delay="2">Esta proto persona reúne supuestos de trabajo a partir del research disponible. Sus datos concretos (edad, contexto, citas) quedan como estructura reservada para completarse con investigación validada — nunca con datos inventados.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">table_chart</span>11 · Matriz del benchmark</p>
+      <h2 class="pd-heading" data-animate>El benchmark confirmó patrones. Nuestro research definió qué mejorar.</h2>
 
-      <div class="pd-placeholder" data-animate data-animate-delay="3">
-        <span class="material-symbols-outlined">badge</span>
-        <p>[PROTO PERSONA — nombre, edad, contexto, objetivos, frustraciones y cita representativa pendientes de completar con research validado.]</p>
+      <div class="pd-matrix" data-animate data-animate-delay="1">
+        <table>
+          <thead>
+            <tr>
+              <th>Criterio</th>
+              <th>Puntoticket</th>
+              <th>Passline</th>
+              <th>Cinépolis</th>
+              <th>Oportunidad Vibra</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Descubrimiento</td><td>Sí</td><td>Sí</td><td>—</td><td>Evento como unidad principal</td></tr>
+            <tr><td>Múltiples fechas / funciones</td><td>No evaluado</td><td>Sí</td><td>Sí</td><td>Agrupadas dentro de un mismo evento</td></tr>
+            <tr><td>Entrada general</td><td>No evaluado</td><td>Sí</td><td>—</td><td>Modalidad 01</td></tr>
+            <tr><td>Selección por sector</td><td>Sí</td><td>No evaluado</td><td>No evaluado</td><td>Modalidad 02</td></tr>
+            <tr><td>Asiento numerado</td><td>No evaluado</td><td>No evaluado</td><td>Sí</td><td>Modalidad 03 — Progressive Disclosure</td></tr>
+            <tr><td>Identificación</td><td>Sí</td><td>No evaluado</td><td>—</td><td>Menor fricción antes del pago</td></tr>
+            <tr><td>Datos personales</td><td>No evaluado</td><td>No evaluado</td><td>—</td><td>Solo lo necesario para la transacción</td></tr>
+            <tr><td>Ticket digital</td><td>Sí</td><td>Sí</td><td>—</td><td>E-ticket</td></tr>
+            <tr><td>Experiencia postcompra</td><td>No evaluado</td><td>Sí</td><td>—</td><td>Oportunidad futura (wallet, recordatorios)</td></tr>
+            <tr><td>Productores</td><td>No evaluado</td><td>Sí</td><td>—</td><td>Future scope — fuera del alcance original</td></tr>
+          </tbody>
+        </table>
+        <div class="pd-matrix__legend">
+          <span>"—" o "No evaluado": no existe información suficiente para afirmarlo. Nunca se asume que una funcionalidad no existe solo porque no fue observada.</span>
+        </div>
       </div>
+
+      <blockquote class="pd-quote" data-animate data-animate-delay="2">
+        “El objetivo no fue replicar cómo compra el mercado, sino identificar convenciones conocidas y detectar dónde Vibra podía reducir esfuerzo.”
+      </blockquote>
     </div>
   </section>
 
-  <!-- 12. JOURNEY MAP -->
-  <section class="pd-section" id="journey-map">
+  <!-- 12. DEL HALLAZGO A LA DECISIÓN -->
+  <section class="pd-section pd-section--alt" id="hallazgo-a-decision">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">route</span>12 · Journey Map</p>
-      <h2 class="pd-heading" data-animate>Etapas preliminares del recorrido</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">A partir de los hallazgos de research se identificaron etapas preliminares del recorrido de compra. Esta es una estructura de trabajo, no el journey map definitivo.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">route</span>12 · Del hallazgo a la decisión</p>
+      <h2 class="pd-heading" data-animate>Cinco decisiones que definieron el producto</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Cada decisión de diseño responde a un origen distinto — diagnóstico, negocio, research o benchmark — y se traduce en una solución concreta dentro del producto.</p>
 
-      <div class="pd-steps" data-animate data-animate-delay="2">
-        <span class="pd-step">Descubrimiento</span>
-        <span class="pd-step">Decisión</span>
-        <span class="pd-step">Identificación</span>
-        <span class="pd-step">Selección de asientos</span>
-        <span class="pd-step">Pago</span>
-        <span class="pd-step">Confirmación</span>
-      </div>
+      <div class="pd-decisions" data-animate data-animate-delay="2">
 
-      <div class="pd-placeholder" data-animate data-animate-delay="3">
-        <span class="material-symbols-outlined">pending_actions</span>
-        <p>[JOURNEY MAP — PENDIENTE. Se incorporará con emociones, puntos de dolor y oportunidades por etapa una vez validado.]</p>
+        <div class="pd-decision">
+          <span class="pd-decision__num">01</span>
+          <div>
+            <h3>Un evento, múltiples formas de asistir</h3>
+            <div class="pd-evidence-row" style="margin-bottom:12px;">
+              <span class="pd-evidence-tag pd-evidence-tag--vision"><span class="material-symbols-outlined">travel_explore</span>Diagnóstico UX</span>
+              <span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">storefront</span>Benchmark</span>
+            </div>
+            <div class="pd-decision__grid">
+              <div><span>Problema</span><p>Un mismo evento aparecía repetido en la cartelera por cada fecha o ciudad.</p></div>
+              <div><span>Decisión</span><p>Agrupar fecha y ciudad como filtros dentro de una misma ficha de evento.</p></div>
+              <div><span>Solución</span><p>Ficha de evento unificada. <a href="#hallazgos">Ver hallazgo completo ↑</a></p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-decision">
+          <span class="pd-decision__num">02</span>
+          <div>
+            <h3>De cientos de asientos a una decisión manejable</h3>
+            <div class="pd-evidence-row" style="margin-bottom:12px;">
+              <span class="pd-evidence-tag pd-evidence-tag--validado"><span class="material-symbols-outlined">groups</span>Evidencia de usuarios</span>
+              <span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">storefront</span>Benchmark</span>
+            </div>
+            <div class="pd-decision__grid">
+              <div><span>Problema</span><p>Cientos de asientos simultáneos eran difíciles de procesar en mobile.</p></div>
+              <div><span>Decisión</span><p>Progressive Disclosure: Recinto → Sector → Subzona → Asiento.</p></div>
+              <div><span>Solución</span><p>Subzonas de ~100 asientos por color. <a href="#hallazgos">Ver hallazgo completo ↑</a></p></div>
+            </div>
+            <blockquote class="pd-quote pd-quote--compact" style="margin-top:16px;">“No redujimos las opciones. Redujimos cuántas debía procesar el usuario al mismo tiempo.”</blockquote>
+          </div>
+        </div>
+
+        <div class="pd-decision">
+          <span class="pd-decision__num">03</span>
+          <div>
+            <h3>Del detalle del evento a una experiencia propia</h3>
+            <div class="pd-evidence-row" style="margin-bottom:12px;">
+              <span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">handshake</span>Necesidad del cliente</span>
+            </div>
+            <p class="pd-lead" style="font-size:15px; margin:0 0 16px;">El cliente identificaba una desconexión entre la comunicación visual usada para promocionar un evento y la experiencia que encontraba el usuario al llegar a la ticketera. La página debía comunicar mejor la identidad del evento y, al mismo tiempo, concentrar la información necesaria para tomar una decisión de compra.</p>
+            <div class="pd-decision__grid pd-decision__grid--2">
+              <div><span>Decisión</span><p>Evolucionar la ficha tradicional hacia una página tipo landing capaz de combinar contenido editorial e información transaccional.</p></div>
+              <div><span>Puede incluir</span><p>Identidad visual del evento, imagen/hero, descripción, fecha, recinto, precios, condiciones de acceso, información relevante de la venta (por ejemplo, desde qué edad pagan los niños cuando corresponda) y CTA de compra.</p></div>
+            </div>
+            <blockquote class="pd-quote pd-quote--compact" style="margin-top:16px;">“La experiencia editorial nunca debe esconder la información necesaria para comprar.”</blockquote>
+          </div>
+        </div>
+
+        <div class="pd-decision">
+          <span class="pd-decision__num">04</span>
+          <div>
+            <h3>Un checkout capaz de adaptarse</h3>
+            <div class="pd-evidence-row" style="margin-bottom:12px;">
+              <span class="pd-evidence-tag pd-evidence-tag--vision"><span class="material-symbols-outlined">travel_explore</span>Diagnóstico + Research</span>
+            </div>
+            <div class="pd-decision__grid">
+              <div><span>Problema</span><p>Los eventos podían usar distintos modelos de venta: general, por sector, asiento numerado o nominativa.</p></div>
+              <div><span>Decisión</span><p>Una arquitectura común donde solo cambia la etapa de selección.</p></div>
+              <div><span>Solución</span><p>Cuatro modalidades de compra. <a href="#arquitectura-informacion">Ver arquitectura completa ↓</a></p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-decision">
+          <span class="pd-decision__num">05</span>
+          <div>
+            <h3>Hacer que la entrada sea más fácil de conservar</h3>
+            <div class="pd-evidence-row" style="margin-bottom:12px;">
+              <span class="pd-evidence-tag pd-evidence-tag--validado"><span class="material-symbols-outlined">support_agent</span>Evidencia real</span>
+              <span class="pd-evidence-tag pd-evidence-tag--oportunidad"><span class="material-symbols-outlined">rocket_launch</span>Propuesta UX</span>
+            </div>
+            <div class="pd-decision__grid">
+              <div><span>Evidencia</span><p>Usuarios contactaban al servicio porque habían perdido o no encontraban sus entradas.</p></div>
+              <div><span>Problema</span><p>El acceso al ticket podía generar fricción incluso después de completar bien la compra.</p></div>
+              <div><span>Propuesta UX</span><p>Incorporar la entrada a una billetera digital compatible. La propuesta busca potencialmente reducir consultas relacionadas con entradas perdidas o difíciles de localizar.</p></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- 13. ARQUITECTURA DE INFORMACIÓN -->
-  <section class="pd-section pd-section--alt" id="arquitectura-informacion">
+  <!-- 13. ARQUITECTURA DE INFORMACIÓN — SECCIÓN PROTEGIDA -->
+  <section class="pd-section" id="arquitectura-informacion">
     <div class="container pd-section__inner">
       <p class="pd-kicker"><span class="material-symbols-outlined">account_tree</span>13 · Arquitectura de información</p>
-      <h2 class="pd-heading" data-animate>Reorganizar la jerarquía del catálogo</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">La decisión de fusionar fecha y ciudad dentro de un mismo evento (Hallazgo 03) y la jerarquía Recinto → Localidad → Subzona → Asiento (Hallazgo 04) implican una arquitectura de información nueva, hoy en proceso de definición formal.</p>
+      <h2 class="pd-heading" data-animate>Reorganizar antes de diseñar</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Los eventos podían utilizar diferentes modelos de venta: entrada general, selección por sector, asiento numerado o entradas nominativas. Diseñar un flujo independiente para cada modalidad habría aumentado la complejidad y dificultado la escalabilidad del producto.</p>
 
-      <div class="pd-placeholder" data-animate data-animate-delay="2">
-        <span class="material-symbols-outlined">schema</span>
-        <p>[ARQUITECTURA DE INFORMACIÓN — COMPLETAR DESPUÉS DE VALIDAR IA. Incluirá el mapa completo de categorías, navegación y jerarquía de contenidos de Vibra.]</p>
+      <div class="pd-research-question" data-animate data-animate-delay="2">
+        <span>Concepto principal</span>
+        <strong>Una arquitectura. Cuatro modalidades de compra.</strong>
+      </div>
+
+      <p class="pd-lead" style="margin-top:24px;" data-animate data-animate-delay="3">Diseñamos una estructura común capaz de adaptar la etapa de selección según la configuración de cada evento, manteniendo identificación, resumen, pago y confirmación como etapas consistentes.</p>
+
+      <p class="pd-note" style="margin-top:28px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="4">Variable — cambia según el evento</p>
+      <div class="pd-flow" data-animate data-animate-delay="4">
+        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">celebration</span>Evento</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">tune</span>Tipo de selección</div>
+      </div>
+
+      <p class="pd-note" style="margin-top:28px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="5">Común — igual en las cuatro modalidades</p>
+      <div class="pd-flow" data-animate data-animate-delay="5">
+        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">badge</span>Identificación</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">receipt_long</span>Resumen</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">credit_card</span>Pago</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Confirmación</div>
+      </div>
+
+      <p class="pd-note" style="margin-top:28px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="5">Mapa completo de arquitectura de información</p>
+      <div class="vibra-ia-diagram" data-animate data-animate-delay="5">
+        <img src="../assets/img/proyecto-1-arquitectura.png" alt="Arquitectura de información completa de Vibra: navegación, categorías y jerarquía de contenidos">
+      </div>
+      <p class="pd-note" data-animate data-animate-delay="6">El panel de Productores (en gris) representa una oportunidad de evolución futura del producto — ver sección 21, Evolución del producto — pero queda fuera del alcance de este case study en su etapa actual.</p>
+    </div>
+  </section>
+
+  <!-- 14. CUATRO MODALIDADES DE COMPRA — SECCIÓN PROTEGIDA -->
+  <section class="pd-section pd-section--alt" id="modalidades">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">checklist_rtl</span>14 · Cuatro modalidades de compra</p>
+      <h2 class="pd-heading" data-animate>Una misma estructura, cuatro formas de comprar</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Cada modalidad ajusta únicamente la etapa de selección — identificación, resumen, pago y confirmación se mantienen consistentes en las cuatro.</p>
+
+      <h3 class="pd-heading" style="font-size:17px; margin-top:36px;" data-animate data-animate-delay="2">01 — Entrada general</h3>
+      <div class="pd-flow" data-animate data-animate-delay="2">
+        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">celebration</span>Evento</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">numbers</span>Cantidad</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">badge</span>Identificación</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">receipt_long</span>Resumen</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">credit_card</span>Pago</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Confirmación</div>
+      </div>
+
+      <h3 class="pd-heading" style="font-size:17px; margin-top:36px;" data-animate data-animate-delay="3">02 — Por sector</h3>
+      <div class="pd-flow" data-animate data-animate-delay="3">
+        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">celebration</span>Evento</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">map</span>Sector</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">numbers</span>Cantidad</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">badge</span>Identificación</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">receipt_long</span>Resumen</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">credit_card</span>Pago</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Confirmación</div>
+      </div>
+
+      <h3 class="pd-heading" style="font-size:17px; margin-top:36px;" data-animate data-animate-delay="4">03 — Asiento numerado</h3>
+      <div class="pd-flow" data-animate data-animate-delay="4">
+        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">celebration</span>Evento</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">map</span>Sector</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">grid_view</span>Subzona</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">event_seat</span>Asiento</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">badge</span>Identificación</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">receipt_long</span>Resumen</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">credit_card</span>Pago</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Confirmación</div>
+      </div>
+
+      <h3 class="pd-heading" style="font-size:17px; margin-top:36px;" data-animate data-animate-delay="5">04 — Entrada nominativa</h3>
+      <div class="pd-flow" data-animate data-animate-delay="5">
+        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">celebration</span>Evento</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">sell</span>Sector / Tipo de entrada</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">numbers</span>Cantidad</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">group</span>Datos de asistentes</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">badge</span>Identificación</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">receipt_long</span>Resumen</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">credit_card</span>Pago</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Confirmación</div>
+      </div>
+
+      <p class="pd-note" style="margin-top:24px;">La nominación de asistentes también se diseña mediante <strong style="color:var(--pd-accent); font-style:normal;">Progressive Disclosure</strong>: en vez de mostrar el formulario completo de los cuatro asistentes a la vez, se revela uno por uno.</p>
+
+      <div class="pd-benchmark__card" style="margin-top:16px; max-width:360px;" data-animate data-animate-delay="5">
+        <p class="pd-benchmark__name" style="text-align:left;">Datos de asistentes</p>
+        <ul class="pd-list" style="margin:0;">
+          <li><span class="material-symbols-outlined">check_circle</span><span>Asistente 1</span></li>
+          <li><span class="material-symbols-outlined">radio_button_unchecked</span><span>Asistente 2 — Agregar datos</span></li>
+          <li><span class="material-symbols-outlined">radio_button_unchecked</span><span>Asistente 3 — Agregar datos</span></li>
+          <li><span class="material-symbols-outlined">radio_button_unchecked</span><span>Asistente 4 — Agregar datos</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- 14. USER FLOW -->
+  <!-- 15. USER FLOW — SECCIÓN PROTEGIDA -->
   <section class="pd-section" id="user-flow">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">alt_route</span>14 · User Flow</p>
-      <h2 class="pd-heading" data-animate>Flujo hipotético del recorrido principal</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Este diagrama refleja la hipótesis de flujo derivada del research — no el user flow definitivo, que se documentará como export desde Figma.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">alt_route</span>15 · User Flow</p>
+      <h2 class="pd-heading" data-animate>Reducir el camino hacia la entrada</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">El flujo debía permitir que diferentes modelos de venta convergieran en una experiencia consistente. La complejidad cambia durante la selección, pero identificación, resumen, pago y confirmación mantienen una estructura común.</p>
 
       <div class="pd-flow" data-animate data-animate-delay="2">
         <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">search</span>Buscar evento</div>
@@ -492,235 +854,72 @@
         <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">credit_card</span>Pago</div>
       </div>
 
-      <div class="pd-placeholder" data-animate data-animate-delay="3">
-        <span class="material-symbols-outlined">hourglass_top</span>
-        <p>[USER FLOW DEFINITIVO — PENDIENTE. Se reemplazará por el export final desde Figma una vez validado con wireframes.]</p>
+      <p class="pd-note" style="margin-top:28px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="3">Un flujo común para diferentes formas de comprar</p>
+      <p class="pd-lead" data-animate data-animate-delay="3">Los eventos podían operar con distintos modelos de venta. En lugar de diseñar recorridos independientes para cada modalidad, concentramos la variabilidad en la etapa de selección y mantuvimos una estructura común para completar la compra.</p>
+      <div class="vibra-ia-diagram" data-animate data-animate-delay="4">
+        <img src="../assets/img/proyecto-1-userflow.png" alt="User flow completo de Vibra: desde el descubrimiento del evento hasta la confirmación de compra">
       </div>
+      <p class="pd-note" data-animate data-animate-delay="5">La complejidad cambia durante la selección. La experiencia de compra permanece consistente. — Figjam</p>
     </div>
   </section>
 
-  <!-- 15. WIREFRAMES -->
-  <section class="pd-section pd-section--alt" id="wireframes">
+  <!-- 16. WIREFRAMES — SECCIÓN PROTEGIDA (no modificar funcionalmente) -->
+  <section class="pd-section" id="wireframes">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">design_services</span>15 · Wireframes</p>
-      <h2 class="pd-heading" data-animate>Exploración de baja fidelidad</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Este bloque está preparado para recibir un wireframe interactivo de Figma Make. Mientras no exista una URL configurada, se muestra un estado de espera claramente identificado.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">design_services</span>16 · Wireframes</p>
+      <h2 class="pd-heading" data-animate>Convertir decisiones en estructura</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Los wireframes funcionales traducen las decisiones anteriores en pantallas concretas, agrupadas según el objetivo que resuelven dentro del recorrido de compra.</p>
 
-      <!-- FigmaEmbed: para activar, agregar la URL real en data-figma-url y en el src del iframe. -->
-      <div class="pd-figma-embed" data-figma-url="">
-        <div class="pd-figma-embed__placeholder">
-          <span class="material-symbols-outlined">design_services</span>
-          <p>Wireframe interactivo próximamente</p>
-          <span>Se incorporará una vista embebida de Figma Make cuando el prototipo esté listo para compartir.</span>
+      <div style="margin-top:40px;" data-animate data-animate-delay="2">
+        <p class="pd-kicker" style="font-size:12px;"><span class="material-symbols-outlined">search</span>01 · Descubrir sin ruido</p>
+        <div class="pd-decision__grid pd-decision__grid--2">
+          <div><span>Problema</span><p>El buscador dependía de términos exactos, los filtros estaban obsoletos y el Home no tenía jerarquía de contenidos.</p></div>
+          <div><span>Decisión</span><p>Mejorar buscador y filtros, e incorporar un hero con eventos destacados.</p></div>
         </div>
-        <div class="pd-figma-embed__frame" hidden>
-          <div class="pd-figma-embed__frame-bar">
-            <span class="pd-figma-embed__dot"></span><span class="pd-figma-embed__dot"></span><span class="pd-figma-embed__dot"></span>
-          </div>
-          <iframe title="Wireframe interactivo — Proyecto Vibra" loading="lazy" allowfullscreen></iframe>
-        </div>
-        <div class="pd-figma-embed__cta">
-          <a href="#" class="btn btn--ghost btn--sm" aria-disabled="true">
-            Abrir wireframe
-            <span class="material-symbols-outlined">open_in_new</span>
-          </a>
-        </div>
+        <p class="pd-note" style="margin-top:10px;">Buscador · Filtros · Cards agrupadas por evento · Hero · Eventos destacados</p>
+        <a href="../assets/prototipo-vibra/index.html" class="btn btn--ghost btn--sm" style="margin-top:12px;">Ver en el wireframe<span class="material-symbols-outlined">arrow_forward</span></a>
       </div>
+
+      <div style="margin-top:36px;" data-animate data-animate-delay="3">
+        <p class="pd-kicker" style="font-size:12px;"><span class="material-symbols-outlined">visibility</span>02 · Entender sin salir del evento</p>
+        <div class="pd-decision__grid pd-decision__grid--2">
+          <div><span>Problema</span><p>Existía una desconexión entre cómo se promocionaba un evento y cómo se presentaba dentro de la ticketera.</p></div>
+          <div><span>Decisión</span><p>Evolucionar la ficha del evento hacia una landing con identidad propia e información relevante para comprar.</p></div>
+        </div>
+        <p class="pd-note" style="margin-top:10px;">Landing · Información relevante · Fechas · Recinto · Precios · Mapa · Cómo llegar · CTA de compra</p>
+        <a href="../assets/prototipo-vibra/index.html" class="btn btn--ghost btn--sm" style="margin-top:12px;">Ver en el wireframe<span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+
+      <div style="margin-top:36px;" data-animate data-animate-delay="4">
+        <p class="pd-kicker" style="font-size:12px;"><span class="material-symbols-outlined">grid_view</span>03 · Seleccionar sin sobrecarga</p>
+        <div class="pd-decision__grid pd-decision__grid--2">
+          <div><span>Problema</span><p>Cientos de asientos numerados simultáneos eran difíciles de procesar en mobile.</p></div>
+          <div><span>Decisión</span><p>Progressive Disclosure: sector → subzona → asiento, en pasos manejables.</p></div>
+        </div>
+        <p class="pd-note" style="margin-top:10px;">Mapa · Sector · Subzonas · Asientos</p>
+        <a href="../assets/prototipo-vibra/index.html" class="btn btn--ghost btn--sm" style="margin-top:12px;">Ver en el wireframe<span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+
+      <div style="margin-top:36px;" data-animate data-animate-delay="5">
+        <p class="pd-kicker" style="font-size:12px;"><span class="material-symbols-outlined">shopping_cart_checkout</span>04 · Comprar con menos fricción</p>
+        <div class="pd-decision__grid pd-decision__grid--2">
+          <div><span>Problema</span><p>La identificación interrumpía el impulso de compra antes de llegar al pago.</p></div>
+          <div><span>Decisión</span><p>Reducir campos y pasos entre la selección y la confirmación; compra rápida como hipótesis a validar.</p></div>
+        </div>
+        <p class="pd-note" style="margin-top:10px;">Carrito · Identificación · Compra rápida · Entrada nominativa · Resumen · Pago · Confirmación</p>
+        <a href="../assets/prototipo-vibra/index.html" class="btn btn--ghost btn--sm" style="margin-top:12px;">Ver en el wireframe<span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+
+      <p class="pd-note" style="margin-top:32px; font-style:normal;">Cada grupo se traza directamente a una decisión de diseño. El recorrido completo, con todas las pantallas navegables, está disponible en el wireframe funcional interactivo — ver siguiente sección.</p>
     </div>
   </section>
 
-  <!-- 16. QUÉ DEBEN DEMOSTRAR LOS WIREFRAMES -->
-  <section class="pd-section" id="que-deben-demostrar">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">checklist</span>16 · Qué deben demostrar los wireframes</p>
-      <h2 class="pd-heading" data-animate>De hallazgo a decisión a wireframe</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Cada wireframe futuro deberá poder trazarse de vuelta a un hallazgo concreto y a la decisión de diseño que lo originó.</p>
-
-      <div class="pd-validation" data-animate data-animate-delay="2">
-        <div class="pd-validation__row">
-          <p class="pd-validation__task"><span class="material-symbols-outlined">looks_two</span>Identificación reordenada</p>
-          <div class="pd-validation__grid">
-            <div><span>Hallazgo</span><p>La identificación interrumpe el impulso de compra.</p></div>
-            <div><span>Decisión</span><p>Reordenar cuándo se solicitan los datos esenciales.</p></div>
-            <div><span>Debe demostrar</span><p>Que el flujo se siente continuo hasta el pago.</p></div>
-          </div>
-        </div>
-        <div class="pd-validation__row">
-          <p class="pd-validation__task"><span class="material-symbols-outlined">looks_3</span>Evento unificado</p>
-          <div class="pd-validation__grid">
-            <div><span>Hallazgo</span><p>Un evento se repite por cada fecha y ciudad.</p></div>
-            <div><span>Decisión</span><p>Fecha y ciudad como filtros dentro de una misma ficha.</p></div>
-            <div><span>Debe demostrar</span><p>Que encontrar el evento correcto toma menos pasos.</p></div>
-          </div>
-        </div>
-        <div class="pd-validation__row">
-          <p class="pd-validation__task"><span class="material-symbols-outlined">looks_4</span>Subzonas del mapa de asientos</p>
-          <div class="pd-validation__grid">
-            <div><span>Hallazgo</span><p>~300 asientos son ilegibles en mobile.</p></div>
-            <div><span>Decisión</span><p>Agrupar en subzonas de ~100 asientos con código de color.</p></div>
-            <div><span>Debe demostrar</span><p>Que elegir un asiento es manejable en pantalla pequeña.</p></div>
-          </div>
-        </div>
-        <div class="pd-validation__row">
-          <p class="pd-validation__task"><span class="material-symbols-outlined">tune</span>Selector de sector progresivo</p>
-          <div class="pd-validation__grid">
-            <div><span>Hallazgo</span><p>Mostrar todo el recinto a la vez sobrecarga a la persona.</p></div>
-            <div><span>Decisión</span><p>Progressive Disclosure: Recinto → Localidad → Subzona → Asiento.</p></div>
-            <div><span>Debe demostrar</span><p>Que cada paso reduce, no aumenta, la carga cognitiva.</p></div>
-          </div>
-        </div>
-        <div class="pd-validation__row">
-          <p class="pd-validation__task"><span class="material-symbols-outlined">smartphone</span>Prioridad mobile</p>
-          <div class="pd-validation__grid">
-            <div><span>Hallazgo</span><p>El contexto de uso principal es mobile, con poca paciencia.</p></div>
-            <div><span>Decisión</span><p>Diseñar primero para una mano y pantallas pequeñas.</p></div>
-            <div><span>Debe demostrar</span><p>Que la navegación es cómoda con el pulgar.</p></div>
-          </div>
-        </div>
-        <div class="pd-validation__row">
-          <p class="pd-validation__task"><span class="material-symbols-outlined">auto_awesome</span>Modernización reconocible</p>
-          <div class="pd-validation__grid">
-            <div><span>Hallazgo</span><p>Usuarios recurrentes ya conocen la plataforma actual.</p></div>
-            <div><span>Decisión</span><p>Evolución antes que disrupción visual.</p></div>
-            <div><span>Debe demostrar</span><p>Que el cambio se siente familiar, no ajeno.</p></div>
-          </div>
-        </div>
-        <div class="pd-validation__row">
-          <p class="pd-validation__task"><span class="material-symbols-outlined">visibility</span>Estado y avance del proceso</p>
-          <div class="pd-validation__grid">
-            <div><span>Hallazgo</span><p>Falta de claridad sobre en qué paso del flujo se está.</p></div>
-            <div><span>Decisión</span><p>Indicadores de progreso consistentes en todo el flujo.</p></div>
-            <div><span>Debe demostrar</span><p>Que la persona siempre sabe cuánto falta.</p></div>
-          </div>
-        </div>
-        <div class="pd-validation__row">
-          <p class="pd-validation__task"><span class="material-symbols-outlined">credit_card</span>Pago sin fricción adicional</p>
-          <div class="pd-validation__grid">
-            <div><span>Hallazgo</span><p>El tramo final del flujo concentra el mayor riesgo de abandono.</p></div>
-            <div><span>Decisión</span><p>Minimizar campos y pasos entre selección y confirmación.</p></div>
-            <div><span>Debe demostrar</span><p>Que completar la compra toma el menor esfuerzo posible.</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 17. DESIGN SYSTEM — VIBRA UI -->
-  <section class="pd-section pd-section--alt" id="design-system">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">widgets</span>17 · Design System — Vibra UI</p>
-      <h2 class="pd-heading" data-animate>Un sistema construido a partir de las decisiones, no al revés</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">El Design System de Vibra se está construyendo de forma curada, componente por componente, a partir de las decisiones documentadas en este case study.</p>
-
-      <div class="pd-token-group" style="margin-top:32px;" data-animate data-animate-delay="2">
-        <strong>Foundations</strong>
-        <div class="pd-chips">
-          <div class="pd-chip"><span class="material-symbols-outlined">palette</span><div><strong>Paleta</strong><span>Violeta Pulso · Coral Vivo · Lima Eléctrica · Cian Ritmo</span></div></div>
-          <div class="pd-chip"><span class="material-symbols-outlined">text_fields</span><div><strong>Tipografía</strong><span>Plus Jakarta Sans</span></div></div>
-          <div class="pd-chip"><span class="material-symbols-outlined">space_dashboard</span><div><strong>Spacing</strong><span>Escala 4/8pt</span></div></div>
-          <div class="pd-chip"><span class="material-symbols-outlined">rounded_corner</span><div><strong>Radios</strong><span>Sistema de esquinas consistente</span></div></div>
-          <div class="pd-chip"><span class="material-symbols-outlined">grid_view</span><div><strong>Grid</strong><span>Mobile first · Responsive</span></div></div>
-        </div>
-      </div>
-
-      <div class="pd-token-group" style="margin-top:28px;" data-animate data-animate-delay="3">
-        <strong>Core components</strong>
-        <div class="pd-chips">
-          <span class="pd-chip"><span class="material-symbols-outlined">smart_button</span><div><strong>Buttons</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">input</span><div><strong>Inputs</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">search</span><div><strong>Search</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">sell</span><div><strong>Chips</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">menu</span><div><strong>Navigation</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">calendar_month</span><div><strong>Calendar</strong></div></span>
-        </div>
-      </div>
-
-      <div class="pd-token-group" style="margin-top:28px;" data-animate data-animate-delay="4">
-        <strong>Ticketing components</strong>
-        <div class="pd-chips">
-          <span class="pd-chip"><span class="material-symbols-outlined">celebration</span><div><strong>Event Card</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">tour</span><div><strong>Tour Card</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">event</span><div><strong>Date Selector</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">location_city</span><div><strong>City Selector</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">stadium</span><div><strong>Sector Selector</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">grid_view</span><div><strong>Subzona Selector</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">event_seat</span><div><strong>Seat</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">map</span><div><strong>Seat Map</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">confirmation_number</span><div><strong>Ticket Selector</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">receipt_long</span><div><strong>Order Summary</strong></div></span>
-          <span class="pd-chip"><span class="material-symbols-outlined">qr_code_2</span><div><strong>Digital Ticket</strong></div></span>
-        </div>
-      </div>
-
-      <div class="pd-gallery" style="margin-top:32px;" data-animate data-animate-delay="4">
-        <div class="pd-visual-frame pd-visual-frame--ui-kit"><span class="material-symbols-outlined" style="color:var(--pd-accent);">image</span><span class="pd-visual-frame__label" style="color:var(--pd-text-muted);">Captura del Design System — reservado</span></div>
-        <div class="pd-visual-frame pd-visual-frame--ui-kit"><span class="material-symbols-outlined" style="color:var(--pd-accent);">image</span><span class="pd-visual-frame__label" style="color:var(--pd-text-muted);">Captura del Design System — reservado</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 18. SOLUCIÓN FINAL -->
-  <section class="pd-section" id="solucion-final">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">check_circle</span>18 · Solución final</p>
-      <h2 class="pd-heading" data-animate>Cuatro momentos del flujo, resueltos con las mismas decisiones</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Esta sección queda estructurada para recibir las pantallas finales de UI cuando estén listas. Cada bloque ya tiene definido qué debe mostrar y a qué problema responde.</p>
-
-      <div class="pd-decisions" data-animate data-animate-delay="2">
-        <div class="pd-decision">
-          <span class="pd-decision__num">01</span>
-          <div>
-            <h3>Descubrir sin ruido</h3>
-            <div class="pd-decision__grid pd-decision__grid--2">
-              <div><span>Contenido futuro</span><p>Pantallas de catálogo y ficha de evento unificada.</p></div>
-              <div><span>Problema relacionado</span><p>Hallazgo 03 — un evento duplicado por fecha y ciudad.</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="pd-decision">
-          <span class="pd-decision__num">02</span>
-          <div>
-            <h3>Elegir sin perder contexto</h3>
-            <div class="pd-decision__grid pd-decision__grid--2">
-              <div><span>Contenido futuro</span><p>Selector de fecha, ciudad y sector.</p></div>
-              <div><span>Problema relacionado</span><p>Hallazgo 03 — comparar opciones sin perder de vista el evento.</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="pd-decision">
-          <span class="pd-decision__num">03</span>
-          <div>
-            <h3>Seleccionar sin sobrecarga</h3>
-            <div class="pd-decision__grid pd-decision__grid--2">
-              <div><span>Contenido futuro</span><p>Mapa de asientos por subzonas.</p></div>
-              <div><span>Problema relacionado</span><p>Hallazgo 04 — ~300 asientos ilegibles en mobile.</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="pd-decision">
-          <span class="pd-decision__num">04</span>
-          <div>
-            <h3>Comprar con menos fricción</h3>
-            <div class="pd-decision__grid pd-decision__grid--2">
-              <div><span>Contenido futuro</span><p>Identificación, resumen de orden y pago.</p></div>
-              <div><span>Problema relacionado</span><p>Hallazgo 02 — la identificación interrumpe el impulso de compra.</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <blockquote class="pd-quote" data-animate data-animate-delay="3">
-        “De cientos de opciones simultáneas a decisiones progresivas.”
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- 19. MOBILE FIRST → RESPONSIVE PRODUCT -->
+  <!-- 17. MOBILE FIRST → RESPONSIVE PRODUCT -->
   <section class="pd-section pd-section--alt" id="responsive">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">devices</span>19 · Mobile First → Responsive Product</p>
-      <h2 class="pd-heading" data-animate>Un mismo producto, dos expresiones</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Vibra se diseñó primero para mobile y luego se expresó en desktop — no como dos proyectos separados, sino como el mismo sistema adaptado a cada contexto.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">devices</span>17 · Mobile First → Responsive Product</p>
+      <h2 class="pd-heading" data-animate>Mobile First no significa Mobile Only</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">La experiencia fue priorizada para el principal contexto de compra y posteriormente escalada hacia pantallas mayores manteniendo la misma lógica de producto. Es un producto responsive con prioridad Mobile First — no dos productos diferentes.</p>
 
       <p class="pd-note" style="margin-top:28px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="2">Mobile</p>
       <div class="pd-gallery" data-animate data-animate-delay="2">
@@ -736,33 +935,156 @@
     </div>
   </section>
 
-  <!-- 20. PROTOTIPO FINAL -->
-  <section class="pd-section" id="prototipo-final">
+  <!-- 18. PROTOTIPO / WIREFRAME FUNCIONAL -->
+  <section class="pd-section" id="wireframe-funcional">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">play_circle</span>20 · Prototipo final</p>
-      <h2 class="pd-heading" data-animate>Explora el flujo completo</h2>
+      <p class="pd-kicker"><span class="material-symbols-outlined">play_circle</span>18 · Prototipo / Wireframe funcional</p>
+      <h2 class="pd-heading" data-animate>Explora la experiencia.</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Recorre el wireframe navegable, construido a partir de las decisiones definidas en las secciones anteriores. Presiona "Explorar wireframe" para recorrer las pantallas completas — podrás volver a este case study en cualquier momento.</p>
 
-      <!-- PrototypeCTA: para activar, agregar la URL real en data-prototype-url. -->
-      <div class="pd-prototype-cta" data-prototype-url="" data-animate data-animate-delay="1">
-        <p>El prototipo navegable de Proyecto Vibra está en desarrollo. Cuando esté listo, este botón abrirá el recorrido completo en una nueva pestaña.</p>
-        <a href="#" class="btn" aria-disabled="true">
-          <span class="pd-prototype-cta__pending-label">Prototipo en desarrollo</span>
-          <span class="material-symbols-outlined">hourglass_top</span>
-        </a>
+      <!-- FigmaEmbed: activado con una imagen de vista previa + link a la build estática del prototipo (assets/prototipo-vibra/), generada a partir del proyecto de Figma Make que Jennifer entregó en assets/wireframe - vibra/. El prototipo navegable en sí incluye su propio botón "Volver al proyecto" (inyectado en el build) que trae de vuelta hasta aquí. -->
+      <div class="pd-figma-embed" data-figma-url="../assets/prototipo-vibra/index.html">
+        <div class="pd-figma-embed__placeholder">
+          <span class="material-symbols-outlined">design_services</span>
+          <p>Wireframe interactivo próximamente</p>
+          <span>Se incorporará una vista embebida de Figma Make cuando el prototipo esté listo para compartir.</span>
+        </div>
+        <div class="pd-figma-embed__frame" hidden>
+          <div class="pd-figma-embed__frame-bar">
+            <span class="pd-figma-embed__dot"></span><span class="pd-figma-embed__dot"></span><span class="pd-figma-embed__dot"></span>
+          </div>
+          <img src="../assets/img/proyecto-1-wireframe-preview.png" alt="Vista previa del wireframe navegable de Vibra — pantalla de inicio con destacados, categorías y próximos eventos">
+        </div>
+        <div class="pd-figma-embed__cta">
+          <a href="../assets/prototipo-vibra/index.html" class="btn btn--ghost btn--sm">
+            Explorar wireframe
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 21. OPORTUNIDADES DE EVOLUCIÓN -->
+  <!-- 19. PLAN DE VALIDACIÓN -->
+  <section class="pd-section" id="validacion">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>19 · Plan de validación</p>
+      <h2 class="pd-heading" data-animate>Diseñar la solución es solo la mitad del trabajo</h2>
+
+      <div class="pd-evidence-row" data-animate data-animate-delay="1" style="margin:8px 0 0;">
+        <span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">flag</span>Next step</span>
+      </div>
+      <div class="pd-research-question" data-animate data-animate-delay="1" style="margin-top:16px;">
+        <span>Pregunta que debe responder la validación</span>
+        <strong>¿Puede una persona completar las funciones críticas de Vibra desde su celular sin que le expliquemos cómo hacerlo?</strong>
+      </div>
+
+      <div class="pd-validation-note" data-animate data-animate-delay="2" style="margin-top:20px;">
+        <span class="material-symbols-outlined">info</span>
+        <p>Lo que sigue es un plan de validación: tareas y métricas propuestas para evaluar la solución — no resultados obtenidos ni datos verificados de este case study.</p>
+      </div>
+
+      <p class="pd-note" style="margin-top:28px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="3">Tareas propuestas</p>
+      <ul class="pd-list" data-animate data-animate-delay="3">
+        <li><span class="material-symbols-outlined">looks_one</span><span>Compra dos entradas generales.</span></li>
+        <li><span class="material-symbols-outlined">looks_two</span><span>Compra dos entradas dentro de un sector específico.</span></li>
+        <li><span class="material-symbols-outlined">looks_3</span><span>Selecciona dos asientos juntos.</span></li>
+        <li><span class="material-symbols-outlined">looks_4</span><span>Compra entradas nominativas para varios asistentes.</span></li>
+        <li><span class="material-symbols-outlined">looks_5</span><span>Completa una compra sin crear una cuenta.</span></li>
+        <li><span class="material-symbols-outlined">looks_6</span><span>Encuentra una fecha disponible en otra ciudad.</span></li>
+      </ul>
+
+      <p class="pd-note" style="margin-top:32px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="4">Métricas propuestas para evaluar la solución</p>
+      <div class="pd-kpi-grid" data-animate data-animate-delay="4">
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">task_alt</span><strong>Task Completion Rate</strong><span>Porcentaje de tareas completadas con éxito.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">timer</span><strong>Tiempo por tarea</strong><span>Tiempo requerido para completar cada tarea propuesta.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">error</span><strong>Errores</strong><span>Cantidad de errores cometidos durante cada tarea.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">undo</span><strong>Retrocesos</strong><span>Veces que la persona vuelve a un paso anterior.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">logout</span><strong>Abandono durante identificación</strong><span>Detecta fricción en el paso de datos esenciales.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">event_seat</span><strong>Tiempo de selección de asiento</strong><span>Mide si las subzonas reducen el tiempo de decisión.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">shopping_cart_checkout</span><strong>Checkout Completion Rate</strong><span>Porcentaje que completa la compra tras iniciar el pago.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">sentiment_satisfied</span><strong>CSAT postcompra</strong><span>Satisfacción percibida inmediatamente después de comprar.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20. DESIGN SYSTEM — VIBRA UI -->
+  <section class="pd-section pd-section--alt" id="design-system">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">widgets</span>20 · Design System — Vibra UI</p>
+      <h2 class="pd-heading" data-animate>Diseñar una experiencia consistente también era parte del producto</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Vibra UI se está construyendo de forma curada, componente por componente, mostrando únicamente lo que demuestra pensamiento sistémico — no un inventario completo de tokens.</p>
+
+      <div class="pd-token-group" style="margin-top:32px;" data-animate data-animate-delay="2">
+        <strong>Foundations — color</strong>
+        <div class="pd-chips">
+          <div class="pd-chip"><span class="vibra-swatch" style="background:#6C3BFF;"></span><div><strong>Violeta Pulso</strong><span>#6C3BFF</span></div></div>
+          <div class="pd-chip"><span class="vibra-swatch" style="background:#FF4D6D;"></span><div><strong>Coral Vivo</strong><span>#FF4D6D</span></div></div>
+          <div class="pd-chip"><span class="vibra-swatch" style="background:#C7F464;"></span><div><strong>Lima Eléctrica</strong><span>#C7F464</span></div></div>
+          <div class="pd-chip"><span class="vibra-swatch" style="background:#31D7E8;"></span><div><strong>Cian Ritmo</strong><span>#31D7E8</span></div></div>
+          <div class="pd-chip"><span class="vibra-swatch" style="background:#171523;"></span><div><strong>Tinta Noche</strong><span>#171523</span></div></div>
+          <div class="pd-chip"><span class="vibra-swatch vibra-swatch--light" style="background:#F7F6FB;"></span><div><strong>Nube Clara</strong><span>#F7F6FB</span></div></div>
+        </div>
+      </div>
+
+      <div class="pd-token-group" style="margin-top:24px;" data-animate data-animate-delay="2">
+        <strong>Foundations — tipografía y layout</strong>
+        <div class="pd-chips">
+          <div class="pd-chip"><span class="material-symbols-outlined">text_fields</span><div><strong>Typography</strong><span>Plus Jakarta Sans · DM Mono (auxiliar)</span></div></div>
+          <div class="pd-chip"><span class="material-symbols-outlined">space_dashboard</span><div><strong>Spacing</strong><span>Escala 4/8pt</span></div></div>
+          <div class="pd-chip"><span class="material-symbols-outlined">grid_view</span><div><strong>Grid</strong><span>Mobile first · Responsive</span></div></div>
+        </div>
+      </div>
+
+      <div class="pd-token-group" style="margin-top:28px;" data-animate data-animate-delay="3">
+        <strong>Core components</strong>
+        <div class="pd-chips">
+          <span class="pd-chip"><span class="material-symbols-outlined">smart_button</span><div><strong>Buttons</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">input</span><div><strong>Inputs</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">search</span><div><strong>Search</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">filter_alt</span><div><strong>Filters</strong></div></span>
+        </div>
+      </div>
+
+      <div class="pd-token-group" style="margin-top:28px;" data-animate data-animate-delay="4">
+        <strong>Ticketing components</strong>
+        <div class="pd-chips">
+          <span class="pd-chip"><span class="material-symbols-outlined">celebration</span><div><strong>Event Card</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">event</span><div><strong>Date Selector</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">location_city</span><div><strong>City / Venue Selector</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">stadium</span><div><strong>Sector Selector</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">grid_view</span><div><strong>Subzone Selector</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">map</span><div><strong>Seat Map</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">confirmation_number</span><div><strong>Ticket Selector</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">receipt_long</span><div><strong>Order Summary</strong></div></span>
+          <span class="pd-chip"><span class="material-symbols-outlined">qr_code_2</span><div><strong>Digital Ticket</strong></div></span>
+        </div>
+      </div>
+
+      <div class="pd-gallery" style="margin-top:32px;" data-animate data-animate-delay="4">
+        <div class="pd-visual-frame pd-visual-frame--ui-kit"><span class="material-symbols-outlined" style="color:var(--pd-accent);">image</span><span class="pd-visual-frame__label" style="color:var(--pd-text-muted);">Captura del Design System — reservado</span></div>
+        <div class="pd-visual-frame pd-visual-frame--ui-kit"><span class="material-symbols-outlined" style="color:var(--pd-accent);">image</span><span class="pd-visual-frame__label" style="color:var(--pd-text-muted);">Captura del Design System — reservado</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 21. EVOLUCIÓN DEL PRODUCTO -->
   <section class="pd-exploration-marker" id="oportunidades">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">rocket_launch</span>21 · Oportunidades de evolución</p>
-      <h2 class="pd-heading" data-animate>Exploración posterior de Product Design</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Estas líneas quedan fuera del alcance original de este case study. Se documentan como exploración posterior, no como trabajo ya realizado.</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">rocket_launch</span>21 · Evolución del producto</p>
+      <p class="pd-note" style="margin:0 0 4px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; font-size:11px; color:var(--pd-text-muted); font-style:normal;">Future Opportunities</p>
+      <h2 class="pd-heading" data-animate>La experiencia no tiene por qué terminar después del pago</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Estas líneas quedan fuera del alcance original de este case study. Se documentan como exploración posterior de Product Design para ampliar el razonamiento — no como funcionalidades entregadas al cliente ni trabajo ya realizado.</p>
 
-      <div class="pd-chips" data-animate data-animate-delay="2">
-        <div class="pd-chip"><span class="material-symbols-outlined">account_balance_wallet</span><div><strong>Wallet</strong><span>Entradas digitales guardadas en un solo lugar</span></div></div>
-        <div class="pd-chip"><span class="material-symbols-outlined">directions</span><div><strong>Cómo llegar</strong><span>Indicaciones integradas al recinto del evento</span></div></div>
+      <div style="margin-top:24px;" data-animate data-animate-delay="2">
+        <div class="pd-evidence-row" style="margin:0 0 10px;"><span class="pd-evidence-tag pd-evidence-tag--oportunidad"><span class="material-symbols-outlined">rocket_launch</span>Propuesta UX</span></div>
+        <h3 class="pd-heading" style="font-size:19px;">No solo mostrar dónde es, sino ayudar a llegar.</h3>
+        <p class="pd-lead" style="font-size:14.5px;">La nueva landing incorporaba información sobre el recinto y su ubicación. Desde UX identificamos la oportunidad de convertir esa información en una acción útil: incorporar un botón "Cómo llegar" asociado a la ubicación del recinto.</p>
+      </div>
+
+      <p class="pd-note" style="margin-top:28px;">La propuesta de <strong style="color:var(--pd-text-primary); font-style:normal;">Wallet</strong> — facilitar la conservación de la entrada — se desarrolla en detalle en <a href="#hallazgo-a-decision">Del hallazgo a la decisión ↑</a>, junto a la evidencia real que la origina.</p>
+
+      <div class="pd-chips" data-animate data-animate-delay="3" style="margin-top:20px;">
         <div class="pd-chip"><span class="material-symbols-outlined">notifications_active</span><div><strong>Recordatorios</strong><span>Avisos previos a la fecha del evento</span></div></div>
         <div class="pd-chip"><span class="material-symbols-outlined">recommend</span><div><strong>Recomendaciones</strong><span>Sugerencias basadas en eventos de interés</span></div></div>
         <div class="pd-chip"><span class="material-symbols-outlined">store</span><div><strong>Productores · B2B</strong><span>Panel de gestión para organizadores de eventos</span></div></div>
@@ -770,35 +1092,12 @@
     </div>
   </section>
 
-  <!-- 22. VALIDACIÓN E IMPACTO -->
-  <section class="pd-section pd-section--alt" id="validacion">
-    <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>22 · Validación e impacto</p>
-      <h2 class="pd-heading" data-animate>KPIs propuestos</h2>
-      <div class="pd-validation-note" data-animate data-animate-delay="1">
-        <span class="material-symbols-outlined">info</span>
-        <p>Las métricas que siguen son propuestas para una futura fase de validación — no son resultados medidos ni datos verificados de este case study.</p>
-      </div>
-
-      <div class="pd-kpi-grid" data-animate data-animate-delay="2">
-        <div class="pd-kpi-card"><span class="material-symbols-outlined">trending_down</span><strong>Tasa de abandono en checkout</strong><span>Propuesta como métrica principal de fricción del flujo.</span></div>
-        <div class="pd-kpi-card"><span class="material-symbols-outlined">timer</span><strong>Tiempo de selección de asiento</strong><span>Mide si las subzonas reducen el tiempo de decisión.</span></div>
-        <div class="pd-kpi-card"><span class="material-symbols-outlined">error</span><strong>Errores en identificación</strong><span>Detecta fricción en el campo de datos esenciales.</span></div>
-        <div class="pd-kpi-card"><span class="material-symbols-outlined">replay</span><strong>Tasa de reintento de compra</strong><span>Compras retomadas tras un abandono previo.</span></div>
-        <div class="pd-kpi-card"><span class="material-symbols-outlined">sentiment_satisfied</span><strong>NPS post-compra</strong><span>Percepción general de la experiencia de compra.</span></div>
-        <div class="pd-kpi-card"><span class="material-symbols-outlined">grid_view</span><strong>Uso del selector de subzonas</strong><span>Adopción del nuevo patrón de selección por capas.</span></div>
-        <div class="pd-kpi-card"><span class="material-symbols-outlined">schedule</span><strong>Duración total del flujo</strong><span>Tiempo desde la búsqueda hasta la confirmación.</span></div>
-        <div class="pd-kpi-card"><span class="material-symbols-outlined">compare_arrows</span><strong>Conversión mobile vs. desktop</strong><span>Compara el rendimiento del flujo entre plataformas.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 23. CIERRE -->
+  <!-- 22. CIERRE -->
   <section class="pd-section" id="cierre">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">flag_circle</span>23 · Cierre</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">flag_circle</span>22 · Cierre</p>
       <h2 class="pd-heading" data-animate>Reducir complejidad sin reducir posibilidades.</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Proyecto Vibra parte de una premisa poco frecuente en un rediseño: el producto original ya funcionaba. El trabajo no fue reinventarlo, sino encontrar con precisión los puntos donde una decisión simple exigía demasiado esfuerzo — la identificación en el momento equivocado, un evento duplicado en el catálogo, un mapa de asientos imposible de leer en mobile — y resolver cada uno sin sacrificar las opciones reales que el catálogo ofrecía.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">Vibra demuestra que mejorar una experiencia no siempre significa agregar nuevas funcionalidades o reconstruir un producto desde cero. El desafío fue identificar dónde la experiencia exigía más esfuerzo del necesario y reorganizar esos momentos para que encontrar, elegir y comprar una entrada resultara más simple.</p>
       <p class="pd-lead" data-animate data-animate-delay="2">Lo que queda documentado aquí es un proceso de decisiones, no una colección de pantallas terminadas: los hallazgos que lo originaron, los principios que lo ordenaron y la estructura ya preparada para recibir el resto del contenido a medida que se valide.</p>
 
       <div class="pd-research-question" data-animate data-animate-delay="3">
@@ -808,6 +1107,23 @@
       <div class="pd-visual-frame pd-visual-frame--wide" style="margin-top:32px;" data-animate data-animate-delay="4">
         <span class="material-symbols-outlined">auto_awesome_mosaic</span>
         <span class="pd-visual-frame__label">Composición final Vibra — reservada</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL PROTOTIPO FINAL, EN CONSTRUCCIÓN (distinto del wireframe funcional — alta fidelidad, aún no corresponde presentarlo como terminado) -->
+  <section class="pd-section" id="prototipo-final">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">auto_awesome</span>Próximo paso</p>
+      <h2 class="pd-heading" data-animate>El prototipo final, en construcción</h2>
+
+      <!-- PrototypeCTA: para activar, agregar la URL real en data-prototype-url. -->
+      <div class="pd-prototype-cta" data-prototype-url="" data-animate data-animate-delay="1">
+        <p>Una vez validada la experiencia funcional, las decisiones se llevarán al sistema visual definitivo de Vibra.</p>
+        <a href="#" class="btn" aria-disabled="true">
+          <span class="pd-prototype-cta__pending-label">Prototipo en desarrollo</span>
+          <span class="material-symbols-outlined">hourglass_top</span>
+        </a>
       </div>
     </div>
   </section>

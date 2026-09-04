@@ -181,6 +181,77 @@
 .pd-brand-specimen .pd-brand-specimen__display { font-size: clamp(28px, 4vw, 44px); }
 .pd-brand-specimen .pd-brand-specimen__body { font-family: var(--pd-font-body); font-weight: 400; font-size: 16px; color: var(--pd-text-body); }
 
+/* ---------- Ajustes de layout: evitar overflow horizontal ----------
+   Contenido de esta reescritura (párrafos más largos en .pd-triad,
+   etiquetas .pd-evidence-tag con texto extenso como la de Cinépolis)
+   puede exceder el ancho disponible en tablet/mobile: por defecto, los
+   hijos de grid/flex no se encogen por debajo de su tamaño de contenido,
+   así que el texto queda recortado en el borde de la pantalla. Se
+   corrige aquí de forma local a Vibra, sin tocar project-detail.css. */
+.project-detail .pd-triad { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.project-detail .pd-evidence-tag {
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  text-align: left;
+}
+
+/* ---------- Diagrama real de arquitectura de información ----------
+   Imagen ancha (exportada desde el FigJam real de Jennifer, fondo
+   transparente). Se muestra a tamaño legible dentro de un marco con
+   scroll horizontal — igual estrategia que .pd-matrix — en vez de
+   comprimirla al ancho del contenedor, donde las etiquetas de cada
+   nodo dejarían de leerse. */
+.project-detail .vibra-ia-diagram {
+  margin-top: 16px;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid var(--pd-border);
+  background: var(--pd-surface);
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+}
+.project-detail .vibra-ia-diagram img {
+  display: block;
+  max-width: none;
+  width: 1800px;
+  height: auto;
+}
+@media (max-width: 700px) {
+  .project-detail .vibra-ia-diagram { padding: 14px; }
+}
+
+/* ---------- Wireframe navegable: vista previa estática (imagen) dentro de .pd-figma-embed__frame ----------
+   project-detail.css define el marco/estilo del componente pero no un caso para <img>, solo para <iframe>
+   (ese componente compartido nunca se usó con una imagen antes de Vibra). El frame se angosta a modo
+   "tarjeta de teléfono" porque la captura es de una pantalla mobile — se ve mejor centrada y compacta que
+   estirada al ancho completo del contenedor. */
+.project-detail .pd-figma-embed__frame {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-detail .pd-figma-embed__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Swatch de color del Design System (sección 20) ----------
+   .pd-chip espera un ícono Material Symbols como primer hijo; aquí se
+   reemplaza por un círculo de color sólido con el HEX real de la paleta
+   Vibra, manteniendo el mismo layout de .pd-chip sin tocar project-detail.css. */
+.project-detail .vibra-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+.project-detail .vibra-swatch--light {
+  border: 1px solid var(--pd-border);
+}
+
 /* ============================================================
    MODO OSCURO — mismo interruptor global del sitio.
    Fuera del hero (fijo en Tinta Noche por marca), el resto de
