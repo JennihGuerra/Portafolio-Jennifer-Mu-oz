@@ -8,6 +8,20 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+# Excepción acotada solo al wireframe navegable de Vibra: la app compilada
+# (Figma Make / Vite + React) dibuja su propio marco "Escritorio/Móvil"
+# cargándose a sí misma dentro de un iframe interno del mismo origen. Bajo
+# file:// eso funciona sin problema (no hay servidor ni headers), pero
+# servido por Netlify el X-Frame-Options: DENY de arriba bloquea también ese
+# auto-iframe del mismo sitio, dejando la pantalla en blanco. SAMEORIGIN
+# sigue bloqueando que otros dominios enmarquen estas páginas (mismo nivel
+# de protección para clickjacking externo) pero permite que el propio sitio
+# se enmarque a sí mismo, que es justo lo que necesita este componente.
+[[headers]]
+  for = "/assets/prototipo-vibra/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
