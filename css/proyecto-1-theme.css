@@ -141,6 +141,17 @@
   border-radius: 18px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  /* Fondo propio del marco = el mismo color (muestreado con cuentagotas) que
+     el fondo del propio archivo proyecto-1-identidad.png (#110F1D) — no el
+     Tinta Noche de marca var(--vibra-noche) = #171523, que es ligeramente
+     distinto. Sin esto, el marco se ve con el color de fondo de la sección
+     (Tinta Noche) y el logo (object-fit:contain) deja franjas de letterbox
+     con SU propio fondo, casi idéntico pero no igual: en desktop (marco 4/1,
+     poco letterbox) la diferencia es casi imperceptible, pero en mobile
+     (marco 1/1, mucho más letterbox arriba/abajo del logo) el desajuste se
+     nota como "dos colores" en vez de una sola pieza. Mismo criterio ya
+     aplicado en la tarjeta de Vibra de index.html (ver css/style.css). */
+  background: #110F1D;
   /* Mismo tamaño de marco que el hero-image de Medical 360
      (.project-hero__media--responsive: 4/1 en desktop, 1/1 en mobile), para
      mantener armonía visual entre proyectos aunque el contenido sea

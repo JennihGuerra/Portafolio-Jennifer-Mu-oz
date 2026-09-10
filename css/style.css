@@ -635,6 +635,61 @@ section { padding-block: var(--section-py); }
 }
 .cert-modal__list span { font-size: 13.5px; color: var(--color-text-secondary); }
 
+/* Tarjeta destacada: certificación de carrera (agrupa varios cursos) */
+.cert-modal__career {
+  display: flex;
+  gap: 14px;
+  padding: 18px !important;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background:
+    linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+    var(--gradient-accent) border-box;
+}
+.cert-modal__career-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  color: #fff;
+  font-size: 22px;
+}
+.cert-modal__career-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 4px;
+}
+.cert-modal__career-includes {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px dashed var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cert-modal__career-includes li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-body);
+  padding: 0;
+  border: none;
+}
+.cert-modal__career-includes .material-symbols-outlined {
+  font-size: 15px;
+  color: var(--color-secondary);
+}
+.cert-modal__career-includes em { font-style: normal; color: var(--color-text-secondary); }
+
 /* ---------- 8. PROYECTOS ---------- */
 .projects { background: var(--color-bg-alt); }
 
