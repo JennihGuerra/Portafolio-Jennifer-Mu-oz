@@ -146,7 +146,6 @@
         <div class="pd-chip"><span class="material-symbols-outlined">account_tree</span><div><strong>Arquitectura de información</strong></div></div>
         <div class="pd-chip"><span class="material-symbols-outlined">alt_route</span><div><strong>Diseño de flujos</strong></div></div>
         <div class="pd-chip"><span class="material-symbols-outlined">design_services</span><div><strong>UI Design</strong></div></div>
-        <div class="pd-chip"><span class="material-symbols-outlined">widgets</span><div><strong>Design System</strong></div></div>
         <div class="pd-chip"><span class="material-symbols-outlined">draft</span><div><strong>Prototipado</strong></div></div>
         <div class="pd-chip"><span class="material-symbols-outlined">fact_check</span><div><strong>Preparación de testing</strong></div></div>
         <div class="pd-chip"><span class="material-symbols-outlined">groups</span><div><strong>Colaboración con producto y desarrollo</strong></div></div>
@@ -666,7 +665,7 @@
             <p class="pd-lead" style="font-size:15px; margin:0 0 16px;">Esta necesidad del negocio —detallada en Business needs— se tradujo en una decisión concreta de producto: la página debía comunicar mejor la identidad del evento sin perder la información necesaria para decidir la compra.</p>
             <div class="pd-decision__grid pd-decision__grid--2">
               <div><span>Decisión</span><p>Evolucionar la ficha tradicional hacia una página tipo landing capaz de combinar contenido editorial e información transaccional.</p></div>
-              <div><span>Puede incluir</span><p>Identidad visual del evento, imagen/hero, descripción, fecha, recinto, precios, condiciones de acceso, información relevante de la venta (por ejemplo, desde qué edad pagan los niños cuando corresponda) y CTA de compra.</p></div>
+              <div><span>Contempla</span><p>Identidad visual del evento, imagen/hero, descripción, fecha, recinto, precios, condiciones de acceso, información relevante de la venta (por ejemplo, desde qué edad pagan los niños cuando corresponda) y CTA de compra.</p></div>
             </div>
             <blockquote class="pd-quote pd-quote--compact" style="margin-top:16px;">“La experiencia editorial nunca debe esconder la información necesaria para comprar.”</blockquote>
           </div>
@@ -681,7 +680,7 @@
             </div>
             <div class="pd-decision__grid">
               <div><span>Problema</span><p>Los eventos podían usar distintos modelos de venta: general, por sector, asiento numerado o nominativa.</p></div>
-              <div><span>Decisión</span><p>Una arquitectura común donde solo cambia la etapa de selección.</p></div>
+              <div><span>Decisión</span><p>Una arquitectura común donde la etapa de selección se adapta según la modalidad de compra.</p></div>
               <div><span>Solución</span><p>Cuatro modalidades de compra. <a href="#arquitectura-informacion">Ver arquitectura completa ↓</a></p></div>
             </div>
           </div>
@@ -719,7 +718,7 @@
         <strong>Una arquitectura. Cuatro modalidades de compra.</strong>
       </div>
 
-      <p class="pd-lead" style="margin-top:24px;" data-animate data-animate-delay="3">Diseñamos una estructura común capaz de adaptar la etapa de selección según la configuración de cada evento, manteniendo identificación, resumen, pago y confirmación como etapas consistentes.</p>
+      <p class="pd-lead" style="margin-top:24px;" data-animate data-animate-delay="3">Diseñamos una estructura común capaz de adaptar la etapa de selección según la configuración de cada evento. Identificación, resumen, pago y confirmación mantienen una estructura consistente, incorporando datos adicionales cuando la modalidad lo requiere.</p>
 
       <p class="pd-note" style="margin-top:28px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="4">Variable — cambia según el evento</p>
       <div class="pd-flow" data-animate data-animate-delay="4">
@@ -752,7 +751,7 @@
     <div class="container pd-section__inner">
       <p class="pd-kicker"><span class="material-symbols-outlined">checklist_rtl</span>14 · Cuatro modalidades de compra</p>
       <h2 class="pd-heading" data-animate>Una misma estructura, cuatro formas de comprar</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Cada modalidad ajusta únicamente la etapa de selección — identificación, resumen, pago y confirmación se mantienen consistentes en las cuatro.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">Cada modalidad adapta la etapa de selección y, cuando corresponde, incorpora los datos específicos requeridos por el tipo de entrada. Identificación, resumen, pago y confirmación mantienen una estructura común.</p>
 
       <h3 class="pd-heading" style="font-size:17px; margin-top:36px;" data-animate data-animate-delay="2">01 — Entrada general</h3>
       <div class="pd-flow" data-animate data-animate-delay="2">
@@ -850,12 +849,13 @@
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
         <div class="pd-flow__step"><span class="material-symbols-outlined">calendar_month</span>Elegir fecha/ciudad</div>
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
-        <div class="pd-flow__step"><span class="material-symbols-outlined">event_seat</span>Elegir asiento</div>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">confirmation_number</span>Seleccionar entrada</div>
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
         <div class="pd-flow__step"><span class="material-symbols-outlined">badge</span>Identificación</div>
         <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
         <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">credit_card</span>Pago</div>
       </div>
+      <p class="pd-note" style="margin-top:12px;" data-animate data-animate-delay="2">La etapa de selección se adapta según la modalidad: cantidad, sector, asiento o datos nominativos.</p>
 
       <p class="pd-note" style="margin-top:28px; font-style:normal; font-weight:700; color:var(--pd-text-primary);" data-animate data-animate-delay="3">Un flujo común para diferentes formas de comprar</p>
       <p class="pd-lead" data-animate data-animate-delay="3">Los eventos podían operar con distintos modelos de venta. En lugar de diseñar recorridos independientes para cada modalidad, concentramos la variabilidad en la etapa de selección y mantuvimos una estructura común para completar la compra.</p>
@@ -1097,7 +1097,7 @@
     <div class="container pd-section__inner">
       <p class="pd-kicker"><span class="material-symbols-outlined">widgets</span>19 · Vibra UI — Foundations & Components</p>
       <h2 class="pd-heading" data-animate>Diseñar una experiencia consistente también era parte del producto</h2>
-      <p class="pd-lead" data-animate data-animate-delay="1">Vibra UI se está construyendo de forma curada, componente por componente, mostrando únicamente lo que demuestra pensamiento sistémico — no un inventario completo de tokens.</p>
+      <p class="pd-lead" data-animate data-animate-delay="1">Vibra UI está construido de forma curada, componente por componente, mostrando únicamente lo que demuestra pensamiento sistémico — no un inventario completo de tokens.</p>
 
       <div class="pd-token-group" style="margin-top:32px;" data-animate data-animate-delay="2">
         <strong>Foundations — color</strong>
@@ -1186,7 +1186,7 @@
       <div style="margin-top:24px;" data-animate data-animate-delay="2">
         <div class="pd-evidence-row" style="margin:0 0 10px;"><span class="pd-evidence-tag pd-evidence-tag--oportunidad"><span class="material-symbols-outlined">rocket_launch</span>Propuesta UX</span></div>
         <h3 class="pd-heading" style="font-size:19px;">No solo mostrar dónde es, sino ayudar a llegar.</h3>
-        <p class="pd-lead" style="font-size:14.5px;">La nueva landing incorporaba información sobre el recinto y su ubicación. Desde UX identificamos la oportunidad de convertir esa información en una acción útil: incorporar un botón "Cómo llegar" asociado a la ubicación del recinto.</p>
+        <p class="pd-lead" style="font-size:14.5px;">La landing propuesta incorpora información sobre el recinto y su ubicación. A partir de esta solución identificamos una oportunidad adicional: convertir esa información en una acción útil mediante un botón "Cómo llegar".</p>
       </div>
 
       <p class="pd-note" style="margin-top:28px;">La propuesta de <strong style="color:var(--pd-text-primary); font-style:normal;">Wallet</strong> — facilitar la conservación de la entrada — se desarrolla en detalle en <a href="#hallazgo-a-decision">Del hallazgo a la decisión ↑</a>, junto a la evidencia real que la origina.</p>
