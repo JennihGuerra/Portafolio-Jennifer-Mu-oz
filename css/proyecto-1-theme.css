@@ -167,6 +167,8 @@
 }
 @media (max-width: 600px) {
   .project-detail .vibra-brand-band .vibra-identity-media { aspect-ratio: 1 / 1; }
+  .project-detail .vibra-ds-preview { gap: 12px; }
+  .project-detail .vibra-ds-preview__thumb { height: 130px; padding: 12px; }
 }
 
 /* ---------- Nota de confidencialidad: franja compacta, no un capítulo ---------- */
@@ -248,6 +250,58 @@
   height: auto;
 }
 
+/* ---------- Badge de marca en el CTA del prototipo final ----------
+   .pd-prototype-cta tiene fondo degradado (Violeta Pulso → Coral Vivo), así
+   que el logo real de Vibra (que usa texto negro + ícono a color, pensado
+   para fondo claro) necesita su propia tarjeta blanca encima del degradado
+   — no se apoya sobre el gradiente directamente. Fondo blanco fijo (no
+   depende de --pd-surface / modo oscuro) porque es el mismo logo real, no
+   un token del Design System. */
+.project-detail .vibra-prototype-brand {
+  display: inline-flex;
+  margin: 0 0 22px;
+  padding: 14px 26px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  border: 1px solid #E4E1EE;
+}
+.project-detail .vibra-prototype-brand img {
+  display: block;
+  height: 26px;
+  width: auto;
+}
+
+/* ---------- PrototypeCTA: fondo blanco fijo, no el degradado de project-detail.css ----------
+   A pedido explícito de Jennifer: el degradado Violeta Pulso → Coral Vivo
+   (magenta hacia el final) se reemplaza por blanco fijo — igual criterio de
+   "marca real, no token del tema" que ya usa .vibra-prototype-brand — con
+   texto y botón en Violeta Pulso para que resalten sobre el blanco en vez
+   de depender del contraste blanco-sobre-degradado que tenía antes. Fijo
+   en claro y oscuro (no usa var(--pd-*) del tema) porque es la misma
+   tarjeta de marca que ya enmarca el logo real. */
+.project-detail .pd-prototype-cta {
+  background: #FFFFFF;
+  color: #171523;
+  border: 1px solid #E4E1EE;
+  box-shadow: 0 14px 30px rgba(23, 21, 35, 0.08);
+}
+.project-detail .pd-prototype-cta p {
+  color: #5B5770;
+}
+.project-detail .pd-prototype-cta .btn:not([aria-disabled="true"]) {
+  background: #6C3BFF;
+  color: #FFFFFF;
+}
+.project-detail .pd-prototype-cta .btn:not([aria-disabled="true"]):hover,
+.project-detail .pd-prototype-cta .btn:not([aria-disabled="true"]):focus-visible {
+  background: #5A2BEA;
+  color: #FFFFFF;
+}
+.project-detail .pd-prototype-cta .btn[aria-disabled="true"] {
+  background: #EFEAFF;
+  color: #8A84A6;
+}
+
 /* ---------- Swatch de color del Design System (sección 20) ----------
    .pd-chip espera un ícono Material Symbols como primer hijo; aquí se
    reemplaza por un círculo de color sólido con el HEX real de la paleta
@@ -261,6 +315,63 @@
 }
 .project-detail .vibra-swatch--light {
   border: 1px solid var(--pd-border);
+}
+
+/* ---------- Core components implementados (sección 20) ----------
+   Mini-galería de capturas reales tomadas del sitio de documentación
+   del Design System Vibra (botones, espaciado, buscador y filtros ya
+   implementados) — reemplaza los chips abstractos por evidencia visual. */
+.project-detail .vibra-ds-preview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 10px;
+}
+.project-detail .vibra-ds-preview__card {
+  margin: 0;
+  background: var(--pd-surface);
+  border: 1px solid var(--pd-border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease);
+}
+.project-detail .vibra-ds-preview__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+  border-color: var(--pd-accent);
+}
+.project-detail .vibra-ds-preview__thumb {
+  height: 220px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+.project-detail .vibra-ds-preview__thumb img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.project-detail .vibra-ds-preview__card figcaption {
+  padding: 10px 14px 14px;
+}
+.project-detail .vibra-ds-preview__card strong {
+  display: block;
+  font-family: var(--pd-font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--pd-text-primary);
+}
+.project-detail .vibra-ds-preview__card span {
+  display: block;
+  font-size: 11.5px;
+  font-family: var(--pd-font-mono, 'DM Mono', monospace);
+  color: var(--pd-text-muted);
+  margin-top: 2px;
 }
 
 /* ============================================================
@@ -309,10 +420,11 @@
 [data-theme="dark"] .project-detail .project-stage-link.is-active:hover,
 [data-theme="dark"] .project-detail .project-stage-link.is-active:focus-visible { color: #171523; }
 
-/* Botón blanco del degradado (CTA final / PrototypeCTA / siguiente proyecto):
-   se fija a texto oscuro para no perder contraste sobre fondo blanco fijo. */
-[data-theme="dark"] .project-detail .pd-next .btn--pd-next,
-[data-theme="dark"] .project-detail .pd-prototype-cta .btn:not([aria-disabled="true"]) {
+/* Botón blanco del degradado (CTA "Siguiente proyecto"): se fija a texto
+   oscuro para no perder contraste sobre fondo blanco fijo. El botón de
+   .pd-prototype-cta ya no necesita este parche: su color está fijo en
+   violeta/blanco directamente en la regla de arriba, sin depender del tema. */
+[data-theme="dark"] .project-detail .pd-next .btn--pd-next {
   color: #171523;
 }
 
