@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistema de diseño para plataforma financiera — Jennifer Muñoz</title>
-<meta name="description" content="Caso de estudio: creación de un design system escalable para web y móvil en una plataforma fintech.">
+<title>Tapp — Caja Los Andes | UX / Product Design · Jennifer Muñoz</title>
+<meta name="description" content="Case study personal e independiente de UX / Product Design sobre Tapp, la tarjeta prepago digital de Caja Los Andes: research, hipótesis y oportunidades de intervención en transferencias y créditos.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,8 @@
 
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/project-detail.css">
+<link rel="stylesheet" href="../css/proyecto-2-theme.css">
 </head>
 <body>
 
@@ -53,42 +55,559 @@
 
 <div class="nav-overlay" id="navOverlay"></div>
 
-<main id="main">
-  <section class="project-hero">
+<main id="main" class="project-detail">
+
+  <!-- Barra fija "Volver a proyectos" -->
+  <div class="tapp-back-bar">
     <div class="container">
       <a href="../index.html#proyectos" class="btn btn--ghost btn--sm btn--back">
         <span class="material-symbols-outlined">arrow_back</span>
         Volver a proyectos
       </a>
-
-      <p class="eyebrow">Product Design · Fintech</p>
-      <h1 class="section-title">Sistema de diseño para plataforma financiera</h1>
-      <p class="section-lead">Caso de estudio: creación de un design system escalable para web y móvil en una plataforma fintech.</p>
-
-      <div class="project-detail__meta">
-        <div><strong>Rol</strong><span>Product Designer</span></div>
-        <div><strong>Duración</strong><span>3 meses</span></div>
-        <div><strong>Herramientas</strong><span>Figma, Storybook, Zeroheight</span></div>
-      </div>
-
-      <div class="project-hero__media" style="background:linear-gradient(135deg, #2E0047, #6a2f8a)">
-        <span class="material-symbols-outlined">account_balance</span>
-      </div>
     </div>
-  </section>
+  </div>
 
-  <section class="coming-soon">
+  <!-- HERO -->
+  <section class="project-hero tapp-hero">
     <div class="container">
-      <div class="coming-soon__card">
-        <div class="coming-soon__icon">
-          <span class="material-symbols-outlined">construction</span>
-        </div>
-        <h2>Caso de estudio en construcción</h2>
-        <p>Estoy escribiendo el detalle completo de este proyecto: proceso, decisiones de diseño y resultados. Vuelve pronto o escríbeme si quieres conocer más ahora mismo.</p>
-        <a href="../index.html#contacto" class="btn btn--primary">Contactarme</a>
+      <p class="eyebrow">UX / Product Design · Fintech</p>
+      <h1 class="section-title" data-animate data-animate-delay="1">No rediseñar Tapp completa: identificar dónde intervenir.</h1>
+      <p class="section-lead" data-animate data-animate-delay="2">Tapp es la tarjeta prepago digital de Caja Los Andes. Este proyecto busca identificar dónde intervenir para reducir esfuerzo y aumentar el control en momentos financieros relevantes — sin rediseñar el producto completo.</p>
+
+      <div class="pd-hero-tags" data-animate data-animate-delay="2">
+        <span class="pd-hero-tag">Fintech</span>
+        <span class="pd-hero-tag">Product Design</span>
+        <span class="pd-hero-tag">UX Research</span>
+        <span class="pd-hero-tag">Caja Los Andes</span>
+      </div>
+
+      <div class="project-detail__meta" data-animate data-animate-delay="3">
+        <div><strong>Rol</strong><span>UX / Product Design</span></div>
+        <div class="is-pending"><strong>Estado</strong><span>Research y definición de alcance · 2026</span></div>
+        <div><strong>Responsabilidades</strong><span>UX Research · Priorización · Problem Framing · Product Design</span></div>
+        <div><strong>Herramientas</strong><span>Figma · FigJam</span></div>
+      </div>
+
+      <div class="project-hero__media" data-animate data-animate-delay="4">
+        <span class="material-symbols-outlined">credit_card</span>
       </div>
     </div>
   </section>
+
+  <!-- Nota de transparencia -->
+  <section class="pd-section" style="padding-block:40px 56px;">
+    <div class="container pd-section__inner">
+      <div class="pd-confidential" data-animate>
+        <span class="material-symbols-outlined">info</span>
+        <p>Este es un proyecto personal e independiente de UX / Product Design, no desarrollado ni encargado por Caja Los Andes. Se construye a partir de información pública (sitio oficial, tiendas de aplicaciones, reseñas públicas) y de pantallas de Tapp observadas durante el proyecto. No reemplaza ni representa investigación interna de la empresa — las fuentes utilizadas están documentadas al final de este case (sección 18).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 · QUÉ ES TAPP -->
+  <section class="pd-section pd-section--alt" id="que-es-tapp">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">info</span>01 · Qué es Tapp</p>
+      <h2 class="pd-heading" data-animate>Un producto financiero que ya resuelve mucho</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Tapp es la tarjeta prepago digital de Caja Los Andes. Su propuesta actual se centra en ordenar y controlar los gastos, realizar transferencias, pagar cuentas, comprar en comercios nacionales e internacionales, retirar dinero, acceder a beneficios y utilizar servicios financieros asociados.</p>
+      <p class="pd-lead" data-animate data-animate-delay="2">El sitio oficial de Tapp destaca transferencias a todos los bancos y entre Tapp, pago de cuentas, ordenamiento de gastos por categoría, compras, tarjeta física, giros y servicios como remesas.</p>
+
+      <blockquote class="pd-quote" data-animate data-animate-delay="3">“Tarjeta prepago digital para controlar y ordenar el dinero de tus gastos.”<span>Posicionamiento actual · tapp.cl</span></blockquote>
+
+      <ul class="pd-list" data-animate data-animate-delay="4">
+        <li><span class="material-symbols-outlined">credit_card</span><span><strong>Producto —</strong> Tarjeta prepago digital de Caja Los Andes.</span></li>
+        <li><span class="material-symbols-outlined">tune</span><span><strong>Propuesta —</strong> Control y orden de los gastos.</span></li>
+        <li><span class="material-symbols-outlined">sync_alt</span><span><strong>Transferencias —</strong> A todos los bancos y entre Tapp.</span></li>
+        <li><span class="material-symbols-outlined">receipt_long</span><span><strong>Pagos —</strong> Pago de cuentas desde la app.</span></li>
+        <li><span class="material-symbols-outlined">account_balance</span><span><strong>Créditos —</strong> Simulación / acceso a crédito Caja Los Andes y depósito directo en Tapp.</span></li>
+        <li><span class="material-symbols-outlined">savings</span><span><strong>Ahorro —</strong> Tapp incluye una experiencia de ahorro / inversión.</span></li>
+        <li><span class="material-symbols-outlined">redeem</span><span><strong>Beneficios —</strong> Convenios y promociones.</span></li>
+        <li><span class="material-symbols-outlined">support_agent</span><span><strong>Canales —</strong> App + soporte / canales de ayuda.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 02 · INFORMACIÓN QUE DEBEMOS RESPETAR -->
+  <section class="pd-section" id="informacion-a-respetar">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">verified</span>02 · Información actual que debemos respetar</p>
+      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Desk research</span></div>
+      <h2 class="pd-heading" data-animate>Separar hechos verificables de hipótesis</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Esta sección es clave porque el case debe evitar afirmar que Tapp carece de una funcionalidad si esa funcionalidad existe en otro nivel del ecosistema.</p>
+      <ul class="pd-list" data-animate data-animate-delay="2">
+        <li><span class="material-symbols-outlined">check_circle</span><span>Tapp permite transferencias nacionales; actualmente declara sin límite de número de movimientos, con máximo de $250.000 para la primera transacción y $5.000.000 diarios.</span></li>
+        <li><span class="material-symbols-outlined">check_circle</span><span>Tapp permite pagar cuentas desde la app.</span></li>
+        <li><span class="material-symbols-outlined">check_circle</span><span>Tapp declara que el crédito Caja Los Andes puede simularse y recibirse directamente en la cuenta Tapp.</span></li>
+        <li><span class="material-symbols-outlined">check_circle</span><span>Caja Los Andes tiene además una app propia que actualmente declara permitir ver el estado del crédito y el pago de cuotas asociadas.</span></li>
+        <li><span class="material-symbols-outlined">check_circle</span><span>Caja Los Andes informa que el crédito social utiliza descuento por planilla como mecanismo de pago en determinados productos/colectivos, y que existen medios alternativos cuando no se realiza el descuento.</span></li>
+      </ul>
+      <blockquote class="pd-quote" data-animate data-animate-delay="3">El problema no se formula como “Caja Los Andes no permite ver créditos”, sino como una oportunidad para investigar la continuidad de esa información y gestión dentro de Tapp.<span>Encuadre del problema</span></blockquote>
+    </div>
+  </section>
+
+  <!-- 03 · AUDITORÍA -->
+  <section class="pd-section pd-section--alt" id="auditoria">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">fact_check</span>03 · Auditoría de la Tapp observada</p>
+      <h2 class="pd-heading" data-animate>Qué observamos, pantalla por pantalla</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">La auditoría se realizó sobre las pantallas de Tapp compartidas durante el proyecto. Estas observaciones sirven como punto de partida y no sustituyen la investigación con usuarios.</p>
+
+      <div class="pd-heuristics" data-animate data-animate-delay="2">
+        <table class="pd-heuristics__table">
+          <thead><tr><th>Pantalla / área</th><th>Qué observamos</th><th>Decisión</th></tr></thead>
+          <tbody>
+            <tr><td>Inicio / acceso</td><td>Saludo personalizado, ingreso, cambio de usuario y accesos rápidos.</td><td>Contexto; no es foco.</td></tr>
+            <tr><td>Home</td><td>Mi cuenta Tapp, saldo, movimientos, Recargar, Pagar, bip!QR, Beneficios, Salud financiera, accesos inferiores.</td><td>Punto de entrada para nuestras propuestas.</td></tr>
+            <tr><td>Salud financiera</td><td>Resumen mensual y gastos por categoría.</td><td>Ya existe; no rediseñar salvo que el research lo conecte con el problema.</td></tr>
+            <tr><td>Recargar</td><td>Carga desde app, transferencia desde otro banco y Sencillito.</td><td>Fuera de alcance.</td></tr>
+            <tr><td>Pago de cuentas</td><td>Alta y pago de servicios.</td><td>Fuera de alcance.</td></tr>
+            <tr><td>bip!QR</td><td>Flujo de transporte / pago asociado a bip!QR.</td><td>Fuera de alcance.</td></tr>
+            <tr><td>Beneficios</td><td>Beneficios, convenios y promociones.</td><td>Fuera de alcance.</td></tr>
+            <tr><td>Mi cuenta</td><td>Datos, claves, información, ayuda y cierre de sesión.</td><td>Fuera de alcance.</td></tr>
+            <tr><td>Transferir</td><td>Contactos guardados, búsqueda, agregar persona y menú por contacto.</td><td>Foco 1.</td></tr>
+            <tr><td>Tarjetas</td><td>Visualización, datos, bloqueo y opciones.</td><td>Fuera de alcance.</td></tr>
+            <tr><td>Mis ahorros</td><td>Experiencia de ahorro / inversión asociada a SoyFocus.</td><td>Fuera de alcance.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <blockquote class="pd-quote" data-animate data-animate-delay="3">No reconstruir Tapp completa. Solo diseñar pantallas directamente afectadas por los journeys investigados y las mínimas necesarias para dar contexto.<span>Regla de alcance</span></blockquote>
+    </div>
+  </section>
+
+  <!-- 04 · ALCANCE DE DISEÑO DEL PROTOTIPO -->
+  <section class="pd-section" id="alcance-prototipo">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">crop</span>04 · Alcance de diseño del prototipo</p>
+      <h2 class="pd-heading" data-animate>Qué vamos a construir — y qué no</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">El prototipo no reconstruye Tapp completa: se concentra en las pantallas directamente afectadas por los journeys investigados, más el mínimo necesario para dar contexto.</p>
+
+      <div class="pd-heuristics" data-animate data-animate-delay="2">
+        <table class="pd-heuristics__table">
+          <thead><tr><th>Área</th><th>Construir</th><th>No construir</th></tr></thead>
+          <tbody>
+            <tr><td>Base</td><td>Home y elementos mínimos de navegación/contexto.</td><td>Toda la app.</td></tr>
+            <tr><td>Transferencias</td><td>Transferir, destinatarios, agregar destinatario, solución validada, verificación y acceso a frecuentes/favoritos si corresponde.</td><td>Otros journeys de Tapp.</td></tr>
+            <tr><td>Créditos</td><td>Entrada a Mis créditos, resumen, detalle, cuotas y acción validada.</td><td>Toda la gestión de Caja Los Andes.</td></tr>
+            <tr><td>Login</td><td>Opcional; solo si ayuda a contextualizar el prototipo.</td><td>Flujos completos de autenticación.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pd-note">“Mis créditos” y el acceso a frecuentes/favoritos aparecen aquí como posibles pantallas a construir, no como soluciones decididas — su diseño final depende de lo que confirme el research de la sección 05.</p>
+    </div>
+  </section>
+
+  <!-- 05 · OPORTUNIDADES INICIALES -->
+  <section class="pd-section pd-section--alt" id="oportunidades">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">explore</span>05 · Oportunidades iniciales</p>
+      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>Hipótesis — sin validar</span></div>
+      <h2 class="pd-heading" data-animate>Dos momentos con potencial de fricción</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">La auditoría abrió dos oportunidades para investigar. Son genuinamente abiertas: el research podría confirmar una, las dos, o ninguna — y podría revelar algo distinto.</p>
+
+      <div class="pd-decisions" style="margin-top:32px;" data-animate data-animate-delay="2">
+        <div class="pd-decision">
+          <span class="pd-decision__num">01</span>
+          <div>
+            <h3>Transferencias</h3>
+            <div class="pd-research-question" style="margin-top:0;">
+              <span>Pregunta de producto</span>
+              <strong style="font-size:clamp(18px,2.2vw,24px);">¿Cómo podemos reducir el esfuerzo necesario para encontrar, agregar y volver a transferir a un destinatario en Tapp?</strong>
+            </div>
+            <div class="pd-decision__grid pd-decision__grid--2" style="margin-top:18px;">
+              <div><span>Observación inicial</span><p>La pantalla observada para agregar una cuenta solicita ingreso manual de información bancaria. La lista de contactos permite buscar destinatarios guardados, pero no observamos una priorización clara de contactos frecuentes/favoritos.</p></div>
+              <div><span>Hipótesis</span><p>El ingreso manual de información y la falta de priorización de destinatarios frecuentes podrían aumentar el esfuerzo necesario para realizar transferencias cotidianas.</p></div>
+            </div>
+            <p class="pd-benchmark__col-title" style="margin-top:22px;">Soluciones a validar — no decididas</p>
+            <ul class="pd-benchmark__list">
+              <li>Reconocimiento simplificado de un usuario Tapp.</li>
+              <li>Pegar / importar datos bancarios desde otra aplicación.</li>
+              <li>Escaneo de QR compatible.</li>
+              <li>Favoritos explícitos.</li>
+              <li>Destinatarios frecuentes derivados del comportamiento, sin convertirlos automáticamente en favoritos.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pd-decision">
+          <span class="pd-decision__num">02</span>
+          <div>
+            <h3>Créditos</h3>
+            <div class="pd-research-question" style="margin-top:0;">
+              <span>Pregunta de producto</span>
+              <strong style="font-size:clamp(18px,2.2vw,24px);">¿Cómo podemos dar mayor continuidad y control al usuario después de recibir o gestionar un crédito asociado a Tapp?</strong>
+            </div>
+            <p class="pd-lead" style="margin-top:18px; font-size:15px;"><strong>Observación inicial:</strong> Tapp promociona y permite simular crédito Caja Los Andes y recibirlo directamente en la cuenta Tapp. El ecosistema Caja Los Andes dispone, por su parte, de información de estado y cuotas en su propia app. Esto abre una oportunidad para investigar si la gestión del crédito se siente fragmentada entre productos/canales.</p>
+            <p class="pd-lead" style="margin-top:12px; font-size:15px;"><strong>Hipótesis:</strong> los usuarios con créditos asociados a Tapp podrían necesitar mayor visibilidad y autonomía para comprender su deuda y actuar cuando el pago habitual no ocurre.</p>
+            <p class="pd-benchmark__col-title" style="margin-top:22px;">Dimensiones a investigar</p>
+            <div class="pd-triad" style="margin-top:14px;">
+              <div class="pd-triad__card"><h3><span class="material-symbols-outlined">visibility</span>Visibilidad</h3><p>Monto pendiente, cuotas pagadas/restantes, próxima cuota.</p></div>
+              <div class="pd-triad__card"><h3><span class="material-symbols-outlined">tune</span>Control</h3><p>Estado del crédito, historial y claridad sobre el pago.</p></div>
+              <div class="pd-triad__card"><h3><span class="material-symbols-outlined">bolt</span>Acción</h3><p>Qué hacer cuando el descuento no ocurre: pago manual o prepago, según las reglas reales del producto.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · SEÑALES PÚBLICAS DE USUARIOS -->
+  <section class="pd-section" id="senales-publicas">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">rate_review</span>06 · Señales públicas de usuarios</p>
+      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--desk"><span class="material-symbols-outlined">travel_explore</span>Desk research</span></div>
+      <h2 class="pd-heading" data-animate>Reseñas públicas como punto de partida, no como prueba</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Las reseñas públicas se utilizan como desk research y generación de hipótesis. No se presentan como evidencia representativa de todos los usuarios.</p>
+
+      <div class="pd-validation" data-animate data-animate-delay="2">
+        <div class="pd-validation__row">
+          <p class="pd-validation__task"><span class="material-symbols-outlined">sync_alt</span>Señal · Transferencias</p>
+          <div class="pd-validation__grid" style="grid-template-columns:1fr;">
+            <div><span>Reseña pública · agosto 2026</span><p>Describe un problema al intentar transferir a una cuenta nueva, seguido de bloqueo de la app y dificultad para acceder al dinero.</p></div>
+          </div>
+        </div>
+        <div class="pd-validation__row">
+          <p class="pd-validation__task"><span class="material-symbols-outlined">account_balance</span>Señal · Crédito</p>
+          <div class="pd-validation__grid" style="grid-template-columns:1fr;">
+            <div><span>Reseña pública · julio 2026</span><p>Reporta recibir comunicaciones de un crédito preaprobado, pero la app mostraba el crédito “en camino” y la persona terminó siendo derivada a Caja Los Andes.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="pd-note" data-animate data-animate-delay="3">Estas señales no prueban por sí solas que exista un problema generalizado. Sí justifican investigar la continuidad de los journeys de transferencia y crédito.</p>
+      <p class="pd-note">Nota: durante el research previo también se identificó un reclamo público sobre la imposibilidad de gestionar un prepago directamente desde Tapp. Este tipo de señal debe verificarse nuevamente antes de usarla como evidencia central del case.</p>
+    </div>
+  </section>
+
+  <!-- 07 · BENCHMARK COMPETITIVO -->
+  <section class="pd-section pd-section--alt" id="benchmark">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">query_stats</span>07 · Benchmark competitivo</p>
+      <h2 class="pd-heading" data-animate>Qué patrones ya resuelve la competencia</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Benchmark seleccionado: Santander, Bci y BancoEstado. El objetivo no es declarar un ganador, sino identificar patrones de interacción que ayuden a formular hipótesis.</p>
+
+      <div class="pd-heuristics" data-animate data-animate-delay="2">
+        <table class="pd-heuristics__table">
+          <thead><tr><th>Criterio</th><th>Tapp</th><th>Santander</th><th>Bci</th><th>BancoEstado</th></tr></thead>
+          <tbody>
+            <tr><td>Destinatarios guardados</td><td>Sí</td><td>Sí</td><td>Sí</td><td>Sí</td></tr>
+            <tr><td>Búsqueda de destinatarios</td><td>Sí</td><td>Sí</td><td>Sí</td><td>Sí</td></tr>
+            <tr><td>Favoritos</td><td>No observado</td><td>Sí</td><td>No confirmado para este benchmark</td><td>No confirmado</td></tr>
+            <tr><td>Pegar datos / QR para nuevo destinatario</td><td>No observado en pantalla auditada</td><td>Sí</td><td>No confirmado</td><td>No confirmado</td></tr>
+            <tr><td>Pagar crédito desde app</td><td>No observado en Tapp auditada</td><td>Sí</td><td>Sí</td><td>Depende del producto/canal</td></tr>
+            <tr><td>Gestión de crédito</td><td>Oportunidad a investigar</td><td>Integrada en app bancaria</td><td>Integrada en app</td><td>Existe en ecosistema</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="pd-benchmark__col-title" style="margin-top:28px;">Aprendizajes</p>
+      <ul class="pd-list" data-animate data-animate-delay="3">
+        <li><span class="material-symbols-outlined">lightbulb</span><span>Santander demuestra patrones de menor esfuerzo para incorporar destinatarios: copiar/pegar datos y QR, además de favoritos.</span></li>
+        <li><span class="material-symbols-outlined">lightbulb</span><span>Bci demuestra continuidad en el journey de crédito al permitir consultar/pagar una cuota desde la app.</span></li>
+        <li><span class="material-symbols-outlined">lightbulb</span><span>BancoEstado funciona como referencia de un modelo bancario masivo y tradicional para transferencias.</span></li>
+        <li><span class="material-symbols-outlined">lightbulb</span><span>El benchmark no define la solución: solo indica qué patrones vale la pena contrastar con usuarios.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 08 · PLAN DE RESEARCH -->
+  <section class="pd-section" id="plan-research">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">route</span>08 · Plan de research</p>
+      <h2 class="pd-heading" data-animate>Cómo vamos a contrastar las hipótesis</h2>
+      <div class="pd-stats" data-animate data-animate-delay="1">
+        <div class="pd-stat"><strong>5</strong><span>Entrevistas — entender comportamientos, fricciones, contexto y causas</span></div>
+        <div class="pd-stat"><strong>10–12</strong><span>Encuesta exploratoria — cuantificar tendencias y frecuencia dentro de la muestra</span></div>
+        <div class="pd-stat"><strong>5</strong><span>Usability testing — validar la solución una vez diseñada</span></div>
+      </div>
+      <p class="pd-note" data-animate data-animate-delay="2">La encuesta es exploratoria y no representativa. Con muestras pequeñas, los resultados deben expresarse como “X de 12 participantes” y no como afirmaciones sobre la totalidad de usuarios bancarios.</p>
+    </div>
+  </section>
+
+  <!-- 09 · ENTREVISTA SEMIESTRUCTURADA -->
+  <section class="pd-section pd-section--alt" id="entrevista">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">record_voice_over</span>09 · Entrevista semiestructurada</p>
+      <h2 class="pd-heading" data-animate>10 preguntas para entender comportamiento, no para validar soluciones</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Duración objetivo: 15–20 minutos. Se evita mencionar QR, favoritos, “Mis créditos” u otras soluciones antes de explorar el comportamiento.</p>
+
+      <ul class="pd-list" data-animate data-animate-delay="2">
+        <li><span class="material-symbols-outlined">help</span><span><strong>1.</strong> ¿Qué aplicaciones bancarias o financieras utilizas habitualmente y para qué las usas principalmente?</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>2.</strong> Cuéntame sobre la última transferencia que hiciste a una persona nueva. ¿Cómo recibiste sus datos y qué hiciste para agregarla?</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>3.</strong> ¿Hay algo que normalmente te resulte incómodo, lento o confuso cuando agregas un destinatario nuevo?</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>4.</strong> ¿Alguna vez te has equivocado o has tenido dudas ingresando datos de una cuenta? Cuéntame qué pasó.</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>5.</strong> Cuando transfieres a alguien a quien ya le has enviado dinero antes, ¿cómo lo encuentras normalmente?</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>6.</strong> ¿Hay personas o cuentas a las que transfieres recurrentemente? ¿Con qué frecuencia y por qué?</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>7.</strong> ¿Tienes o has tenido algún crédito que pagues en cuotas? ¿Cómo revisas actualmente cuánto has pagado y cuánto te falta?</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>8.</strong> Cuando quieres saber el valor de tu próxima cuota, cuántas cuotas quedan o tu saldo pendiente, ¿dónde buscas esa información?</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>9.</strong> ¿Alguna vez tuviste que pagar una cuota manualmente porque no se realizó un descuento automático o por planilla? ¿Cómo resolviste la situación? Si nunca ocurrió: si sucediera, ¿sabrías dónde revisar qué hacer?</span></li>
+        <li><span class="material-symbols-outlined">help</span><span><strong>10.</strong> Pensando en transferencias y en el seguimiento de tus compromisos financieros, ¿qué situación te genera actualmente más esfuerzo, preocupación o pérdida de tiempo? ¿Por qué?</span></li>
+      </ul>
+
+      <p class="pd-benchmark__col-title" style="margin-top:28px;">Repreguntas útiles</p>
+      <p class="pd-lead" style="font-size:15px;">¿Por qué? · ¿Cómo lo haces actualmente? · ¿Me puedes dar un ejemplo? · ¿Qué hiciste después? · ¿Con qué frecuencia ocurre?</p>
+    </div>
+  </section>
+
+  <!-- 10 · ENCUESTA EXPLORATORIA -->
+  <section class="pd-section" id="encuesta">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">poll</span>10 · Encuesta exploratoria</p>
+      <h2 class="pd-heading" data-animate>5 preguntas para cuantificar tendencias, no para representar a todos los usuarios</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Pensada para 10–12 respuestas: apoya a las entrevistas, no sustituye una muestra estadísticamente representativa.</p>
+
+      <div class="pd-benchmark__grid" data-animate data-animate-delay="2">
+        <div class="pd-benchmark__card">
+          <p class="pd-benchmark__name">Pregunta 1</p>
+          <p class="pd-lead" style="font-size:14.5px;">¿Cómo recibes normalmente los datos cuando necesitas transferir a una persona nueva?</p>
+          <ul class="pd-benchmark__list" style="margin-top:14px;">
+            <li>WhatsApp u otra mensajería</li><li>Los copio desde otra aplicación</li><li>La persona me los dicta</li><li>Código QR</li><li>Ya tengo sus datos guardados</li><li>Otra forma</li>
+          </ul>
+        </div>
+        <div class="pd-benchmark__card">
+          <p class="pd-benchmark__name">Pregunta 2</p>
+          <p class="pd-lead" style="font-size:14.5px;">¿Qué tan fácil te resulta agregar un destinatario nuevo en tu aplicación bancaria?</p>
+          <ul class="pd-benchmark__list" style="margin-top:14px;">
+            <li>1 — Muy difícil</li><li>2 — Difícil</li><li>3 — Ni fácil ni difícil</li><li>4 — Fácil</li><li>5 — Muy fácil</li>
+          </ul>
+        </div>
+        <div class="pd-benchmark__card">
+          <p class="pd-benchmark__name">Pregunta 3</p>
+          <p class="pd-lead" style="font-size:14.5px;">¿Con qué frecuencia transfieres dinero a las mismas personas o cuentas?</p>
+          <ul class="pd-benchmark__list" style="margin-top:14px;">
+            <li>Varias veces por semana</li><li>Una vez por semana</li><li>Varias veces al mes</li><li>Una vez al mes</li><li>Menos de una vez al mes</li><li>Casi nunca</li>
+          </ul>
+        </div>
+        <div class="pd-benchmark__card">
+          <p class="pd-benchmark__name">Pregunta 4</p>
+          <p class="pd-lead" style="font-size:14.5px;">Si tienes o has tenido un crédito, ¿qué información consultas o te gustaría poder consultar fácilmente desde tu aplicación financiera?</p>
+          <ul class="pd-benchmark__list" style="margin-top:14px;">
+            <li>Valor de la próxima cuota</li><li>Fecha del próximo pago</li><li>Cuotas pagadas</li><li>Cuotas restantes</li><li>Saldo total pendiente</li><li>Historial de pagos</li><li>Estado del crédito</li><li>Pagar una cuota manualmente</li><li>Prepagar el crédito</li><li>No tengo/he tenido créditos</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pd-benchmark__card" style="margin-top:20px; max-width:620px; margin-inline:auto;" data-animate data-animate-delay="3">
+        <p class="pd-benchmark__name">Pregunta 5</p>
+        <p class="pd-lead" style="font-size:14.5px; text-align:center;">¿Cuál de estas situaciones te sería MÁS importante simplificar desde una aplicación financiera?</p>
+        <ul class="pd-benchmark__list" style="margin-top:14px;">
+          <li>Agregar un nuevo destinatario</li><li>Encontrar rápidamente un destinatario frecuente</li><li>Evitar ingresar manualmente datos bancarios</li><li>Revisar el estado de un crédito y sus cuotas</li><li>Poder pagar una cuota cuando sea necesario</li><li>Ninguna de las anteriores</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · CÓMO ANALIZAREMOS LOS RESULTADOS -->
+  <section class="pd-section pd-section--alt" id="analisis-resultados">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>11 · Cómo analizaremos los resultados</p>
+      <h2 class="pd-heading" data-animate>De los datos a una decisión de diseño</h2>
+      <ul class="pd-list" data-animate data-animate-delay="1">
+        <li><span class="material-symbols-outlined">checklist</span><span><strong>1.</strong> Separar evidencia de hipótesis: qué observamos realmente versus qué creemos que podría mejorar.</span></li>
+        <li><span class="material-symbols-outlined">checklist</span><span><strong>2.</strong> Agrupar patrones por journey: transferencias y créditos.</span></li>
+        <li><span class="material-symbols-outlined">checklist</span><span><strong>3.</strong> Registrar frecuencia, impacto, contexto y consecuencias de cada problema.</span></li>
+        <li><span class="material-symbols-outlined">checklist</span><span><strong>4.</strong> Cruzar entrevistas con encuesta: usar la encuesta como apoyo, no como prueba estadística.</span></li>
+        <li><span class="material-symbols-outlined">checklist</span><span><strong>5.</strong> Identificar contradicciones: si usuarios dicen que una solución es útil pero no la necesitan con frecuencia, no priorizarla automáticamente.</span></li>
+        <li><span class="material-symbols-outlined">checklist</span><span><strong>6.</strong> Priorizar oportunidades por impacto × frecuencia × evidencia × viabilidad.</span></li>
+        <li><span class="material-symbols-outlined">checklist</span><span><strong>7.</strong> Definir un único problem statement por oportunidad antes de diseñar.</span></li>
+      </ul>
+      <blockquote class="pd-quote" data-animate data-animate-delay="2">Una funcionalidad solo pasa a diseño si existe evidencia suficiente de que resuelve un problema relevante y puede abordarse principalmente desde UX/Product Design.<span>Regla de decisión</span></blockquote>
+    </div>
+  </section>
+
+  <!-- 12 · MÉTRICAS PARA EL USABILITY TESTING -->
+  <section class="pd-section" id="metricas-testing">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">speed</span>12 · Métricas para el usability testing</p>
+      <h2 class="pd-heading" data-animate>Qué vamos a medir cuando exista un prototipo</h2>
+      <div class="pd-heuristics" data-animate data-animate-delay="1">
+        <table class="pd-heuristics__table">
+          <thead><tr><th>Journey</th><th>Tarea</th><th>Métricas</th></tr></thead>
+          <tbody>
+            <tr><td>Transferencias</td><td>Agregar un nuevo destinatario y comenzar una transferencia</td><td>Éxito de tarea · tiempo · errores · interacciones · dificultad percibida</td></tr>
+            <tr><td>Transferencias</td><td>Encontrar un destinatario recurrente</td><td>Tiempo · éxito · esfuerzo percibido</td></tr>
+            <tr><td>Créditos</td><td>Encontrar estado y cuotas de un crédito</td><td>Éxito · tiempo · comprensión</td></tr>
+            <tr><td>Créditos</td><td>Resolver una situación de pago</td><td>Éxito · comprensión · confianza · errores</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 · ARQUITECTURA DE PROTOTIPO ESPERADA -->
+  <section class="pd-section pd-section--alt" id="arquitectura-prototipo">
+    <div class="container pd-section__inner pd-section__inner--wide">
+      <p class="pd-kicker"><span class="material-symbols-outlined">account_tree</span>13 · Arquitectura de prototipo esperada</p>
+      <div class="pd-evidence-row"><span class="pd-evidence-tag pd-evidence-tag--hipotesis"><span class="material-symbols-outlined">science</span>No es definitiva</span></div>
+      <h2 class="pd-heading" data-animate>El flujo que esperamos prototipar</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Depende de lo que el research valide. El prototipo puede iniciar directamente desde Home; el login es opcional porque no aporta evidencia a las hipótesis. Las áreas no relacionadas con la investigación no necesitan reconstruirse ni ser clickeables.</p>
+
+      <p class="pd-benchmark__col-title" style="margin-top:28px;">Transferir</p>
+      <div class="pd-flow" data-animate data-animate-delay="2">
+        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">home</span>Home</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">sync_alt</span>Transferir</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">group</span>Destinatarios</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">person_add</span>Agregar</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">verified</span>Método validado</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">fact_check</span>Revisión</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Transferencia</div>
+      </div>
+
+      <p class="pd-benchmark__col-title" style="margin-top:32px;">Créditos</p>
+      <div class="pd-flow" data-animate data-animate-delay="3">
+        <div class="pd-flow__step pd-flow__step--start"><span class="material-symbols-outlined">home</span>Home</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">account_balance</span>Mis créditos</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">summarize</span>Resumen</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">description</span>Detalle</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step"><span class="material-symbols-outlined">payments</span>Cuotas</div>
+        <span class="material-symbols-outlined pd-flow__arrow">arrow_forward</span>
+        <div class="pd-flow__step pd-flow__step--end"><span class="material-symbols-outlined">task_alt</span>Acción validada</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 · ROADMAP DE TRABAJO -->
+  <section class="pd-section" id="roadmap">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">timeline</span>14 · Roadmap de trabajo</p>
+      <h2 class="pd-heading" data-animate>Dónde está el proyecto hoy</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Este case se irá completando a medida que cada etapa produzca evidencia real — nada se marca como terminado antes de tiempo.</p>
+
+      <div class="pd-roadmap" data-animate data-animate-delay="2">
+        <p class="pd-roadmap__phase">Definición (completado)</p>
+        <div class="pd-roadmap__item pd-roadmap__item--done"><span class="material-symbols-outlined">check_circle</span><span class="pd-roadmap__label">Auditoría de Tapp</span><span class="pd-roadmap__status">Completado</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--done"><span class="material-symbols-outlined">check_circle</span><span class="pd-roadmap__label">Alcance de diseño</span><span class="pd-roadmap__status">Completado</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--done"><span class="material-symbols-outlined">check_circle</span><span class="pd-roadmap__label">Oportunidades e hipótesis iniciales</span><span class="pd-roadmap__status">Completado</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--done"><span class="material-symbols-outlined">check_circle</span><span class="pd-roadmap__label">Benchmark competitivo</span><span class="pd-roadmap__status">Completado</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--done"><span class="material-symbols-outlined">check_circle</span><span class="pd-roadmap__label">Plan de research</span><span class="pd-roadmap__status">Completado</span></div>
+
+        <p class="pd-roadmap__phase">Research con usuarios</p>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">record_voice_over</span><span class="pd-roadmap__label">5 entrevistas</span><span class="pd-roadmap__status">Próximo paso</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">poll</span><span class="pd-roadmap__label">Encuesta exploratoria (10–12)</span><span class="pd-roadmap__status">Próximo paso</span></div>
+
+        <p class="pd-roadmap__phase">Síntesis y priorización</p>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">grid_view</span><span class="pd-roadmap__label">Síntesis — patrones, citas, contradicciones</span><span class="pd-roadmap__status">Más adelante</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">low_priority</span><span class="pd-roadmap__label">Priorización de problemas</span><span class="pd-roadmap__status">Más adelante</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">tips_and_updates</span><span class="pd-roadmap__label">Problem statements + HMW</span><span class="pd-roadmap__status">Más adelante</span></div>
+
+        <p class="pd-roadmap__phase">Diseño y validación</p>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">account_tree</span><span class="pd-roadmap__label">User flows definitivos</span><span class="pd-roadmap__status">Más adelante</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">grid_on</span><span class="pd-roadmap__label">Wireframes low-fi</span><span class="pd-roadmap__status">Más adelante</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">palette</span><span class="pd-roadmap__label">UI — integración con lenguaje visual Tapp</span><span class="pd-roadmap__status">Más adelante</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">smartphone</span><span class="pd-roadmap__label">Prototipo de journeys</span><span class="pd-roadmap__status">Más adelante</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">fact_check</span><span class="pd-roadmap__label">Testing — 5 usuarios + métricas</span><span class="pd-roadmap__status">Más adelante</span></div>
+        <div class="pd-roadmap__item pd-roadmap__item--future"><span class="material-symbols-outlined">sync</span><span class="pd-roadmap__label">Iteración basada en evidencia</span><span class="pd-roadmap__status">Más adelante</span></div>
+      </div>
+
+      <div class="project-stage-badge" style="margin-top:28px;" data-animate data-animate-delay="3">
+        <span class="material-symbols-outlined">hourglass_top</span>
+        Research con usuarios · próximo paso
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 · GUARDRAILS DEL CASE -->
+  <section class="pd-section pd-section--alt" id="guardrails">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">shield</span>15 · Guardrails del case</p>
+      <h2 class="pd-heading" data-animate>Cómo evitamos sesgos y afirmaciones sin evidencia</h2>
+      <ul class="pd-list" data-animate data-animate-delay="1">
+        <li><span class="material-symbols-outlined">block</span><span>No decir que Tapp no tiene ninguna gestión de créditos: Caja Los Andes sí declara estado y cuotas en su propia app.</span></li>
+        <li><span class="material-symbols-outlined">block</span><span>No afirmar que todos los usuarios tienen problemas de transferencia o crédito por unas pocas reseñas.</span></li>
+        <li><span class="material-symbols-outlined">block</span><span>No presentar QR, favoritos, pegar datos o “Mis créditos” como soluciones decididas antes del research.</span></li>
+        <li><span class="material-symbols-outlined">block</span><span>No reconstruir funcionalidades de Tapp que no participan del journey.</span></li>
+        <li><span class="material-symbols-outlined">block</span><span>No llamar “resultado” a una métrica que todavía no existe: antes del testing, se habla de impacto esperado.</span></li>
+        <li><span class="material-symbols-outlined">block</span><span>Distinguir siempre auditoría, benchmark, evidencia pública, research propio e hipótesis.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 16 · NARRATIVA FINAL -->
+  <section class="pd-section" id="narrativa-final">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">menu_book</span>16 · Narrativa final del case</p>
+      <blockquote class="pd-quote" data-animate>No rediseñé Tapp. Identifiqué dónde intervenir.<span>Frase conductora</span></blockquote>
+      <ul class="pd-list" data-animate data-animate-delay="1">
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Contexto —</strong> Tapp es un producto financiero con múltiples servicios y una propuesta de control del dinero.</span></li>
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Auditoría —</strong> detectamos dos momentos con potencial de fricción: gestionar destinatarios y continuar la gestión de un crédito.</span></li>
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Desk research —</strong> encontramos señales públicas de usuarios y un benchmark que mostró patrones competitivos relevantes.</span></li>
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Research —</strong> contrastamos las hipótesis con entrevistas y encuesta exploratoria.</span></li>
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Priorización —</strong> seleccionamos oportunidades con mayor impacto, frecuencia, evidencia y viabilidad.</span></li>
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Diseño —</strong> intervenimos únicamente los journeys seleccionados, respetando el producto existente.</span></li>
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Testing —</strong> medimos si la propuesta reduce esfuerzo y mejora comprensión.</span></li>
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Iteración —</strong> mostramos qué cambió a partir de la evidencia.</span></li>
+        <li><span class="material-symbols-outlined">chevron_right</span><span><strong>Resultado —</strong> presentamos una propuesta de producto, no un simple rediseño visual.</span></li>
+      </ul>
+      <p class="pd-note">Este es el arco narrativo planeado para el case terminado. Hoy, solo los primeros pasos (contexto, auditoría y desk research) están completos — el resto se irá documentando a medida que ocurra.</p>
+    </div>
+  </section>
+
+  <!-- 17 · RESULTADO -->
+  <section class="pd-section pd-section--alt" id="resultado">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">flag</span>17 · Resultado</p>
+      <h2 class="pd-heading" data-animate>Todavía no hay resultado — mostrar el proceso completo es parte del objetivo</h2>
+      <div class="pd-placeholder" data-animate data-animate-delay="1">
+        <span class="material-symbols-outlined">hourglass_empty</span>
+        <p>PENDIENTE DE RESEARCH / DISEÑO / TESTING. Este proyecto está en la etapa de definición de alcance e hipótesis (ver roadmap, sección 14). El resultado final, las métricas de testing y las decisiones de UI se documentarán aquí una vez completados el research con usuarios, el diseño de las soluciones priorizadas y las pruebas de usabilidad.</p>
+      </div>
+
+      <p class="pd-benchmark__col-title" style="margin-top:32px;">KPIs propuestos — no resultados medidos</p>
+      <div class="pd-kpi-grid" data-animate data-animate-delay="2">
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">task_alt</span><strong>Éxito al agregar un destinatario</strong><span>Se medirá en el testing con 5 usuarios.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">schedule</span><strong>Tiempo para encontrar un destinatario frecuente</strong><span>Se medirá en el testing con 5 usuarios.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">psychology</span><strong>Comprensión del estado del crédito</strong><span>Se medirá en el testing con 5 usuarios.</span></div>
+        <div class="pd-kpi-card"><span class="material-symbols-outlined">verified_user</span><strong>Confianza al resolver un pago</strong><span>Se medirá en el testing con 5 usuarios.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18 · FUENTES PÚBLICAS -->
+  <section class="pd-section" id="fuentes">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">link</span>18 · Fuentes públicas principales</p>
+      <h2 class="pd-heading" data-animate>De dónde sale la información de este case</h2>
+      <ul class="pd-list pd-list--compact" data-animate data-animate-delay="1">
+        <li><span class="material-symbols-outlined">language</span><span><strong>Tapp — sitio oficial.</strong> Producto, propuesta y funcionalidades. <a href="https://www.tapp.cl/" target="_blank" rel="noopener noreferrer">tapp.cl</a></span></li>
+        <li><span class="material-symbols-outlined">language</span><span><strong>Tapp — Funcionalidades.</strong> Transferencias, pagos, crédito y características. <a href="https://www.tapp.cl/funcionalidades" target="_blank" rel="noopener noreferrer">tapp.cl/funcionalidades</a></span></li>
+        <li><span class="material-symbols-outlined">language</span><span><strong>Tapp — Tarifas y límites.</strong> Límites actuales de transferencias y otros movimientos. <a href="https://www.tapp.cl/tarifas-y-limites" target="_blank" rel="noopener noreferrer">tapp.cl/tarifas-y-limites</a></span></li>
+        <li><span class="material-symbols-outlined">language</span><span><strong>Tapp — Ayuda.</strong> Canales de soporte. <a href="https://www.tapp.cl/ayuda" target="_blank" rel="noopener noreferrer">tapp.cl/ayuda</a></span></li>
+        <li><span class="material-symbols-outlined">android</span><span><strong>Tapp — Google Play.</strong> Descripción, calificación y reseñas públicas. <a href="https://play.google.com/store/apps/details?id=cl.tapp" target="_blank" rel="noopener noreferrer">play.google.com</a></span></li>
+        <li><span class="material-symbols-outlined">account_balance</span><span><strong>Caja Los Andes — Tapp.</strong> Crédito Caja Los Andes asociado a Tapp. <a href="https://www.cajalosandes.cl/tapp" target="_blank" rel="noopener noreferrer">cajalosandes.cl/tapp</a></span></li>
+        <li><span class="material-symbols-outlined">android</span><span><strong>Caja Los Andes — App.</strong> Funcionalidades actuales, incluido estado/cuotas de crédito. <a href="https://play.google.com/store/apps/details?id=cajalosandes.cla" target="_blank" rel="noopener noreferrer">play.google.com</a></span></li>
+        <li><span class="material-symbols-outlined">description</span><span><strong>Caja Los Andes — Crédito Social.</strong> Características, cuotas y descuento por planilla. <a href="https://web.cajalosandes.cl/qa-pwp-pensionado/creditos/credito-social" target="_blank" rel="noopener noreferrer">cajalosandes.cl</a></span></li>
+        <li><span class="material-symbols-outlined">description</span><span><strong>Caja Los Andes — Medios de pago.</strong> Qué ocurre cuando no se realiza el descuento y alternativas de pago. <a href="https://pensionados.cajalosandes.cl/creditos/medios-de-pago" target="_blank" rel="noopener noreferrer">pensionados.cajalosandes.cl</a></span></li>
+        <li><span class="material-symbols-outlined">language</span><span><strong>Santander — App.</strong> Transferencias, QR/copiar-pegar y pago de créditos.</span></li>
+        <li><span class="material-symbols-outlined">language</span><span><strong>Bci — App.</strong> Transferencias, destinatarios y pagos. <a href="https://www.bci.cl/personas/app-bci" target="_blank" rel="noopener noreferrer">bci.cl/personas/app-bci</a></span></li>
+        <li><span class="material-symbols-outlined">language</span><span><strong>Bci — Pago cuota crédito.</strong> Flujo oficial de pago de crédito. <a href="https://www.bci.cl/hazlo-en-linea-sucursales/paso-a-paso/pagar-una-cuota-de-tu-credito-de-consumo-app" target="_blank" rel="noopener noreferrer">bci.cl</a></span></li>
+      </ul>
+      <p class="pd-note">La paleta visual usada en esta página es una aproximación personal inspirada en capturas reales de Tapp — no corresponde a tokens oficiales de su Design System.</p>
+    </div>
+  </section>
+
+  <!-- SIGUIENTE PROYECTO -->
+  <section class="pd-next" id="siguiente-proyecto">
+    <div class="container">
+      <p class="pd-kicker"><span class="material-symbols-outlined">arrow_forward</span>Siguiente proyecto</p>
+      <h2>Medical 360</h2>
+      <p>De un MVP de agenda médica a una experiencia integral de gestión de salud.</p>
+      <a href="proyecto-3.html" class="btn--pd-next">
+        Ver caso de estudio
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
 </main>
 <footer class="footer">
   <div class="container footer__inner">

@@ -271,10 +271,44 @@
     </div>
   </section>
 
-  <!-- 07. RESEARCH -->
+  <!-- 07. ANTES → DESPUÉS -->
+  <section class="pd-section" id="antes-despues">
+    <div class="container pd-section__inner">
+      <p class="pd-kicker"><span class="material-symbols-outlined">compare_arrows</span>07 · Antes → Después</p>
+      <h2 class="pd-heading" data-animate>De los problemas identificados a las decisiones de producto</h2>
+      <p class="pd-lead" data-animate data-animate-delay="1">Antes de entrar en el detalle de research, arquitectura y validación, un resumen de qué problemas existían y qué decisiones de diseño los abordaron.</p>
+
+      <div class="pd-decision__grid pd-decision__grid--2" style="margin-top:28px;" data-animate data-animate-delay="2">
+        <div>
+          <span>Antes</span>
+          <ul class="pd-list" style="margin-top:14px;">
+            <li><span class="material-symbols-outlined">radio_button_unchecked</span><span>Eventos repetidos por fecha y localidad en el catálogo.</span></li>
+            <li><span class="material-symbols-outlined">radio_button_unchecked</span><span>Búsqueda y filtros poco flexibles, dependientes de términos exactos.</span></li>
+            <li><span class="material-symbols-outlined">radio_button_unchecked</span><span>Cuatro modalidades de venta con recorridos potencialmente distintos entre sí.</span></li>
+            <li><span class="material-symbols-outlined">radio_button_unchecked</span><span>Selección de asientos compleja en mobile, con cientos de opciones a la vez.</span></li>
+            <li><span class="material-symbols-outlined">radio_button_unchecked</span><span>Transición poco clara entre la información del evento y el inicio de la compra.</span></li>
+          </ul>
+        </div>
+        <div>
+          <span>Después</span>
+          <ul class="pd-list" style="margin-top:14px;">
+            <li><span class="material-symbols-outlined">check_circle</span><span>Arquitectura centrada en el evento: fecha y localidad como filtros dentro de una misma ficha.</span></li>
+            <li><span class="material-symbols-outlined">check_circle</span><span>Búsqueda y filtros rediseñados, orientados al descubrimiento.</span></li>
+            <li><span class="material-symbols-outlined">check_circle</span><span>Una arquitectura común que adapta la etapa de selección según la modalidad de compra.</span></li>
+            <li><span class="material-symbols-outlined">check_circle</span><span>Progressive disclosure: Recinto → Sector → Subzona → Asiento.</span></li>
+            <li><span class="material-symbols-outlined">check_circle</span><span>Validamos el wireframe con usuarios y priorizamos señales más claras para iniciar la compra.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <blockquote class="pd-quote" style="margin-top:32px;" data-animate data-animate-delay="3">"No buscamos eliminar la complejidad del producto, sino hacer que el usuario la enfrentara solo cuando era necesaria."</blockquote>
+    </div>
+  </section>
+
+  <!-- 08. RESEARCH -->
   <section class="pd-section" id="research">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>07 · Research</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>08 · Research</p>
       <h2 class="pd-heading" data-animate>Lo que descubrimos antes de tocar la interfaz</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Una vez iniciado el proyecto, profundizamos el análisis combinando información del producto, necesidades comunicadas por el cliente, feedback de usuarios y evaluación UX de los principales recorridos — desde encontrar un evento hasta guardar la entrada después de comprarla.</p>
 
@@ -295,10 +329,10 @@
     </div>
   </section>
 
-  <!-- 08. PRINCIPALES HALLAZGOS -->
+  <!-- 09. PRINCIPALES HALLAZGOS -->
   <section class="pd-section pd-section--alt" id="hallazgos">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>08 · Principales hallazgos</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>09 · Principales hallazgos</p>
       <h2 class="pd-heading" data-animate>De encontrar un evento a guardar la entrada</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Organizamos lo aprendido según el momento del recorrido al que afecta. No todo tiene el mismo origen: algunos son hallazgos de research con usuarios, otros responden a necesidades del negocio, y otros fueron detectados durante el diagnóstico inicial.</p>
 
@@ -472,10 +506,10 @@
     </div>
   </section>
 
-  <!-- 09. SÍNTESIS -->
+  <!-- 10. SÍNTESIS -->
   <section class="pd-section" id="sintesis">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">summarize</span>09 · Síntesis</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">summarize</span>10 · Síntesis</p>
       <h2 class="pd-heading" data-animate>Un mismo patrón detrás de cada hallazgo</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Sin importar el origen — diagnóstico, negocio, research o benchmark — casi todas las decisiones respondían a la misma lógica: entender qué conservar, qué simplificar y qué modernizar.</p>
 
@@ -503,10 +537,10 @@
     </div>
   </section>
 
-  <!-- 10. BENCHMARK FUNCIONAL -->
+  <!-- 11. BENCHMARK FUNCIONAL -->
   <section class="pd-section pd-section--alt" id="benchmark">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>10 · Benchmark funcional</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">travel_explore</span>11 · Benchmark funcional</p>
       <h2 class="pd-heading" data-animate>Mirar el mercado para entender patrones, no para copiarlos</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Analizamos dos plataformas de ticketing y un referente transaccional para entender cómo el mercado resolvía algunos de los momentos más críticos identificados durante el research: eventos con múltiples funciones, distintos modelos de entrada, identificación, selección de asientos y experiencia postcompra.</p>
       <p class="pd-note">El Benchmark no descubrió nuestros problemas — el diagnóstico inicial y el research los identificaron primero. El Benchmark ayudó a reconocer patrones ya conocidos en el mercado para resolverlos.</p>
@@ -572,10 +606,10 @@
     </div>
   </section>
 
-  <!-- 11. MATRIZ DEL BENCHMARK -->
+  <!-- 12. MATRIZ DEL BENCHMARK -->
   <section class="pd-section" id="benchmark-conclusiones">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">table_chart</span>11 · Matriz del benchmark</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">table_chart</span>12 · Matriz del benchmark</p>
       <h2 class="pd-heading" data-animate>El benchmark confirmó patrones. Nuestro research definió qué mejorar.</h2>
 
       <div class="pd-matrix" data-animate data-animate-delay="1">
@@ -613,10 +647,10 @@
     </div>
   </section>
 
-  <!-- 12. DEL HALLAZGO A LA DECISIÓN -->
+  <!-- 13. DEL HALLAZGO A LA DECISIÓN -->
   <section class="pd-section pd-section--alt" id="hallazgo-a-decision">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">route</span>12 · Del hallazgo a la decisión</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">route</span>13 · Del hallazgo a la decisión</p>
       <h2 class="pd-heading" data-animate>Cinco decisiones que definieron el producto</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Cada decisión de diseño responde a un origen distinto — diagnóstico, negocio, research o benchmark — y se traduce en una solución concreta dentro del producto.</p>
 
@@ -706,10 +740,10 @@
     </div>
   </section>
 
-  <!-- 13. ARQUITECTURA DE INFORMACIÓN — SECCIÓN PROTEGIDA -->
+  <!-- 14. ARQUITECTURA DE INFORMACIÓN — SECCIÓN PROTEGIDA -->
   <section class="pd-section" id="arquitectura-informacion">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">account_tree</span>13 · Arquitectura de información</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">account_tree</span>14 · Arquitectura de información</p>
       <h2 class="pd-heading" data-animate>Reorganizar antes de diseñar</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Los eventos podían utilizar diferentes modelos de venta: entrada general, selección por sector, asiento numerado o entradas nominativas. Diseñar un flujo independiente para cada modalidad habría aumentado la complejidad y dificultado la escalabilidad del producto.</p>
 
@@ -742,14 +776,14 @@
       <div class="vibra-ia-diagram" data-animate data-animate-delay="5">
         <img src="../assets/img/proyecto-1-arquitectura.png" alt="Arquitectura de información completa de Vibra: navegación, categorías y jerarquía de contenidos">
       </div>
-      <p class="pd-note" data-animate data-animate-delay="6">El panel de Productores (en gris) representa una oportunidad de evolución futura del producto — ver sección 21, Evolución del producto — pero queda fuera del alcance de este case study en su etapa actual. — Figjam</p>
+      <p class="pd-note" data-animate data-animate-delay="6">El panel de Productores (en gris) representa una oportunidad de evolución futura del producto — ver sección 22, Evolución del producto — pero queda fuera del alcance de este case study en su etapa actual. — Figjam</p>
     </div>
   </section>
 
-  <!-- 14. CUATRO MODALIDADES DE COMPRA — SECCIÓN PROTEGIDA -->
+  <!-- 15. CUATRO MODALIDADES DE COMPRA — SECCIÓN PROTEGIDA -->
   <section class="pd-section pd-section--alt" id="modalidades">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">checklist_rtl</span>14 · Cuatro modalidades de compra</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">checklist_rtl</span>15 · Cuatro modalidades de compra</p>
       <h2 class="pd-heading" data-animate>Una misma estructura, cuatro formas de comprar</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Cada modalidad adapta la etapa de selección y, cuando corresponde, incorpora los datos específicos requeridos por el tipo de entrada. Identificación, resumen, pago y confirmación mantienen una estructura común.</p>
 
@@ -837,10 +871,10 @@
     </div>
   </section>
 
-  <!-- 15. USER FLOW — SECCIÓN PROTEGIDA -->
+  <!-- 16. USER FLOW — SECCIÓN PROTEGIDA -->
   <section class="pd-section" id="user-flow">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">alt_route</span>15 · User Flow</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">alt_route</span>16 · User Flow</p>
       <h2 class="pd-heading" data-animate>Reducir el camino hacia la entrada</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">El flujo debía permitir que diferentes modelos de venta convergieran en una experiencia consistente. La complejidad cambia durante la selección, pero identificación, resumen, pago y confirmación mantienen una estructura común.</p>
 
@@ -866,10 +900,10 @@
     </div>
   </section>
 
-  <!-- 16. WIREFRAMES — SECCIÓN PROTEGIDA (no modificar funcionalmente) -->
+  <!-- 17. WIREFRAMES — SECCIÓN PROTEGIDA (no modificar funcionalmente) -->
   <section class="pd-section" id="wireframes">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">design_services</span>16 · Wireframes</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">design_services</span>17 · Wireframes</p>
       <h2 class="pd-heading" data-animate>Convertir decisiones en estructura</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Los wireframes funcionales traducen las decisiones anteriores en pantallas concretas, agrupadas según el objetivo que resuelven dentro del recorrido de compra.</p>
 
@@ -917,10 +951,10 @@
     </div>
   </section>
 
-  <!-- 17. PROTOTIPO / WIREFRAME FUNCIONAL -->
+  <!-- 18. PROTOTIPO / WIREFRAME FUNCIONAL -->
   <section class="pd-section" id="wireframe-funcional">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">play_circle</span>17 · Prototipo / Wireframe funcional</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">play_circle</span>18 · Prototipo / Wireframe funcional</p>
       <h2 class="pd-heading" data-animate>Explora la experiencia.</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Recorre el wireframe navegable, construido a partir de las decisiones definidas en las secciones anteriores. Presiona "Explorar wireframe" para recorrer las pantallas completas — podrás volver a este case study en cualquier momento.</p>
 
@@ -947,10 +981,10 @@
     </div>
   </section>
 
-  <!-- 18. VALIDACIÓN -->
+  <!-- 19. VALIDACIÓN -->
   <section class="pd-section" id="validacion">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>18 · Validación</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">insights</span>19 · Validación</p>
       <h2 class="pd-heading" data-animate>Validar antes de llevar la solución a alta fidelidad</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Probamos el wireframe funcional con 4 participantes y 5 tareas críticas para identificar fricciones en los principales momentos de la compra.</p>
 
@@ -1092,10 +1126,10 @@
     </div>
   </section>
 
-  <!-- 19. DESIGN SYSTEM — VIBRA UI -->
+  <!-- 20. DESIGN SYSTEM — VIBRA UI -->
   <section class="pd-section pd-section--alt" id="design-system">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">widgets</span>19 · Vibra UI — Foundations & Components</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">widgets</span>20 · Vibra UI — Foundations & Components</p>
       <h2 class="pd-heading" data-animate>Diseñar una experiencia consistente también era parte del producto</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Vibra UI está construido de forma curada, componente por componente, mostrando únicamente lo que demuestra pensamiento sistémico — no un inventario completo de tokens.</p>
 
@@ -1115,7 +1149,6 @@
         <strong>Foundations — tipografía y layout</strong>
         <div class="pd-chips">
           <div class="pd-chip"><span class="material-symbols-outlined">text_fields</span><div><strong>Typography</strong><span>Plus Jakarta Sans · DM Mono (auxiliar)</span></div></div>
-          <div class="pd-chip"><span class="material-symbols-outlined">space_dashboard</span><div><strong>Spacing</strong><span>Escala 4/8pt</span></div></div>
         </div>
       </div>
 
@@ -1166,19 +1199,19 @@
     </div>
   </section>
 
-  <!-- 20. RESULTADO -->
+  <!-- 21. RESULTADO -->
   <section class="pd-section" id="resultado">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">task_alt</span>20 · Resultado</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">task_alt</span>21 · Resultado</p>
       <h2 class="pd-heading" data-animate>Resultado</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Definimos una arquitectura de compra común para cuatro modalidades de ticketing, validamos el recorrido mobile antes de avanzar a alta fidelidad e identificamos tres puntos prioritarios de iteración: inicio de compra, selección de fecha/localidad e identificación.</p>
     </div>
   </section>
 
-  <!-- 21. EVOLUCIÓN DEL PRODUCTO -->
+  <!-- 22. EVOLUCIÓN DEL PRODUCTO -->
   <section class="pd-exploration-marker" id="oportunidades">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">rocket_launch</span>21 · Evolución del producto</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">rocket_launch</span>22 · Evolución del producto</p>
       <p class="pd-note" style="margin:0 0 4px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; font-size:11px; color:var(--pd-text-muted); font-style:normal;">Future Opportunities</p>
       <h2 class="pd-heading" data-animate>La experiencia no tiene por qué terminar después del pago</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Estas líneas quedan fuera del alcance original de este case study. Se documentan como exploración posterior de Product Design para ampliar el razonamiento — no como funcionalidades entregadas al cliente ni trabajo ya realizado.</p>
@@ -1199,10 +1232,10 @@
     </div>
   </section>
 
-  <!-- 22. CIERRE -->
+  <!-- 23. CIERRE -->
   <section class="pd-section" id="cierre">
     <div class="container pd-section__inner">
-      <p class="pd-kicker"><span class="material-symbols-outlined">flag_circle</span>22 · Cierre</p>
+      <p class="pd-kicker"><span class="material-symbols-outlined">flag_circle</span>23 · Cierre</p>
       <h2 class="pd-heading" data-animate>Reducir complejidad sin reducir posibilidades.</h2>
       <p class="pd-lead" data-animate data-animate-delay="1">Vibra demuestra que mejorar una experiencia no siempre significa agregar nuevas funcionalidades o reconstruir un producto desde cero. El desafío fue identificar dónde la experiencia exigía más esfuerzo del necesario y reorganizar esos momentos para que encontrar, elegir y comprar una entrada resultara más simple.</p>
       <p class="pd-lead" data-animate data-animate-delay="2">El resultado documenta la evolución desde el diagnóstico inicial hasta un prototipo final, mostrando cómo los hallazgos de investigación y validación guiaron las principales decisiones de producto.</p>
@@ -1217,7 +1250,7 @@
     </div>
   </section>
 
-  <!-- EL PROTOTIPO FINAL (alta fidelidad, construido a partir de las decisiones validadas en la sección 19, y ya probado con usuarios reales) -->
+  <!-- EL PROTOTIPO FINAL (alta fidelidad, construido a partir de las decisiones validadas en la sección 20, y ya probado con usuarios reales) -->
   <section class="pd-section" id="prototipo-final">
     <div class="container pd-section__inner">
       <p class="pd-kicker"><span class="material-symbols-outlined">auto_awesome</span>Prototipo final</p>
@@ -1239,9 +1272,9 @@
   <section class="pd-next" id="siguiente-proyecto">
     <div class="container">
       <p class="pd-kicker"><span class="material-symbols-outlined">arrow_forward</span>Siguiente proyecto</p>
-      <h2>Medical 360</h2>
-      <p>De un MVP de agenda médica a una experiencia integral de gestión de salud.</p>
-      <a href="proyecto-3.html" class="btn--pd-next">
+      <h2>Tapp — Caja Los Andes</h2>
+      <p>Un producto financiero real, en etapa de research: dónde intervenir para reducir esfuerzo y aumentar el control.</p>
+      <a href="proyecto-2.html" class="btn--pd-next">
         Ver caso de estudio
         <span class="material-symbols-outlined">arrow_forward</span>
       </a>

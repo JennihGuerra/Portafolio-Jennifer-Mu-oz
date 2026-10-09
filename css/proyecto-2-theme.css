@@ -1,0 +1,147 @@
+/* ============================================================
+   TEMA — Tapp · Caja Los Andes (proyecto-2.html)
+   ------------------------------------------------------------
+   Paleta APROXIMADA (enviada por Jennifer, basada en capturas reales
+   de Tapp — no son tokens oficiales del Design System de Tapp):
+     #0066FF  Azul Tapp / Primary     — CTA, highlights, enlaces, métricas
+     #0046B8  Azul profundo           — bloques destacados y contraste
+     #DCEBFF  Celeste                 — fondos suaves, insights y cards
+     #C7F000  Verde lima / Accent     — SOLO como acento puntual (ver abajo)
+     #172033  Azul noche              — texto principal
+     #667085  Gris secundario         — texto secundario
+     #F4F6F8  Gris superficie         — fondos alternativos
+     #FFFFFF  Blanco                  — fondo principal
+
+   Regla visual (tal cual la entregó Jennifer): predominio de blanco/gris
+   claro, azul como color de acción, verde lima solo como acento puntual.
+   Por eso --tapp-lima NO se usa como --pd-accent ni como color estructural:
+   queda disponible para detalles chicos (p.ej. un ícono aislado), igual
+   que el patrón "Lima Eléctrica" de Vibra.
+
+   Tipografía: no fue especificada para este proyecto — se usa Roboto
+   (la misma tipografía base del sitio) hasta contar con una fuente real
+   confirmada.
+   ============================================================ */
+
+.project-detail {
+  --pd-bg: #FFFFFF;
+  --pd-bg-alt: #F4F6F8;
+  --pd-surface: #FFFFFF;
+  --pd-border: rgba(23, 32, 51, 0.10);
+
+  --pd-text-primary: #172033;
+  --pd-text-body: #667085;
+  --pd-text-muted: #98A2B3;
+
+  --pd-accent: #0066FF;
+  --pd-accent-2: #0046B8;
+  --pd-on-accent: #FFFFFF;
+
+  --pd-gradient: linear-gradient(135deg, #0066FF 0%, #0046B8 100%);
+
+  --pd-font-display: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --pd-font-body: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Colores de las etiquetas de tipo de evidencia — distintos del azul de
+     marca para que cada tipo de información se distinga de un vistazo,
+     siempre combinados con ícono + texto (nunca solo color). */
+  --pd-tag-validado: #1E8E5A;
+  --pd-tag-desk: #0066FF;
+  --pd-tag-hipotesis: #B8720A;
+  --pd-tag-oportunidad: #7C3AED;
+  --pd-tag-vision: #98A2B3;
+
+  /* Acento puntual — ver regla visual arriba. Uso reservado a detalles
+     aislados (p.ej. un ícono suelto), nunca como fondo ni como color de
+     texto corrido. */
+  --tapp-lima: #C7F000;
+}
+
+/* ============================================================
+   MODO OSCURO
+   ------------------------------------------------------------
+   El azul de marca (#0066FF) se aclara para funcionar como color de
+   TEXTO/ícono sobre fondo oscuro (kickers, cifras, bordes de cita). El
+   degradado (fondos sólidos tipo CTA, flujos, nodos) se mantiene en un
+   azul más saturado/oscuro — independiente de --pd-accent — para que el
+   texto blanco (--pd-on-accent) siga teniendo contraste suficiente.
+   ============================================================ */
+[data-theme="dark"] .project-detail {
+  --pd-bg: #0B1220;
+  --pd-bg-alt: #101A2E;
+  --pd-surface: #142238;
+  --pd-border: rgba(130, 170, 255, 0.18);
+
+  --pd-text-primary: #FFFFFF;
+  --pd-text-body: #E3E8F0;
+  --pd-text-muted: #9FB0C8;
+
+  --pd-accent: #5B9BFF;
+  --pd-accent-2: #8AB8FF;
+  --pd-on-accent: #FFFFFF;
+
+  --pd-gradient: linear-gradient(135deg, #2E6FE0 0%, #0046B8 100%);
+
+  --pd-tag-validado: #4ADE80;
+  --pd-tag-desk: #5B9BFF;
+  --pd-tag-hipotesis: #FFB65C;
+  --pd-tag-oportunidad: #C4A6FF;
+  --pd-tag-vision: #9FB0C8;
+
+  --tapp-lima: #D7FF3D;
+}
+
+/* Encabezados de tabla (benchmark, auditoría, matrices) usan background:
+   var(--pd-accent) sólido + texto var(--pd-on-accent). En oscuro --pd-accent
+   es un celeste claro (pensado como texto sobre fondo oscuro) y --pd-on-accent
+   sigue blanco por el degradado de arriba — sobre ESTE fondo sólido claro el
+   texto blanco perdería contraste, así que aquí se fuerza a oscuro. */
+[data-theme="dark"] .project-detail .pd-heuristics__table thead th,
+[data-theme="dark"] .project-detail .pd-matrix thead th {
+  color: #0B1220;
+}
+
+/* Botón del CTA final "Siguiente proyecto": fondo blanco fijo (ver
+   .pd-next .btn--pd-next en project-detail.css), con texto que por
+   defecto toma --pd-text-primary (ya blanco en modo oscuro) — se fija a
+   un color oscuro para que el texto se siga viendo sobre el botón blanco. */
+[data-theme="dark"] .project-detail .pd-next .btn--pd-next {
+  color: #0B1220;
+}
+
+/* ---------- Barra fija "Volver a proyectos" ----------
+   Tapp es un case study de una sola fase (sin navegación por etapas como
+   Medical 360), así que no necesita el bloque .project-case-controls
+   completo — pero sí debe mostrar "Volver a proyectos" fijo desde el
+   primer scroll, con el mismo patrón que ya usa Vibra. A diferencia de
+   Vibra (que fija su fondo en Tinta Noche porque el hero es oscuro por
+   marca en todo momento), el hero de Tapp sigue el tema claro/oscuro del
+   sitio, así que la barra usa los tokens --pd-surface/--pd-border y no
+   necesita reglas aparte para modo oscuro. */
+.project-detail .tapp-back-bar {
+  position: fixed;
+  top: 76px;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  padding: 16px max(24px, calc((100vw - var(--container-w, 1200px)) / 2));
+  background: color-mix(in srgb, var(--pd-accent) 10%, var(--pd-surface));
+  border-bottom: 1px solid var(--pd-border);
+  backdrop-filter: blur(14px);
+}
+.project-detail .tapp-back-bar .btn--back {
+  margin-bottom: 0;
+}
+
+/* El hero ya no despeja el espacio de .project-case-controls (que no se
+   usa en esta página) — solo el header fijo (76px) + la barra "Volver a
+   proyectos" (~72px) + un respiro breve. */
+.project-detail .project-hero.tapp-hero {
+  padding-top: calc(76px + 104px);
+}
+
+@media (max-width: 600px) {
+  .project-detail .tapp-back-bar {
+    padding: 14px 20px;
+  }
+}

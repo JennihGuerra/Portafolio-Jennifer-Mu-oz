@@ -200,8 +200,21 @@
    puede exceder el ancho disponible en tablet/mobile: por defecto, los
    hijos de grid/flex no se encogen por debajo de su tamaño de contenido,
    así que el texto queda recortado en el borde de la pantalla. Se
-   corrige aquí de forma local a Vibra, sin tocar project-detail.css. */
-.project-detail .pd-triad { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+   corrige aquí de forma local a Vibra, sin tocar project-detail.css.
+
+   BUG encontrado y corregido (octubre 2026): esta regla no tenía media
+   query, así que por especificidad (".project-detail .pd-triad" pesa más
+   que el ".pd-triad" de project-detail.css) ganaba SIEMPRE, incluso en
+   mobile — anulando el colapso a 1 columna que project-detail.css define
+   en @media (max-width:800px)/(max-width:600px). Resultado real en el
+   celular: la tríada "Encontrar el evento / Entradas nominativas /
+   Finalización de compra" (sección 10 · Síntesis) se veía apretada en
+   3 columnas angostas en vez de apilarse. El problema de overflow que
+   esta regla soluciona solo existe en el layout de 3 columnas (por eso
+   se restringe aquí a los anchos donde ese layout sigue activo). */
+@media (min-width: 801px) {
+  .project-detail .pd-triad { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 .project-detail .pd-evidence-tag {
   min-width: 0;
   max-width: 100%;
